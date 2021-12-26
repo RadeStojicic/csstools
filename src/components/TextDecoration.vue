@@ -1,0 +1,498 @@
+!<template>
+  <div class="textDecoration_container page">
+    <div class="backgroundtextDecoration">
+      <div class="titletextDecoration">
+        <div class="titletextDecorationContainer">
+          <div>
+            <h1>Category/TextDecoration</h1>
+          </div>
+          <div>
+            <a href="https://github.com/RadeStojicic" target="_blank">
+              <i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.facebook.com/rade.stojicic" target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rade-stojicic-098883222/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://www.instagram.com/radee_st/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="textDecorationTool">
+        <div class="optionstextDecoration">
+          <h1 class="textDecorationText">Settings</h1>
+          <div class="toolstextDecoration">
+            <div class="colortextDecorationContainer">
+              <p>Color</p>
+              <section class="bsInputContainer">
+                <input
+                  class="textDecorationColorTool"
+                  type="color"
+                  v-model="colortextDecoration"
+                  name="color"
+                  value="#000000"
+                />
+              </section>
+            </div>
+            <div>
+              <p>Line</p>
+              <div
+                @click="showDropDownLine"
+                class="positionDropDown"
+                ref="divClick"
+              >
+                <section class="">
+                  {{ activeLineVar }}
+                </section>
+                <i class="fas fa-caret-down"></i>
+              </div>
+              <section style="display: none;" class="itemsDropDownLine">
+                <section
+                  @click="replaceClassLine(), overline()"
+                  class="notActiveLine secLine"
+                  ref=""
+                >
+                  overline
+                </section>
+                <section
+                  @click="replaceClassLine(), underline()"
+                  class="notActiveLine secLine"
+                  ref="secLine"
+                >
+                  underline
+                </section>
+                <section
+                  @click="replaceClassLine(), lineThrough()"
+                  class="activeLine secLine"
+                  ref=""
+                >
+                  line-through
+                </section>
+              </section>
+            </div>
+            <div>
+              <p>Style</p>
+              <div
+                @click="showDropDownLineStyle"
+                class="positionDropDown"
+                ref="divClick"
+              >
+                <section class="">
+                  {{ activeLineStyleVar }}
+                </section>
+                <i class="fas fa-caret-down"></i>
+              </div>
+              <section style="display: none;" class="itemsDropDownLineStyle">
+                <section
+                  @click="replaceClassLineStyle(), doubleLine()"
+                  class="notActiveLineStyle secLineStyle"
+                  ref=""
+                >
+                  double
+                </section>
+                <section
+                  @click="replaceClassLineStyle(), dottedLine()"
+                  class="notActiveLineStyle secLineStyle"
+                  ref=""
+                >
+                  dotted
+                </section>
+                <section
+                  @click="replaceClassLineStyle(), solidLine()"
+                  class="activeLineStyle secLineStyle"
+                  ref="secLineStyle"
+                >
+                  solid
+                </section>
+                <section
+                  @click="replaceClassLineStyle(), dashedLine()"
+                  class="notActiveLineStyle secLineStyle"
+                  ref=""
+                >
+                  dashed
+                </section>
+                <section
+                  @click="replaceClassLineStyle(), wavyLine()"
+                  class="notActiveLineStyle secLineStyle"
+                  ref=""
+                >
+                  wavy
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="secondtextDecoration">
+          <div class="previewtextDecorationContainer">
+            <h1 class="previewtextDecorationText">Preview</h1>
+
+            <p
+              :style="{
+                textDecorationLine: activeLineVar,
+                textDecorationColor: colortextDecoration,
+                textDecorationStyle: activeLineStyleVar,
+              }"
+              class="elementtextDecoration"
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+              cumque, assumenda amet voluptatibus id natus repudiandae!
+            </p>
+          </div>
+          <div class="resulttextDecoration">
+            <div class="copyContainertextDecoration">
+              <h1 class="resulttextDecorationText">Result</h1>
+              <button class="ctcButton" @click="copyToClipBoardBS()">
+                Copy to clipboard
+              </button>
+            </div>
+
+            <div class="resultText">
+              <code
+                ><span style="color: #bef264;">text-decoration: </span
+                >{{ activeLineVar }} {{ activeLineStyleVar }}
+                {{ colortextDecoration }};
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  data() {
+    return {
+      colortextDecoration: "#ffffff",
+      activeLineVar: "underline",
+      activeLineStyleVar: "solid",
+    };
+  },
+  methods: {
+    copyToClipBoardBS() {
+      navigator.clipboard.writeText(
+        "text-decoration: " +
+          this.activeLineVar +
+          " " +
+          this.activeLineStyleVar +
+          " " +
+          this.colortextDecoration +
+          ";"
+      );
+      alert("Copied to clipboard!");
+    },
+    showDropDownLine() {
+      let itemsDropDownLine = document.querySelector(".itemsDropDownLine");
+      if (itemsDropDownLine.style.display == "none") {
+        itemsDropDownLine.style.display = "block";
+      } else {
+        itemsDropDownLine.style.display = "none";
+      }
+      document.querySelector(".itemsDropDownLineStyle").style.display = "none";
+    },
+    showDropDownLineStyle() {
+      let itemsDropDownLineStyle = document.querySelector(
+        ".itemsDropDownLineStyle"
+      );
+      if (itemsDropDownLineStyle.style.display == "none") {
+        itemsDropDownLineStyle.style.display = "block";
+      } else {
+        itemsDropDownLineStyle.style.display = "none";
+      }
+      document.querySelector(".itemsDropDownLine").style.display = "none";
+    },
+    replaceClassLine() {
+      let lineSections = document.querySelectorAll(".secLine");
+
+      for (let i = 0; i < lineSections.length; i++) {
+        lineSections[i].addEventListener("click", function() {
+          let currentPosition = document.getElementsByClassName("activeLine");
+          currentPosition[0].className = currentPosition[0].className.replace(
+            "activeLine",
+            ""
+          );
+          this.className += " activeLine";
+        });
+        let dropLineContainer = document.querySelector(".itemsDropDownLine");
+        dropLineContainer.style.display = "none";
+      }
+    },
+    replaceClassLineStyle() {
+      let lineStyleSections = document.querySelectorAll(".secLineStyle");
+
+      for (let i = 0; i < lineStyleSections.length; i++) {
+        lineStyleSections[i].addEventListener("click", function() {
+          let currentPosition = document.getElementsByClassName(
+            "activeLineStyle"
+          );
+          currentPosition[0].className = currentPosition[0].className.replace(
+            "activeLineStyle",
+            ""
+          );
+          this.className += " activeLineStyle";
+        });
+        let dropLineStyleContainer = document.querySelector(
+          ".itemsDropDownLineStyle"
+        );
+        dropLineStyleContainer.style.display = "none";
+      }
+    },
+    overline() {
+      this.activeLineVar = "overline";
+    },
+    underline() {
+      this.activeLineVar = "underline";
+    },
+    lineThrough() {
+      this.activeLineVar = "line-through";
+    },
+    doubleLine() {
+      this.activeLineStyleVar = "double";
+    },
+    dottedLine() {
+      this.activeLineStyleVar = "dotted";
+    },
+    dashedLine() {
+      this.activeLineStyleVar = "dashed";
+    },
+    solidLine() {
+      this.activeLineStyleVar = "solid";
+    },
+    wavyLine() {
+      this.activeLineStyleVar = "wavy";
+    },
+  },
+  mounted() {
+    this.$refs.secLine.click();
+    this.$refs.secLineStyle.click();
+  },
+};
+</script>
+
+<style>
+.textDecoration_container {
+  width: 86%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #1d263d;
+}
+
+.titletextDecoration {
+  background-color: rgb(96, 10, 255);
+}
+.titletextDecorationContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textDecorationStyle input {
+  margin-right: 20px;
+}
+
+.textDecorationStyle p {
+  margin-bottom: 15px;
+}
+
+.titletextDecorationContainer div i {
+  font-size: 1vw;
+  color: white;
+  padding: 5px;
+}
+
+.titletextDecoration h1 {
+  font-size: 1.2vw;
+  color: rgb(255, 255, 255);
+  padding: 15px 0px 15px 15px;
+  text-align: right;
+}
+
+.textDecorationHorizontalTool {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.textDecorationVerticalTool {
+  width: 100%;
+  margin-top: 10px;
+}
+.textDecorationBlurTool {
+  width: 100%;
+  margin-top: 10px;
+}
+.textDecorationSpreadTool {
+  width: 100%;
+  margin-top: 10px;
+}
+.textDecorationColorTool {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #353945;
+  color: white;
+}
+
+.bsInputContainer {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.copyContainertextDecoration {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyContainertextDecoration button {
+  padding: 10px;
+  border: 1px #ffffff solid;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.copyContainertextDecoration button:hover {
+  background-color: rgba(233, 233, 233, 0.171);
+}
+
+.elementtextDecoration {
+  width: 100%;
+  margin: auto;
+  color: white;
+  font-size: 0.9vw;
+  background-color: rgba(245, 245, 245, 0.158);
+  padding: 15px;
+  height: 150px;
+}
+
+.toolstextDecoration div {
+  margin-top: 20px;
+  background-color: rgba(245, 245, 245, 0.158);
+  padding: 10px;
+}
+
+.toolstextDecoration p {
+  font-size: 0.9vw;
+}
+
+.textDecorationTool {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.textDecorationText {
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.optionstextDecoration {
+  flex: 1;
+  background-color: rgba(245, 245, 245, 0.158);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+}
+.secondtextDecoration {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: rgba(245, 245, 245, 0.158);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.previewtextDecorationText {
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.previewtextDecoration {
+  height: 200px;
+}
+
+.resultText {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(245, 245, 245, 0.158);
+  padding: 10px;
+}
+
+.resultText code {
+  margin-top: 10px;
+  background-color: #353945;
+  padding: 12px;
+  color: white;
+  border: none;
+  font-size: 0.9vw;
+}
+
+.resulttextDecoration {
+  margin-top: 40px;
+}
+
+.resulttextDecorationText {
+  color: white;
+}
+
+.itemsDropDownLine {
+  background-color: rgba(226, 226, 226, 0.158);
+  -webkit-animation: 0.5s opacityDrop ease-in-out;
+  animation: 0.5s opacityDrop ease-in-out;
+}
+
+.itemsDropDownLine section {
+  border-top: 1px rgba(65, 61, 61, 0.24) solid;
+  padding: 10px;
+  cursor: pointer;
+}
+.itemsDropDownLineStyle {
+  background-color: rgba(226, 226, 226, 0.158);
+  -webkit-animation: 0.5s opacityDrop ease-in-out;
+  animation: 0.5s opacityDrop ease-in-out;
+}
+
+.itemsDropDownLineStyle section {
+  border-top: 1px rgba(65, 61, 61, 0.24) solid;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.activeLine {
+  background-color: rgba(226, 226, 226, 0.24);
+}
+.activeLineStyle {
+  background-color: rgba(226, 226, 226, 0.24);
+}
+</style>
