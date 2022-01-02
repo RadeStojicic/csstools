@@ -479,37 +479,37 @@ a {
     display: flex;
     justify-content: flex-start;
     color: white;
-    font-size: 2.7vw;
+    font-size: 3vw;
     margin-right: 20px;
   }
   .fa-times {
     display: flex;
     justify-content: flex-start;
     color: white;
-    font-size: 2.9vw;
+    font-size: 3.2vw;
     margin-right: 20px;
   }
   .headerResponsiveNav p {
     color: white;
-    font-size: 2.7vw;
+    font-size: 3vw;
     font-weight: bold;
   }
   .responsiveLinks p {
     color: rgb(103, 187, 255);
-    font-size: 1.5vw;
+    font-size: 2.2vw;
     padding: 15px 10px 10px 10px;
     margin-left: 10px;
   }
 
   .responsiveFooter p {
     color: rgb(172, 172, 172);
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     margin-top: 10px;
     font-style: italic;
     padding: 0px 10px 0px 10px;
   }
   .responsiveLinks li {
-    font-size: 1.4vw;
+    font-size: 2vw;
   }
 }
 @media (max-width: 780px) {
@@ -526,37 +526,37 @@ a {
     display: flex;
     justify-content: flex-start;
     color: white;
-    font-size: 4vw;
+    font-size: 4.5vw;
     margin-right: 20px;
   }
   .fa-times {
     display: flex;
     justify-content: flex-start;
     color: white;
-    font-size: 4.2vw;
+    font-size: 4.7vw;
     margin-right: 20px;
   }
   .headerResponsiveNav p {
     color: white;
-    font-size: 4vw;
+    font-size: 4.5vw;
     font-weight: bold;
   }
   .responsiveLinks p {
     color: rgb(103, 187, 255);
-    font-size: 2.2vw;
+    font-size: 2.5vw;
     padding: 15px 10px 10px 10px;
     margin-left: 10px;
   }
 
   .responsiveFooter p {
     color: rgb(172, 172, 172);
-    font-size: 2vw;
+    font-size: 2.3vw;
     margin-top: 10px;
     font-style: italic;
     padding: 0px 10px 0px 10px;
   }
   .responsiveLinks li {
-    font-size: 2vw;
+    font-size: 2.4vw;
   }
 }
 @media (max-width: 600px) {

@@ -928,7 +928,7 @@ export default {
   }
 
   .copyRGB {
-    padding: 13px;
+    padding: 3vw;
     background-color: rgb(19, 19, 26);
     border: none;
     outline: none;
@@ -939,7 +939,7 @@ export default {
   }
 
   .copyHex {
-    padding: 13px;
+    padding: 3vw;
     background-color: rgb(19, 19, 26);
     border: none;
     outline: none;
@@ -988,7 +988,7 @@ export default {
   }
 
   .codePalleteText {
-    font-size: 4.5vw;
+    font-size: 5vw;
     font-weight: 600;
     margin-bottom: 20px;
   }
@@ -998,7 +998,6 @@ export default {
     border-radius: 5px;
     padding: 2.5vw 1.5vw 2.5vw 1.5vw;
     font-weight: 500;
-    font-size: 3.2vw;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1011,6 +1010,7 @@ export default {
     background-color: #353945;
     width: 100%;
     margin-top: 10px;
+    font-size: 3.3vw;
   }
   .inputsBG div code {
     padding: 10px;
@@ -1018,7 +1018,7 @@ export default {
 
   .colorText {
     color: rgb(255, 255, 255);
-    font-size: 4.5vw;
+    font-size: 5vw;
     font-weight: 600;
     margin-bottom: 20px;
   }
@@ -1044,7 +1044,7 @@ export default {
 
   .previewPalleteText {
     color: rgb(255, 255, 255);
-    font-size: 4.5vw;
+    font-size: 5vw;
     font-weight: 600;
     margin-bottom: 20px;
   }
