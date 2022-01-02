@@ -907,13 +907,13 @@ export default {
   }
 
   .titleColorContainer div i {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     color: white;
     padding: 10px;
   }
 
   .titleColor h1 {
-    font-size: 3.5vw;
+    font-size: 4vw;
     color: rgb(255, 255, 255);
     padding: 15px 0px 15px 15px;
     text-align: right;
@@ -996,9 +996,9 @@ export default {
   .inputsBG {
     background-color: rgba(233, 233, 233, 0.171);
     border-radius: 5px;
-    padding: 20px 10px 20px 10px;
+    padding: 2.5vw 1.5vw 2.5vw 1.5vw;
     font-weight: 500;
-    font-size: 3vw;
+    font-size: 3.2vw;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1018,7 +1018,7 @@ export default {
 
   .colorText {
     color: rgb(255, 255, 255);
-    font-size: 4vw;
+    font-size: 4.5vw;
     font-weight: 600;
     margin-bottom: 20px;
   }
@@ -1044,7 +1044,7 @@ export default {
 
   .previewPalleteText {
     color: rgb(255, 255, 255);
-    font-size: 4vw;
+    font-size: 4.5vw;
     font-weight: 600;
     margin-bottom: 20px;
   }

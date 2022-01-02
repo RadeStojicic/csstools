@@ -222,12 +222,14 @@ a {
   font-size: 3.5vw;
   padding: 15px 10px 10px 10px;
   margin-left: 10px;
+  user-select: none;
 }
 .responsiveLinks li {
   padding: 15px 10px 15px 25px;
   color: white;
   border-top: 1px rgba(128, 128, 128, 0.39) solid;
   width: 100%;
+  user-select: none;
 }
 
 .responsiveLinks li:hover {
@@ -253,6 +255,7 @@ a {
   margin: 30px auto;
   background-color: #141b2c;
   padding-bottom: 50px;
+  user-select: none;
 }
 
 .responsiveFooter div {
@@ -568,28 +571,32 @@ a {
   }
   .headerResponsiveNav p {
     color: white;
-    font-size: 5vw;
+    font-size: 5.5vw;
     font-weight: bold;
   }
   .fa-bars {
-    font-size: 5vw;
+    font-size: 5.5vw;
+  }
+  .fa-times {
+    font-size: 5.6vw;
   }
   .responsiveLinks p {
     color: rgb(103, 187, 255);
-    font-size: 3vw;
+    font-size: 3.8vw;
     padding: 15px 10px 10px 10px;
     margin-left: 10px;
   }
 
   .responsiveFooter p {
     color: rgb(172, 172, 172);
-    font-size: 3vw;
+    font-size: 3.2vw;
     margin-top: 10px;
     font-style: italic;
     padding: 0px 10px 0px 10px;
   }
   .responsiveLinks li {
-    font-size: 3vw;
+    font-size: 3.5vw;
+    padding: 20px 10px 20px 25px;
   }
 }
 </style>
