@@ -988,7 +988,7 @@ export default {
   }
 
   .codePalleteText {
-    font-size: 4vw;
+    font-size: 4.5vw;
     font-weight: 600;
     margin-bottom: 20px;
   }
