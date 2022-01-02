@@ -41,8 +41,11 @@
             ></div>
           </div>
           <div class="codePallete">
-            <div>
+            <div class="copyContainerBgColor">
               <h1 class="codePalleteText">Result</h1>
+              <button class="ctcButton" @click="copyToClipBoardColor()">
+                Copy to clipboard
+              </button>
             </div>
 
             <div class="inputsBG">
@@ -51,7 +54,6 @@
                   ><span style="color: #bef264;">background-color:</span>
                   {{ color }};
                 </code>
-                <button @click="copyHex()" class="copyHex">Copy</button>
               </div>
               <div>
                 <code
@@ -60,8 +62,6 @@
                   >
                   {{ rgb }};
                 </code>
-
-                <button @click="copyRgb()" class="copyRGB">Copy</button>
               </div>
             </div>
           </div>
@@ -91,12 +91,16 @@ export default {
           .join(",") +
         ")";
     },
-    copyRgb() {
-      navigator.clipboard.writeText("background-color: " + this.rgb + ";");
-      alert("Copied to clipboard!");
-    },
-    copyHex() {
-      navigator.clipboard.writeText("background-color: " + this.color + ";");
+    copyToClipBoardColor() {
+      this.convertToRGB();
+      navigator.clipboard.writeText(
+        "background-color: " +
+          this.color +
+          "; " +
+          "background-color: " +
+          this.rgb +
+          "; "
+      );
       alert("Copied to clipboard!");
     },
   },
@@ -157,27 +161,6 @@ export default {
   align-items: flex-start;
   width: 80%;
 }
-.copyRGB {
-  padding: 13px;
-  background-color: rgb(19, 19, 26);
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: white;
-  margin-left: 10px;
-  width: 100px;
-}
-
-.copyHex {
-  padding: 13px;
-  background-color: rgb(19, 19, 26);
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: white;
-  margin-left: 10px;
-  width: 100px;
-}
 
 .hexContainer {
   display: flex;
@@ -203,6 +186,23 @@ export default {
   font-size: 0.9vw;
 }
 
+.copyContainerBgColor {
+  display: flex;
+  justify-content: space-between;
+}
+.copyContainerBgColor button {
+  padding: 10px;
+  border: 1px #ffffff solid;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.copyContainerBgColor button:hover {
+  background-color: rgba(233, 233, 233, 0.171);
+}
 .colorBG {
   width: 100%;
   background-color: rgb(255, 255, 255);
@@ -361,28 +361,6 @@ export default {
     outline: none;
     cursor: pointer;
     font-size: 18px;
-  }
-
-  .copyRGB {
-    padding: 13px;
-    background-color: rgb(19, 19, 26);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: white;
-    margin-left: 10px;
-    width: 100px;
-  }
-
-  .copyHex {
-    padding: 13px;
-    background-color: rgb(19, 19, 26);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: white;
-    margin-left: 10px;
-    width: 100px;
   }
 
   .hexContainer {
@@ -551,28 +529,6 @@ export default {
     font-size: 18px;
   }
 
-  .copyRGB {
-    padding: 13px;
-    background-color: rgb(19, 19, 26);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: white;
-    margin-left: 10px;
-    width: 100px;
-  }
-
-  .copyHex {
-    padding: 13px;
-    background-color: rgb(19, 19, 26);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: white;
-    margin-left: 10px;
-    width: 100px;
-  }
-
   .hexContainer {
     display: flex;
     justify-content: center;
@@ -739,28 +695,6 @@ export default {
     font-size: 18px;
   }
 
-  .copyRGB {
-    padding: 13px;
-    background-color: rgb(19, 19, 26);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: white;
-    margin-left: 10px;
-    width: 100px;
-  }
-
-  .copyHex {
-    padding: 13px;
-    background-color: rgb(19, 19, 26);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: white;
-    margin-left: 10px;
-    width: 100px;
-  }
-
   .hexContainer {
     display: flex;
     justify-content: center;
@@ -925,28 +859,6 @@ export default {
     outline: none;
     cursor: pointer;
     font-size: 18px;
-  }
-
-  .copyRGB {
-    padding: 3vw;
-    background-color: rgb(19, 19, 26);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: white;
-    margin-left: 10px;
-    width: 100px;
-  }
-
-  .copyHex {
-    padding: 3vw;
-    background-color: rgb(19, 19, 26);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: white;
-    margin-left: 10px;
-    width: 100px;
   }
 
   .hexContainer {
