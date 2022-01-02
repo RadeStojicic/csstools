@@ -137,7 +137,7 @@
               </button>
             </div>
 
-            <div class="resultText">
+            <div class="resultTextBoxShadow">
               <code
                 ><span style="color: #bef264;">box-shadow: </span>
                 {{ horizontalBS }}px {{ verticalBS }}px {{ blurBS }}px
@@ -359,7 +359,7 @@ export default {
   height: 200px;
 }
 
-.resultText {
+.resultTextBoxShadow {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -367,7 +367,7 @@ export default {
   padding: 10px;
 }
 
-.resultText code {
+.resultTextBoxShadow code {
   margin-top: 10px;
   background-color: #353945;
   padding: 12px;

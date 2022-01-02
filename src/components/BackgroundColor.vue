@@ -278,6 +278,217 @@ export default {
 .previewPallete {
   height: 200px;
 }
+@media (max-width: 1800px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 30px 0;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .background {
+    width: 85vw;
+    height: 100ch;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 0px auto;
+  }
+}
+@media (max-width: 1300px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 30px 0;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .background {
+    width: 100%;
+    height: 100ch;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleColorContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+
+  .titleColorContainer div i {
+    font-size: 1.6vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .titleColor h1 {
+    font-size: 1.6vw;
+    color: rgb(255, 255, 255);
+    padding: 15px 0px 15px 15px;
+    text-align: right;
+  }
+
+  .rgb {
+    padding: 21px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .copyRGB {
+    padding: 13px;
+    background-color: rgb(19, 19, 26);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    width: 100px;
+  }
+
+  .copyHex {
+    padding: 13px;
+    background-color: rgb(19, 19, 26);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    width: 100px;
+  }
+
+  .hexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .color {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #353945;
+    color: white;
+  }
+
+  #hex {
+    font-size: 0.9vw;
+  }
+  #rgb {
+    font-size: 0.9vw;
+  }
+
+  .colorBG {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+  }
+  .colorBG p {
+    margin-left: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .codePalleteText {
+    font-size: 2vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .inputsBG {
+    background-color: rgba(233, 233, 233, 0.171);
+    border-radius: 5px;
+    padding: 20px 10px 20px 10px;
+    font-weight: 500;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .inputsBG div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #353945;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .inputsBG div code {
+    padding: 15px;
+  }
+
+  .colorText {
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .optionsPallete {
+    flex: 1;
+    background-color: rgba(233, 233, 233, 0.171);
+    border-radius: 5px;
+    width: 65%;
+    margin: auto;
+  }
+  .secondPallete {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: rgba(233, 233, 233, 0.171);
+    margin: 10px auto;
+    height: auto;
+    border-radius: 5px;
+    width: 65%;
+  }
+
+  .previewPalleteText {
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .previewPallete {
+    height: 200px;
+  }
+}
 @media (max-width: 1080px) {
   .hero {
     display: flex;

@@ -152,7 +152,7 @@
               </button>
             </div>
 
-            <div class="resultText">
+            <div class="resultTextTextDecoration">
               <code
                 ><span style="color: #bef264;">text-decoration: </span
                 >{{ activeLineVar }} {{ activeLineStyleVar }}
@@ -441,7 +441,7 @@ export default {
   height: 200px;
 }
 
-.resultText {
+.resultTextTextDecoration {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -449,7 +449,7 @@ export default {
   padding: 10px;
 }
 
-.resultText code {
+.resultTextTextDecoration code {
   margin-top: 10px;
   background-color: #353945;
   padding: 12px;

@@ -217,7 +217,7 @@
               </button>
             </div>
 
-            <div class="resultText">
+            <div class="resultTextFlexBox">
               <code><span style="color: #bef264;">display: </span>flex; </code>
               <code
                 ><span style="color: #bef264;">flex-direction: </span
@@ -565,7 +565,7 @@ export default {
   height: 200px;
 }
 
-.resultText {
+.resultTextFlexBox {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -573,7 +573,7 @@ export default {
   padding: 10px;
 }
 
-.resultText code {
+.resultTextFlexBox code {
   margin-top: 10px;
   background-color: #353945;
   padding: 12px;

@@ -61,7 +61,7 @@
               </button>
             </div>
 
-            <div class="resultText">
+            <div class="resultTextOpacity">
               <code
                 ><span style="color: #bef264;">opacity:</span>
                 {{ opacityAmount }};
@@ -221,7 +221,7 @@ export default {
   height: 200px;
 }
 
-.resultText {
+.resultTextOpacity {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -229,7 +229,7 @@ export default {
   padding: 10px;
 }
 
-.resultText code {
+.resultTextOpacity code {
   margin-top: 10px;
   background-color: #353945;
   padding: 12px;

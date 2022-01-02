@@ -61,7 +61,7 @@
               </button>
             </div>
 
-            <div class="resultText">
+            <div class="resultTextRotate">
               <code
                 ><span style="color: #bef264;">transform:</span>
                 <span style="color: #fffb7a"> rotate</span>(<span
@@ -226,7 +226,7 @@ export default {
   height: 200px;
 }
 
-.resultText {
+.resultTextRotate {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -234,7 +234,7 @@ export default {
   padding: 10px;
 }
 
-.resultText code {
+.resultTextRotate code {
   margin-top: 10px;
   background-color: #353945;
   padding: 12px;

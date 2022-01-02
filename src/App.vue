@@ -28,7 +28,25 @@
 <script>
 export default {
   name: "App",
-  components: {},
+  metaInfo() {
+    return {
+      title: "CSS Tools",
+      meta: [
+        {
+          name: "description",
+          content: "This Website Contains Css Tools To Generate CSS",
+        },
+        {
+          property: "og:title",
+          content: "Epiloge - Build your network in your field of interest",
+        },
+        { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+        { property: "og:site_name", content: "CSS Tools" },
+        { property: "og:type", content: "website" },
+        { name: "robots", content: "index,follow" },
+      ],
+    };
+  },
 };
 </script>
 
@@ -48,6 +66,6 @@ export default {
 }
 
 .fadeIn {
-  animation-duration: 0.2s;
+  animation-duration: 0.15s;
 }
 </style>

@@ -167,7 +167,7 @@
               </button>
             </div>
 
-            <div class="resultText">
+            <div class="resultTextImageFilter">
               <code
                 ><span style="color: #bef264;">filter: </span>
                 <span style="color:#">blur</span
@@ -404,7 +404,7 @@ export default {
   height: 200px;
 }
 
-.resultText {
+.resultTextImageFilter {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -412,7 +412,7 @@ export default {
   padding: 10px;
 }
 
-.resultText code {
+.resultTextImageFilter code {
   margin-top: 10px;
   background-color: #353945;
   padding: 12px;

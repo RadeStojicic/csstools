@@ -1,6 +1,6 @@
 !<template>
   <div class="border_container page">
-    <div class="backgroundBorder">
+    <div class="backgroundBorderC">
       <div class="titleBorder">
         <div class="titleBorderContainer">
           <div>
@@ -115,7 +115,7 @@
               </button>
             </div>
 
-            <div class="resultText">
+            <div class="resultTextBorder">
               <code
                 ><span style="color: #bef264;">border-radius:</span>
                 {{ value }}%;
@@ -333,7 +333,7 @@ export default {
   height: 200px;
 }
 
-.resultText {
+.resultTextBorder {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -341,7 +341,7 @@ export default {
   padding: 10px;
 }
 
-.resultText code {
+.resultTextBorder code {
   margin-top: 10px;
   background-color: #353945;
   padding: 12px;

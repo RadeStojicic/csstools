@@ -154,7 +154,7 @@
               </button>
             </div>
 
-            <div class="resultText">
+            <div class="resultTextGradient">
               <code v-if="this.activeGradientTypeVar == 'linear'"
                 ><span style="color: #bef264;">background: </span>
                 <span style="color: #fffb7a;">linear-gradient</span>(<span
@@ -427,7 +427,7 @@ export default {
   width: 100%;
 }
 
-.resultText {
+.resultTextGradient {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -435,7 +435,7 @@ export default {
   padding: 10px;
 }
 
-.resultText code {
+.resultTextGradient code {
   margin-top: 10px;
   background-color: #353945;
   padding: 12px;

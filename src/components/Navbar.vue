@@ -106,6 +106,11 @@ export default {
         hamburger.style.display = "none";
         close.style.display = "block";
       }
+      allLinks.addEventListener("click", () => {
+        allLinks.style.display = "none";
+        hamburger.style.display = "block";
+        close.style.display = "none";
+      });
     },
   },
 };
@@ -122,7 +127,7 @@ export default {
   list-style: none;
   z-index: 1000;
   display: block;
-  width: 300px;
+  width: 15vw;
 }
 
 a {
@@ -157,7 +162,7 @@ a {
   background-color: rgba(41, 41, 41, 0.178);
 }
 .footerClassic {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -165,12 +170,12 @@ a {
 .footerClassic div {
   border-top: 1px rgba(128, 128, 128, 0.39) solid;
   width: 95%;
-  margin: auto;
+  margin: 20px auto;
   padding: 10px;
 }
 .footerClassic p {
   color: rgb(172, 172, 172);
-  font-size: 0.9em;
+  font-size: 1em;
   margin-top: 5px;
 }
 
@@ -263,7 +268,134 @@ a {
   font-style: italic;
   padding: 0px 10px 0px 10px;
 }
-@media (max-width: 1680px) {
+@media (min-width: 2000px) {
+  .navbarClassic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #141b2c;
+    font-weight: 500;
+    list-style: none;
+    z-index: 1000;
+    display: block;
+    width: 20vw;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .title {
+    color: white;
+    font-size: 1.4vw;
+    padding: 1vw;
+    font-weight: bold;
+  }
+
+  .toolsNavBar {
+    margin-top: 1.5vw;
+  }
+  .toolsNavBar p {
+    color: rgb(103, 187, 255);
+    font-size: 0.8vw;
+    padding: 0.4vw;
+    margin-top: 5px;
+  }
+  .toolsNavBar li {
+    padding: 0.5vw 0.5vw 0.5vw 1vw;
+    color: white;
+    font-size: 0.8vw;
+    border-top: 1px rgba(128, 128, 128, 0.39) solid;
+    width: 100%;
+  }
+  .toolsNavBar li:hover {
+    background-color: rgba(41, 41, 41, 0.178);
+  }
+  .footerClassic {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footerClassic div {
+    border-top: 1px rgba(128, 128, 128, 0.39) solid;
+    width: 95%;
+    margin: auto;
+    padding: 0.5vw;
+  }
+  .footerClassic p {
+    color: rgb(172, 172, 172);
+    font-size: 0.8vw;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 1800px) {
+  .navbarClassic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #141b2c;
+    font-weight: 500;
+    list-style: none;
+    z-index: 1000;
+    display: block;
+    width: 20vw;
+    overflow: auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .title {
+    color: white;
+    font-size: 1.8vw;
+    padding: 1vw;
+    font-weight: bold;
+  }
+
+  .toolsNavBar {
+    margin-top: 1.8vw;
+  }
+  .toolsNavBar p {
+    color: rgb(103, 187, 255);
+    font-size: 1.2vw;
+    padding: 1vw;
+    margin-top: 5px;
+  }
+  .toolsNavBar li {
+    padding: 0.5vw 0.5vw 0.5vw 1.3vw;
+    color: white;
+    font-size: 1.1vw;
+    border-top: 1px rgba(128, 128, 128, 0.39) solid;
+    width: 100%;
+  }
+  .toolsNavBar li:hover {
+    background-color: rgba(41, 41, 41, 0.178);
+  }
+  .footerClassic {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footerClassic div {
+    border-top: 1px rgba(128, 128, 128, 0.39) solid;
+    width: 95%;
+    margin: auto;
+    padding: 0.5vw;
+  }
+  .footerClassic p {
+    color: rgb(172, 172, 172);
+    font-size: 0.8vw;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 1300px) {
   .navbarClassic {
     display: none;
   }
@@ -289,8 +421,45 @@ a {
   }
   .headerResponsiveNav p {
     color: white;
-    font-size: 2.2vw;
+    font-size: 2vw;
     font-weight: bold;
+  }
+  .responsiveLinks {
+    position: relative;
+    top: 20px;
+  }
+  .responsiveLinks p {
+    color: rgb(103, 187, 255);
+    font-size: 1.4vw;
+    padding: 15px 10px 10px 10px;
+    margin-left: 10px;
+  }
+
+  .headerResponsiveNav p {
+    color: white;
+    font-size: 2.6vw;
+    font-weight: bold;
+  }
+  .responsiveLinks li {
+    font-size: 1.3vw;
+  }
+
+  .responsiveFooter p {
+    color: rgb(172, 172, 172);
+    font-size: 1.3vw;
+    margin-top: 20px;
+    font-style: italic;
+    padding: 1vw;
+    margin-left: 10px;
+  }
+  .responsiveFooter {
+    margin: 50px auto;
+  }
+
+  .responsiveFooter div {
+    border-top: 1px rgba(128, 128, 128, 0.39) solid;
+    width: 100%;
+    margin: auto;
   }
 }
 @media (max-width: 1080px) {
@@ -322,6 +491,23 @@ a {
     font-size: 2.7vw;
     font-weight: bold;
   }
+  .responsiveLinks p {
+    color: rgb(103, 187, 255);
+    font-size: 1.5vw;
+    padding: 15px 10px 10px 10px;
+    margin-left: 10px;
+  }
+
+  .responsiveFooter p {
+    color: rgb(172, 172, 172);
+    font-size: 1.5vw;
+    margin-top: 10px;
+    font-style: italic;
+    padding: 0px 10px 0px 10px;
+  }
+  .responsiveLinks li {
+    font-size: 1.4vw;
+  }
 }
 @media (max-width: 780px) {
   .navbarClassic {
@@ -352,6 +538,23 @@ a {
     font-size: 4vw;
     font-weight: bold;
   }
+  .responsiveLinks p {
+    color: rgb(103, 187, 255);
+    font-size: 2.2vw;
+    padding: 15px 10px 10px 10px;
+    margin-left: 10px;
+  }
+
+  .responsiveFooter p {
+    color: rgb(172, 172, 172);
+    font-size: 2vw;
+    margin-top: 10px;
+    font-style: italic;
+    padding: 0px 10px 0px 10px;
+  }
+  .responsiveLinks li {
+    font-size: 2vw;
+  }
 }
 @media (max-width: 600px) {
   .navbarClassic {
@@ -370,6 +573,23 @@ a {
   }
   .fa-bars {
     font-size: 5vw;
+  }
+  .responsiveLinks p {
+    color: rgb(103, 187, 255);
+    font-size: 3vw;
+    padding: 15px 10px 10px 10px;
+    margin-left: 10px;
+  }
+
+  .responsiveFooter p {
+    color: rgb(172, 172, 172);
+    font-size: 3vw;
+    margin-top: 10px;
+    font-style: italic;
+    padding: 0px 10px 0px 10px;
+  }
+  .responsiveLinks li {
+    font-size: 3vw;
   }
 }
 </style>

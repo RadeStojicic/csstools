@@ -108,7 +108,7 @@
               </button>
             </div>
 
-            <div class="resultText">
+            <div class="resultTextCursor">
               <code
                 ><span style="color: #bef264;">cursor: </span>
                 {{ activeCursor }};</code
@@ -348,7 +348,7 @@ export default {
   height: 200px;
 }
 
-.resultText {
+.resultTextCursor {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -356,7 +356,7 @@ export default {
   padding: 10px;
 }
 
-.resultText code {
+.resultTextCursor code {
   margin-top: 10px;
   background-color: #353945;
   padding: 12px;

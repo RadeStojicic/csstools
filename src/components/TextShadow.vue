@@ -104,7 +104,7 @@
               </button>
             </div>
 
-            <div class="resultText">
+            <div class="resultTextTextShadow">
               <code
                 ><span style="color: #bef264;">text-shadow: </span
                 >{{ horizontalTextShadow }}px {{ verticalTextShadow }}px
@@ -309,7 +309,7 @@ export default {
   height: 200px;
 }
 
-.resultText {
+.resultTextTextShadow {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -317,7 +317,7 @@ export default {
   padding: 10px;
 }
 
-.resultText code {
+.resultTextTextShadow code {
   margin-top: 10px;
   background-color: #353945;
   padding: 12px;
