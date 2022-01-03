@@ -128,6 +128,7 @@ export default {
   z-index: 1000;
   display: block;
   width: 15vw;
+  overflow: auto;
 }
 
 a {

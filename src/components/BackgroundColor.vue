@@ -109,11 +109,11 @@ export default {
 
 <style>
 .background {
-  width: 86%;
+  width: 85%;
   position: absolute;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 100%;
   background-color: #1d263d;
 }
 .titleColor {
@@ -281,10 +281,10 @@ export default {
 @media (max-width: 1800px) {
   .hero {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 50px;
     margin: auto;
-    width: 100%;
+    width: 80%;
     height: auto;
     background-color: #1d263d;
     position: relative;
@@ -295,7 +295,8 @@ export default {
 
   .background {
     width: 85vw;
-    height: 100ch;
+    height: 100vh;
+    padding-bottom: 30px;
     background-color: #1d263d;
     z-index: -1;
     margin: 0px auto;
@@ -318,7 +319,7 @@ export default {
 
   .background {
     width: 100%;
-    height: 100ch;
+    height: 100vh;
     background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
@@ -484,9 +485,10 @@ export default {
 
   .background {
     width: 100%;
-    height: 100ch;
+    height: 100vh;
     background-color: #1d263d;
     z-index: -1;
+    padding-bottom: 30px;
     margin: 80px auto;
   }
   .navBarClassic {

@@ -296,15 +296,6 @@ export default {
   margin-right: 20px;
 }
 
-.imageUrl {
-  padding: 10px;
-  border: none;
-  outline: none;
-  background-color: white;
-  font-size: 0.9vw;
-  width: 100%;
-}
-
 .bsInputContainer {
   width: 100%;
   background-color: rgb(255, 255, 255);

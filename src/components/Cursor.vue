@@ -192,6 +192,9 @@ export default {
   height: 100vh;
   background-color: #1d263d;
 }
+.backgroundCursor {
+  height: 100ch;
+}
 
 .titleCursor {
   background-color: rgb(96, 10, 255);
@@ -237,15 +240,6 @@ export default {
 
 .insetBS {
   margin-right: 20px;
-}
-
-.imageUrl {
-  padding: 10px;
-  border: none;
-  outline: none;
-  background-color: white;
-  font-size: 0.9vw;
-  width: 100%;
 }
 
 .bsInputContainer {
@@ -334,7 +328,7 @@ export default {
   background-color: rgba(245, 245, 245, 0.158);
   padding: 20px;
   border-radius: 5px;
-  max-width: 50%;
+  width: 50%;
 }
 
 .previewCursorText {
@@ -444,5 +438,373 @@ export default {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
   padding: 10px;
   cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+  .CursorTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 100px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.5vw;
+  }
+
+  .Cursor_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleCursorContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleCursorContainer h1 {
+    font-size: 1.6vw;
+  }
+  .titleCursor div i {
+    font-size: 1.6vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultCursorText {
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+  .CursorText {
+    font-size: 2vw;
+  }
+  .previewCursorText {
+    font-size: 2vw;
+  }
+  .toolsCursor p {
+    font-size: 1.6vw;
+  }
+  .optionsCursor {
+    width: 90%;
+  }
+  .secondCursor {
+    width: 90%;
+  }
+
+  .resultCursor code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 1.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementCursor {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 1080px) {
+  .CursorTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 100px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.8vw;
+  }
+  .Cursor_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleCursorContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleCursorContainer h1 {
+    font-size: 2.5vw;
+  }
+  .titleCursor div i {
+    font-size: 2.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultCursorText {
+    font-size: 2.6vw;
+    margin-bottom: 0px;
+  }
+  .CursorText {
+    font-size: 2.6vw;
+  }
+  .previewCursorText {
+    font-size: 2.6vw;
+  }
+  .toolsCursor p {
+    font-size: 2vw;
+  }
+  .optionsCursor {
+    width: 90%;
+  }
+  .secondCursor {
+    width: 90%;
+  }
+
+  .resultCursor code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2vw;
+    overflow-wrap: break-word;
+  }
+  .elementCursor {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 780px) {
+  .CursorTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 100px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 2vw;
+  }
+  .Cursor_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleCursorContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleCursorContainer h1 {
+    font-size: 2.7vw;
+  }
+  .titleCursor div i {
+    font-size: 2.7vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultCursorText {
+    font-size: 3.5vw;
+    margin-bottom: 0px;
+  }
+  .CursorText {
+    font-size: 3.5vw;
+  }
+  .previewCursorText {
+    font-size: 3.5vw;
+  }
+  .toolsCursor p {
+    font-size: 2.3vw;
+  }
+  .optionsCursor {
+    width: 90%;
+  }
+  .secondCursor {
+    width: 90%;
+  }
+
+  .resultCursor code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementCursor {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  .CursorTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 80px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .imageUrl {
+    font-size: 2.5vw;
+  }
+
+  .Cursor_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleCursorContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleCursorContainer h1 {
+    font-size: 4vw;
+  }
+  .titleCursor div i {
+    font-size: 4.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultCursorText {
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .CursorText {
+    font-size: 5vw;
+  }
+  .previewCursorText {
+    font-size: 5vw;
+  }
+  .toolsCursor p {
+    font-size: 3vw;
+  }
+  .optionsCursor {
+    width: 90%;
+  }
+  .secondCursor {
+    width: 90%;
+  }
+  .resultCursor {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 245, 245, 0.158);
+    padding: 10px;
+  }
+
+  .resultCursor code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 3.3vw;
+    overflow-wrap: break-word;
+  }
+  .elementCursor {
+    font-size: 3vw;
+  }
 }
 </style>

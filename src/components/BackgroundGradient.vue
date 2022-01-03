@@ -274,6 +274,9 @@ export default {
   height: 100vh;
   background-color: #1d263d;
 }
+.backgroundBackgroundGradient {
+  height: 100ch;
+}
 
 .titleBackgroundGradient {
   background-color: rgb(96, 10, 255);
@@ -319,15 +322,6 @@ export default {
 
 .insetBS {
   margin-right: 20px;
-}
-
-.imageUrl {
-  padding: 10px;
-  border: none;
-  outline: none;
-  background-color: white;
-  font-size: 0.9vw;
-  width: 100%;
 }
 
 .GradientInputContainer {
@@ -411,7 +405,7 @@ export default {
   background-color: rgba(245, 245, 245, 0.158);
   padding: 20px;
   border-radius: 5px;
-  max-width: 50%;
+  width: 50%;
 }
 
 .previewBackgroundGradientText {
@@ -589,5 +583,350 @@ export default {
 
 .activeGradientType {
   background-color: rgba(226, 226, 226, 0.24);
+}
+
+@media (max-width: 1300px) {
+  .BackgroundGradientTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 280px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .BackgroundGradient_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleBackgroundGradientContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleBackgroundGradientContainer h1 {
+    font-size: 1.6vw;
+  }
+  .titleBackgroundGradient div i {
+    font-size: 1.6vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultBackgroundGradientText {
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+  .BackgroundGradientText {
+    font-size: 2vw;
+  }
+  .previewBackgroundGradientText {
+    font-size: 2vw;
+  }
+  .toolsBackgroundGradient p {
+    font-size: 1.6vw;
+  }
+  .optionsBackgroundGradient {
+    width: 90%;
+  }
+  .secondBackgroundGradient {
+    width: 90%;
+  }
+
+  .resultTextGradient code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 1.7vw;
+    overflow-wrap: break-word;
+  }
+}
+@media (max-width: 1080px) {
+  .BackgroundGradientTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 280px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .BackgroundGradient_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleBackgroundGradientContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleBackgroundGradientContainer h1 {
+    font-size: 2.5vw;
+  }
+  .titleBackgroundGradient div i {
+    font-size: 2.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultBackgroundGradientText {
+    font-size: 2.6vw;
+    margin-bottom: 0px;
+  }
+  .BackgroundGradientText {
+    font-size: 2.6vw;
+  }
+  .previewBackgroundGradientText {
+    font-size: 2.6vw;
+  }
+  .toolsBackgroundGradient p {
+    font-size: 2vw;
+  }
+  .optionsBackgroundGradient {
+    width: 90%;
+  }
+  .secondBackgroundGradient {
+    width: 90%;
+  }
+
+  .resultTextGradient code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2vw;
+    overflow-wrap: break-word;
+  }
+}
+@media (max-width: 780px) {
+  .BackgroundGradientTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 280px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .BackgroundGradient_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleBackgroundGradientContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleBackgroundGradientContainer h1 {
+    font-size: 2.7vw;
+  }
+  .titleBackgroundGradient div i {
+    font-size: 2.7vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultBackgroundGradientText {
+    font-size: 3.5vw;
+    margin-bottom: 0px;
+  }
+  .BackgroundGradientText {
+    font-size: 3.5vw;
+  }
+  .previewBackgroundGradientText {
+    font-size: 3.5vw;
+  }
+  .toolsBackgroundGradient p {
+    font-size: 2.3vw;
+  }
+  .optionsBackgroundGradient {
+    width: 90%;
+  }
+  .secondBackgroundGradient {
+    width: 90%;
+  }
+
+  .resultTextGradient code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2.5vw;
+    overflow-wrap: break-word;
+  }
+}
+@media (max-width: 600px) {
+  .BackgroundGradientTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 230px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .BackgroundGradient_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleBackgroundGradientContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleBackgroundGradientContainer h1 {
+    font-size: 4vw;
+  }
+  .titleBackgroundGradient div i {
+    font-size: 4.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultBackgroundGradientText {
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .BackgroundGradientText {
+    font-size: 5vw;
+  }
+  .previewBackgroundGradientText {
+    font-size: 5vw;
+  }
+  .toolsBackgroundGradient p {
+    font-size: 3vw;
+  }
+  .optionsBackgroundGradient {
+    width: 90%;
+  }
+  .secondBackgroundGradient {
+    width: 90%;
+  }
+  .resultTextGradient {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 245, 245, 0.158);
+    padding: 10px;
+  }
+
+  .resultTextGradient code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 3.3vw;
+    overflow-wrap: break-word;
+  }
 }
 </style>
