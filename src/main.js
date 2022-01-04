@@ -15,11 +15,7 @@ import Flexbox from "./components/Flexbox.vue";
 import Cursor from "./components/Cursor.vue";
 import ImageFilter from "./components/ImageFilter.vue";
 import VueMeta from "vue-meta";
-import VueGtag from "vue-gtag";
 
-Vue.use(VueGtag, {
-  config: { id: "G-PF7JV2KS3G" },
-});
 Vue.config.productionTip = false;
 
 Vue.component("vue-background-color", BackgroundColor);
