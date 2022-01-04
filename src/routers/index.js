@@ -12,7 +12,7 @@ import BackgroundGradient from "../components/BackgroundGradient.vue";
 import Flexbox from "../components/Flexbox.vue";
 import Cursor from "../components/Cursor.vue";
 import ImageFilter from "../components/ImageFilter.vue";
-
+import VueAnalytics from "vue-analytics";
 Vue.use(Router);
 
 const router = new Router({
@@ -78,6 +78,11 @@ const router = new Router({
       component: ImageFilter,
     },
   ],
+});
+
+Vue.use(VueAnalytics, {
+  id: "G-PF7JV2KS3G",
+  router,
 });
 
 export default router;

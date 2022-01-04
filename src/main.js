@@ -15,13 +15,7 @@ import Flexbox from "./components/Flexbox.vue";
 import Cursor from "./components/Cursor.vue";
 import ImageFilter from "./components/ImageFilter.vue";
 import VueMeta from "vue-meta";
-Vue.use(VueMeta);
-import router1 from "./router";
-import VueAnalytics from "vue-analytics";
-Vue.use(VueAnalytics, {
-  id: "G-PF7JV2KS3G",
-  router1,
-});
+
 Vue.config.productionTip = false;
 
 Vue.component("vue-background-color", BackgroundColor);
@@ -37,6 +31,9 @@ Vue.component("vue-background-gradient", BackgroundGradient);
 Vue.component("vue-flexbox", Flexbox);
 Vue.component("vue-cursor", Cursor);
 Vue.component("vue-image-filter", ImageFilter);
+
+Vue.use(VueMeta);
+
 new Vue({
   router,
   render: (h) => h(App),
