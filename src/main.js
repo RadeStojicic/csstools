@@ -19,7 +19,7 @@ Vue.use(VueMeta);
 
 import VueAnalytics from "vue-analytics";
 Vue.use(VueAnalytics, {
-  id: "G-PF7JV2KS3G",
+  id: "298275835",
   router,
 });
 Vue.config.productionTip = false;
