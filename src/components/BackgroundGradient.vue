@@ -871,7 +871,7 @@ export default {
   }
 
   .titleBackgroundGradientContainer {
-    width: 95%;
+    width: 98%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -879,7 +879,7 @@ export default {
     padding: 15px 0px 15px 0px;
   }
   .titleBackgroundGradientContainer h1 {
-    font-size: 4vw;
+    font-size: 3.8vw;
   }
   .titleBackgroundGradient div i {
     font-size: 4.5vw;

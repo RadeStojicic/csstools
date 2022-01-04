@@ -181,7 +181,9 @@ export default {
   height: 100vh;
   background-color: #1d263d;
 }
-
+.backgroundBorderC {
+  height: 100ch;
+}
 .titleBorder {
   background-color: rgb(96, 10, 255);
 }
@@ -356,5 +358,377 @@ export default {
 
 .resultBorderText {
   color: white;
+}
+@media (max-width: 1300px) {
+  .borderTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 230px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.5vw;
+  }
+
+  .border_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleBorderContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleBorderContainer h1 {
+    font-size: 1.6vw;
+  }
+  .titleBorder div i {
+    font-size: 1.6vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultBorderText {
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+  .borderText {
+    font-size: 2vw;
+  }
+  .previewBorderText {
+    font-size: 2vw;
+  }
+  .toolsBorder p {
+    font-size: 1.6vw;
+  }
+  .optionsBorder {
+    width: 90%;
+  }
+  .secondBorder {
+    width: 90%;
+  }
+
+  .resultTextBorder code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 1.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementBorder {
+    font-size: 1.5vw;
+  }
+  .tools p {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 1080px) {
+  .borderTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 220px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.8vw;
+  }
+  .border_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleBorderContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleBorderContainer h1 {
+    font-size: 2.5vw;
+  }
+  .titleBorder div i {
+    font-size: 2.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultBorderText {
+    font-size: 2.6vw;
+    margin-bottom: 0px;
+  }
+  .borderText {
+    font-size: 2.6vw;
+  }
+  .previewBorderText {
+    font-size: 2.6vw;
+  }
+  .toolsBorder p {
+    font-size: 2vw;
+  }
+  .optionsBorder {
+    width: 90%;
+  }
+  .secondBorder {
+    width: 90%;
+  }
+
+  .resultTextBorder code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2vw;
+    overflow-wrap: break-word;
+  }
+  .elementborder {
+    font-size: 1.5vw;
+  }
+  .tools p {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 780px) {
+  .borderTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 220px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 2vw;
+  }
+  .border_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleBorderContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleBorderContainer h1 {
+    font-size: 2.7vw;
+  }
+  .titleBorder div i {
+    font-size: 2.7vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultBorderText {
+    font-size: 3.5vw;
+    margin-bottom: 0px;
+  }
+  .borderText {
+    font-size: 3.5vw;
+  }
+  .previewBorderText {
+    font-size: 3.5vw;
+  }
+  .toolsBorder p {
+    font-size: 2.3vw;
+  }
+  .optionsBorder {
+    width: 90%;
+  }
+  .secondBorder {
+    width: 90%;
+  }
+
+  .resultTextBorder code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementborder {
+    font-size: 2vw;
+  }
+  .tools p {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 600px) {
+  .borderTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 220px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .imageUrl {
+    font-size: 2.5vw;
+  }
+
+  .border_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleBorderContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleBorderContainer h1 {
+    font-size: 4vw;
+  }
+  .titleBorder div i {
+    font-size: 4.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultborderText {
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .borderText {
+    font-size: 5vw;
+  }
+  .previewBorderText {
+    font-size: 5vw;
+  }
+  .toolsBorder p {
+    font-size: 3vw;
+  }
+  .optionsBorder {
+    width: 90%;
+  }
+  .secondBorder {
+    width: 90%;
+  }
+
+  .resultTextBorder code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 3.3vw;
+    overflow-wrap: break-word;
+  }
+  .elementborder {
+    font-size: 3vw;
+  }
+  .tools p {
+    font-size: 3.3vw;
+  }
 }
 </style>

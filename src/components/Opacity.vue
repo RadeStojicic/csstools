@@ -98,6 +98,9 @@ export default {
   height: 100vh;
   background-color: #1d263d;
 }
+.backgroundOpacity {
+  height: 100ch;
+}
 
 .titleOpacity {
   background-color: rgb(96, 10, 255);
@@ -244,5 +247,366 @@ export default {
 
 .resultOpacityText {
   color: white;
+}
+
+@media (max-width: 1300px) {
+  .OpacityTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 20px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.5vw;
+  }
+
+  .Opacity_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleOpacityContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleOpacityContainer h1 {
+    font-size: 1.6vw;
+  }
+  .titleOpacity div i {
+    font-size: 1.6vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultOpacityText {
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+  .OpacityText {
+    font-size: 2vw;
+  }
+  .previewOpacityText {
+    font-size: 2vw;
+  }
+  .toolsOpacity p {
+    font-size: 1.6vw;
+  }
+  .optionsOpacity {
+    width: 90%;
+  }
+  .secondOpacity {
+    width: 90%;
+  }
+
+  .resultOpacity code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 1.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementOpacity {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 1080px) {
+  .OpacityTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 20px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.8vw;
+  }
+  .Opacity_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleOpacityContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleOpacityContainer h1 {
+    font-size: 2.5vw;
+  }
+  .titleOpacity div i {
+    font-size: 2.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultOpacityText {
+    font-size: 2.6vw;
+    margin-bottom: 0px;
+  }
+  .OpacityText {
+    font-size: 2.6vw;
+  }
+  .previewOpacityText {
+    font-size: 2.6vw;
+  }
+  .toolsOpacity p {
+    font-size: 2vw;
+  }
+  .optionsOpacity {
+    width: 90%;
+  }
+  .secondOpacity {
+    width: 90%;
+  }
+
+  .resultOpacity code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2vw;
+    overflow-wrap: break-word;
+  }
+  .elementOpacity {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 780px) {
+  .OpacityTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 20px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 2vw;
+  }
+  .Opacity_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleOpacityContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleOpacityContainer h1 {
+    font-size: 2.7vw;
+  }
+  .titleOpacity div i {
+    font-size: 2.7vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultOpacityText {
+    font-size: 3.5vw;
+    margin-bottom: 0px;
+  }
+  .OpacityText {
+    font-size: 3.5vw;
+  }
+  .previewOpacityText {
+    font-size: 3.5vw;
+  }
+  .toolsOpacity p {
+    font-size: 2.3vw;
+  }
+  .optionsOpacity {
+    width: 90%;
+  }
+  .secondOpacity {
+    width: 90%;
+  }
+
+  .resultOpacity code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementOpacity {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  .OpacityTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 20px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .imageUrl {
+    font-size: 2.5vw;
+  }
+
+  .Opacity_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleOpacityContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleOpacityContainer h1 {
+    font-size: 4vw;
+  }
+  .titleOpacity div i {
+    font-size: 4.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultOpacityText {
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .OpacityText {
+    font-size: 5vw;
+  }
+  .previewOpacityText {
+    font-size: 5vw;
+  }
+  .toolsOpacity p {
+    font-size: 3vw;
+  }
+  .optionsOpacity {
+    width: 90%;
+  }
+  .secondOpacity {
+    width: 90%;
+  }
+
+  .resultOpacity code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 3.3vw;
+    overflow-wrap: break-word;
+  }
+  .elementOpacity {
+    font-size: 3vw;
+  }
 }
 </style>

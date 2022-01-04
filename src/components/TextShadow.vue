@@ -156,7 +156,9 @@ export default {
   height: 100vh;
   background-color: #1d263d;
 }
-
+.backgroundtextShadow {
+  height: 100ch;
+}
 .titletextShadow {
   background-color: rgb(96, 10, 255);
 }
@@ -362,5 +364,365 @@ export default {
 }
 .activeShadowStyle {
   background-color: rgba(226, 226, 226, 0.24);
+}
+@media (max-width: 1300px) {
+  .textShadowTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 150px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.5vw;
+  }
+
+  .textShadow_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titletextShadowContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titletextShadowContainer h1 {
+    font-size: 1.6vw;
+  }
+  .titletextShadow div i {
+    font-size: 1.6vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resulttextShadowText {
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+  .textShadowText {
+    font-size: 2vw;
+  }
+  .previewtextShadowText {
+    font-size: 2vw;
+  }
+  .toolstextShadow p {
+    font-size: 1.6vw;
+  }
+  .optionstextShadow {
+    width: 90%;
+  }
+  .secondtextShadow {
+    width: 90%;
+  }
+
+  .resulttextShadow code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 1.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementtextShadow {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 1080px) {
+  .textShadowTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 140px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.8vw;
+  }
+  .textShadow_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titletextShadowContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titletextShadowContainer h1 {
+    font-size: 2.5vw;
+  }
+  .titletextShadow div i {
+    font-size: 2.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resulttextShadowText {
+    font-size: 2.6vw;
+    margin-bottom: 0px;
+  }
+  .textShadowText {
+    font-size: 2.6vw;
+  }
+  .previewtextShadowText {
+    font-size: 2.6vw;
+  }
+  .toolstextShadow p {
+    font-size: 2vw;
+  }
+  .optionstextShadow {
+    width: 90%;
+  }
+  .secondtextShadow {
+    width: 90%;
+  }
+
+  .resulttextShadow code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2vw;
+    overflow-wrap: break-word;
+  }
+  .elementtextShadow {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 780px) {
+  .textShadowTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 130px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 2vw;
+  }
+  .textShadow_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titletextShadowContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titletextShadowContainer h1 {
+    font-size: 2.7vw;
+  }
+  .titletextShadow div i {
+    font-size: 2.7vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resulttextShadowText {
+    font-size: 3.5vw;
+    margin-bottom: 0px;
+  }
+  .textShadowText {
+    font-size: 3.5vw;
+  }
+  .previewtextShadowText {
+    font-size: 3.5vw;
+  }
+  .toolstextShadow p {
+    font-size: 2.3vw;
+  }
+  .optionstextShadow {
+    width: 90%;
+  }
+  .secondtextShadow {
+    width: 90%;
+  }
+
+  .resulttextShadow code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementtextShadow {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 600px) {
+  .textShadowTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 120px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .imageUrl {
+    font-size: 2.5vw;
+  }
+
+  .textShadow_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titletextShadowContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titletextShadowContainer h1 {
+    font-size: 4vw;
+  }
+  .titletextShadow div i {
+    font-size: 4.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resulttextShadowText {
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .textShadowText {
+    font-size: 5vw;
+  }
+  .previewtextShadowText {
+    font-size: 5vw;
+  }
+  .toolstextShadow p {
+    font-size: 3vw;
+  }
+  .optionstextShadow {
+    width: 90%;
+  }
+  .secondtextShadow {
+    width: 90%;
+  }
+
+  .resulttextShadow code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 3.3vw;
+    overflow-wrap: break-word;
+  }
+  .elementtextShadow {
+    font-size: 3.3vw;
+  }
 }
 </style>

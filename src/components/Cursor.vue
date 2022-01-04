@@ -786,13 +786,6 @@ export default {
   .secondCursor {
     width: 90%;
   }
-  .resultCursor {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(245, 245, 245, 0.158);
-    padding: 10px;
-  }
 
   .resultCursor code {
     margin-top: 10px;
@@ -804,7 +797,7 @@ export default {
     overflow-wrap: break-word;
   }
   .elementCursor {
-    font-size: 3vw;
+    font-size: 3.3vw;
   }
 }
 </style>

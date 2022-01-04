@@ -284,6 +284,9 @@ export default {
   height: 100vh;
   background-color: #1d263d;
 }
+.backgroundtextDecoration {
+  height: 100ch;
+}
 
 .titletextDecoration {
   background-color: rgb(96, 10, 255);
@@ -494,5 +497,373 @@ export default {
 }
 .activeLineStyle {
   background-color: rgba(226, 226, 226, 0.24);
+}
+
+@media (max-width: 1300px) {
+  .textDecorationTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 130px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.5vw;
+  }
+
+  .textDecoration_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titletextDecorationContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titletextDecorationContainer h1 {
+    font-size: 1.6vw;
+  }
+  .titletextDecorationContainer div i {
+    font-size: 1.6vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resulttextDecorationText {
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+  .textDecorationText {
+    font-size: 2vw;
+  }
+  .previewtextDecorationText {
+    font-size: 2vw;
+  }
+  .toolstextDecoration p {
+    font-size: 1.6vw;
+  }
+  .optionstextDecoration {
+    width: 90%;
+  }
+  .secondtextDecoration {
+    width: 90%;
+  }
+
+  .resultTextTextDecoration code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 1.7vw;
+    overflow-wrap: break-word;
+  }
+  .elementtextDecoration {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 1080px) {
+  .textDecorationTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 130px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.8vw;
+  }
+  .textDecoration_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titletextDecorationContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titletextDecorationContainer h1 {
+    font-size: 2.5vw;
+  }
+  .titletextDecorationContainer div i {
+    font-size: 2.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resulttextDecorationText {
+    font-size: 2.6vw;
+    margin-bottom: 0px;
+  }
+  .textDecorationText {
+    font-size: 2.6vw;
+  }
+  .previewtextDecorationText {
+    font-size: 2.6vw;
+  }
+  .toolstextDecoration p {
+    font-size: 2vw;
+  }
+  .optionstextDecoration {
+    width: 90%;
+  }
+  .secondtextDecoration {
+    width: 90%;
+  }
+
+  .resultTextTextDecoration code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2vw;
+    overflow-wrap: break-word;
+  }
+  .elementtextDecoration {
+    font-size: 1.9vw;
+  }
+}
+@media (max-width: 780px) {
+  .textDecorationTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 130px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 2vw;
+  }
+  .textDecoration_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titletextDecorationContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titletextDecorationContainer h1 {
+    font-size: 2.7vw;
+  }
+  .titletextDecorationContainer div i {
+    font-size: 2.7vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resulttextDecorationText {
+    font-size: 3.5vw;
+    margin-bottom: 0px;
+  }
+  .textDecorationText {
+    font-size: 3.5vw;
+  }
+  .previewtextDecorationText {
+    font-size: 3.5vw;
+  }
+  .toolstextDecoration p {
+    font-size: 2.3vw;
+  }
+  .optionstextDecoration {
+    width: 90%;
+  }
+  .secondtextDecoration {
+    width: 90%;
+  }
+
+  .resultTextTextDecoration code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementtextDecoration {
+    font-size: 2.4vw;
+  }
+}
+@media (max-width: 600px) {
+  .textDecorationTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 130px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .imageUrl {
+    font-size: 2.5vw;
+  }
+
+  .textDecoration_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titletextDecorationContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titletextDecorationContainer h1 {
+    font-size: 4vw;
+  }
+  .titletextDecorationContainer div i {
+    font-size: 4.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resulttextDecorationText {
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .textDecorationText {
+    font-size: 5vw;
+  }
+  .previewtextDecorationText {
+    font-size: 5vw;
+  }
+  .toolstextDecoration p {
+    font-size: 3vw;
+  }
+  .optionstextDecoration {
+    width: 90%;
+  }
+  .secondtextDecoration {
+    width: 90%;
+  }
+  .resultTextTextDecoration {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 245, 245, 0.158);
+    padding: 10px;
+  }
+
+  .resultTextTextDecoration code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 3.3vw;
+    overflow-wrap: break-word;
+  }
+  .elementtextDecoration {
+    font-size: 3.2vw;
+  }
 }
 </style>

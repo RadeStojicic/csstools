@@ -249,7 +249,9 @@ export default {
   height: 100vh;
   background-color: #1d263d;
 }
-
+.backgroundimageFilter {
+  height: 100ch;
+}
 .titleimageFilter {
   background-color: rgb(96, 10, 255);
 }
@@ -294,6 +296,15 @@ export default {
 
 .insetBS {
   margin-right: 20px;
+}
+
+.imageUrl {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: white;
+  font-size: 0.9vw;
+  width: 100%;
 }
 
 .bsInputContainer {
@@ -381,7 +392,7 @@ export default {
   background-color: rgba(245, 245, 245, 0.158);
   padding: 20px;
   border-radius: 5px;
-  max-width: 50%;
+  width: 50%;
 }
 
 .previewimageFilterText {
@@ -423,5 +434,366 @@ export default {
 .imageFilterTool {
   width: 100%;
   margin-top: 10px;
+}
+
+@media (max-width: 1300px) {
+  .imageFilterToolContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 380px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.5vw;
+  }
+
+  .imageFilter_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleimageFilterContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleimageFilterContainer h1 {
+    font-size: 1.6vw;
+  }
+  .titleimageFilter div i {
+    font-size: 1.6vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultimageFilterText {
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+  .imageFilterText {
+    font-size: 2vw;
+  }
+  .previewimageFilterText {
+    font-size: 2vw;
+  }
+  .toolsimageFilter p {
+    font-size: 1.6vw;
+  }
+  .optionsimageFilter {
+    width: 90%;
+  }
+  .secondimageFilter {
+    width: 90%;
+  }
+
+  .resultimageFilter code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 1.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementimageFilter {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 1080px) {
+  .imageFilterToolContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 350px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.8vw;
+  }
+  .imageFilter_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleimageFilterContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleimageFilterContainer h1 {
+    font-size: 2.5vw;
+  }
+  .titleimageFilter div i {
+    font-size: 2.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultimageFilterText {
+    font-size: 2.6vw;
+    margin-bottom: 0px;
+  }
+  .imageFilterText {
+    font-size: 2.6vw;
+  }
+  .previewimageFilterText {
+    font-size: 2.6vw;
+  }
+  .toolsimageFilter p {
+    font-size: 2vw;
+  }
+  .optionsimageFilter {
+    width: 90%;
+  }
+  .secondimageFilter {
+    width: 90%;
+  }
+
+  .resultimageFilter code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2vw;
+    overflow-wrap: break-word;
+  }
+  .elementimageFilter {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 780px) {
+  .imageFilterToolContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 300px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 2vw;
+  }
+  .imageFilter_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleimageFilterContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleimageFilterContainer h1 {
+    font-size: 2.7vw;
+  }
+  .titleimageFilter div i {
+    font-size: 2.7vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultimageFilterText {
+    font-size: 3.5vw;
+    margin-bottom: 0px;
+  }
+  .imageFilterText {
+    font-size: 3.5vw;
+  }
+  .previewimageFilterText {
+    font-size: 3.5vw;
+  }
+  .toolsimageFilter p {
+    font-size: 2.3vw;
+  }
+  .optionsimageFilter {
+    width: 90%;
+  }
+  .secondimageFilter {
+    width: 90%;
+  }
+
+  .resultimageFilter code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementimageFilter {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  .imageFilterToolContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 320px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .imageUrl {
+    font-size: 2.9vw;
+  }
+
+  .imageFilter_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleimageFilterContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleimageFilterContainer h1 {
+    font-size: 4vw;
+  }
+  .titleimageFilter div i {
+    font-size: 4.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultimageFilterText {
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .imageFilterText {
+    font-size: 5vw;
+  }
+  .previewimageFilterText {
+    font-size: 5vw;
+  }
+  .toolsimageFilter p {
+    font-size: 3vw;
+  }
+  .optionsimageFilter {
+    width: 90%;
+  }
+  .secondimageFilter {
+    width: 90%;
+  }
+
+  .resultimageFilter code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 3.3vw;
+    overflow-wrap: break-word;
+  }
+  .elementimageFilter {
+    font-size: 3.3vw;
+  }
 }
 </style>

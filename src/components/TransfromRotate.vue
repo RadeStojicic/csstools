@@ -103,7 +103,9 @@ export default {
   height: 100vh;
   background-color: #1d263d;
 }
-
+.backgroundTransformRotate {
+  height: 100ch;
+}
 .titleTransformRotate {
   background-color: rgb(96, 10, 255);
 }
@@ -249,5 +251,365 @@ export default {
 
 .resultTransformRotateText {
   color: white;
+}
+@media (max-width: 1300px) {
+  .TransformRotateTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 0px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.5vw;
+  }
+
+  .TransformRotate_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleTransformRotateContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleTransformRotateContainer h1 {
+    font-size: 1.6vw;
+  }
+  .titleTransformRotate div i {
+    font-size: 1.6vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultTransformRotateText {
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+  .TransformRotateText {
+    font-size: 2vw;
+  }
+  .previewTransformRotateText {
+    font-size: 2vw;
+  }
+  .toolsTransformRotate p {
+    font-size: 1.6vw;
+  }
+  .optionsTransformRotate {
+    width: 90%;
+  }
+  .secondTransformRotate {
+    width: 90%;
+  }
+
+  .resultTransformRotate code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 1.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementTransformRotate {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 1080px) {
+  .TransformRotateTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 0px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.8vw;
+  }
+  .TransformRotate_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleTransformRotateContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleTransformRotateContainer h1 {
+    font-size: 2.5vw;
+  }
+  .titleTransformRotate div i {
+    font-size: 2.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultTransformRotateText {
+    font-size: 2.6vw;
+    margin-bottom: 0px;
+  }
+  .TransformRotateText {
+    font-size: 2.6vw;
+  }
+  .previewTransformRotateText {
+    font-size: 2.6vw;
+  }
+  .toolsTransformRotate p {
+    font-size: 2vw;
+  }
+  .optionsTransformRotate {
+    width: 90%;
+  }
+  .secondTransformRotate {
+    width: 90%;
+  }
+
+  .resultTransformRotate code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2vw;
+    overflow-wrap: break-word;
+  }
+  .elementTransformRotate {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 780px) {
+  .TransformRotateTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 0px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 2vw;
+  }
+  .TransformRotate_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleTransformRotateContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleTransformRotateContainer h1 {
+    font-size: 2.7vw;
+  }
+  .titleTransformRotate div i {
+    font-size: 2.7vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultTransformRotateText {
+    font-size: 3.5vw;
+    margin-bottom: 0px;
+  }
+  .TransformRotateText {
+    font-size: 3.5vw;
+  }
+  .previewTransformRotateText {
+    font-size: 3.5vw;
+  }
+  .toolsTransformRotate p {
+    font-size: 2.3vw;
+  }
+  .optionsTransformRotate {
+    width: 90%;
+  }
+  .secondTransformRotate {
+    width: 90%;
+  }
+
+  .resultTransformRotate code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementTransformRotate {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  .TransformRotateTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 0px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .imageUrl {
+    font-size: 2.5vw;
+  }
+
+  .TransformRotate_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleTransformRotateContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleTransformRotateContainer h1 {
+    font-size: 4vw;
+  }
+  .titleTransformRotate div i {
+    font-size: 4.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultTransformRotateText {
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .TransformRotateText {
+    font-size: 5vw;
+  }
+  .previewTransformRotateText {
+    font-size: 5vw;
+  }
+  .toolsTransformRotate p {
+    font-size: 3vw;
+  }
+  .optionsTransformRotate {
+    width: 90%;
+  }
+  .secondTransformRotate {
+    width: 90%;
+  }
+
+  .resultTransformRotate code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 3.3vw;
+    overflow-wrap: break-word;
+  }
+  .elementTransformRotate {
+    font-size: 3vw;
+  }
 }
 </style>

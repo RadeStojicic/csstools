@@ -191,7 +191,9 @@ export default {
   height: 100vh;
   background-color: #1d263d;
 }
-
+.backgroundBoxShadow {
+  height: 100ch;
+}
 .titleBoxShadow {
   background-color: rgb(96, 10, 255);
 }
@@ -382,5 +384,366 @@ export default {
 
 .resultBoxShadowText {
   color: white;
+}
+
+@media (max-width: 1300px) {
+  .BoxShadowTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 260px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.5vw;
+  }
+
+  .BoxShadow_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleBoxShadowContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleBoxShadowContainer h1 {
+    font-size: 1.6vw;
+  }
+  .titleBoxShadow div i {
+    font-size: 1.6vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultBoxShadowText {
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+  .BoxShadowText {
+    font-size: 2vw;
+  }
+  .previewBoxShadowText {
+    font-size: 2vw;
+  }
+  .toolsBoxShadow p {
+    font-size: 1.6vw;
+  }
+  .optionsBoxShadow {
+    width: 90%;
+  }
+  .secondBoxShadow {
+    width: 90%;
+  }
+
+  .resultBoxShadow code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 1.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementBoxShadow {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 1080px) {
+  .BoxShadowTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 240px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 1.8vw;
+  }
+  .BoxShadow_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleBoxShadowContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleBoxShadowContainer h1 {
+    font-size: 2.5vw;
+  }
+  .titleBoxShadow div i {
+    font-size: 2.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultBoxShadowText {
+    font-size: 2.6vw;
+    margin-bottom: 0px;
+  }
+  .BoxShadowText {
+    font-size: 2.6vw;
+  }
+  .previewBoxShadowText {
+    font-size: 2.6vw;
+  }
+  .toolsBoxShadow p {
+    font-size: 2vw;
+  }
+  .optionsBoxShadow {
+    width: 90%;
+  }
+  .secondBoxShadow {
+    width: 90%;
+  }
+
+  .resultBoxShadow code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2vw;
+    overflow-wrap: break-word;
+  }
+  .elementBoxShadow {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 780px) {
+  .BoxShadowTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 220px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .imageUrl {
+    font-size: 2vw;
+  }
+  .BoxShadow_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleBoxShadowContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleBoxShadowContainer h1 {
+    font-size: 2.7vw;
+  }
+  .titleBoxShadow div i {
+    font-size: 2.7vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultBoxShadowText {
+    font-size: 3.5vw;
+    margin-bottom: 0px;
+  }
+  .BoxShadowText {
+    font-size: 3.5vw;
+  }
+  .previewBoxShadowText {
+    font-size: 3.5vw;
+  }
+  .toolsBoxShadow p {
+    font-size: 2.3vw;
+  }
+  .optionsBoxShadow {
+    width: 90%;
+  }
+  .secondBoxShadow {
+    width: 90%;
+  }
+
+  .resultBoxShadow code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 2.5vw;
+    overflow-wrap: break-word;
+  }
+  .elementBoxShadow {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  .BoxShadowTool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: #1d263d;
+    position: relative;
+    margin: 240px auto;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .imageUrl {
+    font-size: 2.5vw;
+  }
+
+  .BoxShadow_container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d263d;
+    z-index: -1;
+    margin: 80px auto;
+  }
+  .navBarClassic {
+    display: none;
+  }
+  .responsiveNav {
+    display: block;
+  }
+  .titleColor {
+    background-color: rgb(96, 10, 255);
+  }
+
+  .titleBoxShadowContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+  }
+  .titleBoxShadowContainer h1 {
+    font-size: 4vw;
+  }
+  .titleBoxShadow div i {
+    font-size: 4.5vw;
+    color: white;
+    padding: 10px;
+  }
+
+  .codePallete {
+    color: rgb(255, 255, 255);
+  }
+
+  .resultBoxShadowText {
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .BoxShadowText {
+    font-size: 5vw;
+  }
+  .previewBoxShadowText {
+    font-size: 5vw;
+  }
+  .toolsBoxShadow p {
+    font-size: 3.2vw;
+  }
+  .optionsBoxShadow {
+    width: 90%;
+  }
+  .secondBoxShadow {
+    width: 90%;
+  }
+
+  .resultBoxShadow code {
+    margin-top: 10px;
+    background-color: #353945;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 3.3vw;
+    overflow-wrap: break-word;
+  }
+  .elementBoxShadow {
+    font-size: 3vw;
+  }
 }
 </style>
