@@ -16,7 +16,7 @@ import Cursor from "./components/Cursor.vue";
 import ImageFilter from "./components/ImageFilter.vue";
 import VueMeta from "vue-meta";
 Vue.use(VueMeta);
-import router from "./router";
+
 import VueAnalytics from "vue-analytics";
 Vue.use(VueAnalytics, {
   id: "G-PF7JV2KS3G",
