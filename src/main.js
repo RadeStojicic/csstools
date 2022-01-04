@@ -16,11 +16,11 @@ import Cursor from "./components/Cursor.vue";
 import ImageFilter from "./components/ImageFilter.vue";
 import VueMeta from "vue-meta";
 Vue.use(VueMeta);
-
+import router1 from "./router";
 import VueAnalytics from "vue-analytics";
 Vue.use(VueAnalytics, {
-  id: "298275835",
-  router,
+  id: "G-PF7JV2KS3G",
+  router1,
 });
 Vue.config.productionTip = false;
 
