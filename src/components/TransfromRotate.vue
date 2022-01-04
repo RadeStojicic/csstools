@@ -267,9 +267,6 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 1.5vw;
-  }
 
   .TransformRotate_container {
     width: 100%;
@@ -357,9 +354,7 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 1.8vw;
-  }
+
   .TransformRotate_container {
     width: 100%;
     height: 100%;
@@ -446,9 +441,7 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 2vw;
-  }
+
   .TransformRotate_container {
     width: 100%;
     height: 100%;
@@ -534,10 +527,6 @@ export default {
     margin: 0px auto;
     height: auto;
     padding-bottom: 30px;
-  }
-
-  .imageUrl {
-    font-size: 2.5vw;
   }
 
   .TransformRotate_container {

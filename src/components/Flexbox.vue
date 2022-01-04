@@ -650,9 +650,6 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 1.5vw;
-  }
 
   .Flexbox_container {
     width: 100%;
@@ -740,9 +737,7 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 1.8vw;
-  }
+
   .Flexbox_container {
     width: 100%;
     height: 100%;
@@ -829,9 +824,7 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 2vw;
-  }
+
   .Flexbox_container {
     width: 100%;
     height: 100%;
@@ -919,10 +912,6 @@ export default {
     padding-bottom: 30px;
   }
 
-  .imageUrl {
-    font-size: 2.5vw;
-  }
-
   .Flexbox_container {
     width: 100%;
     height: 100%;
@@ -973,7 +962,7 @@ export default {
     font-size: 5vw;
   }
   .toolsFlexbox p {
-    font-size: 3vw;
+    font-size: 3.3vw;
   }
   .optionsFlexbox {
     width: 90%;

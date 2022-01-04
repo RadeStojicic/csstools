@@ -909,7 +909,7 @@ export default {
   }
 
   .imageUrl {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 
   .BackgroundImage_container {

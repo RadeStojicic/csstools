@@ -715,13 +715,13 @@ export default {
     height: auto;
     background-color: #1d263d;
     position: relative;
-    margin: 320px auto;
+    margin: 310px auto;
     height: auto;
     padding-bottom: 30px;
   }
 
   .imageUrl {
-    font-size: 2.9vw;
+    font-size: 3.2vw;
   }
 
   .imageFilter_container {

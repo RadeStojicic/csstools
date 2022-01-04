@@ -401,9 +401,6 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 1.5vw;
-  }
 
   .BoxShadow_container {
     width: 100%;
@@ -491,9 +488,7 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 1.8vw;
-  }
+
   .BoxShadow_container {
     width: 100%;
     height: 100%;
@@ -580,9 +575,7 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 2vw;
-  }
+
   .BoxShadow_container {
     width: 100%;
     height: 100%;
@@ -668,10 +661,6 @@ export default {
     margin: 240px auto;
     height: auto;
     padding-bottom: 30px;
-  }
-
-  .imageUrl {
-    font-size: 2.5vw;
   }
 
   .BoxShadow_container {

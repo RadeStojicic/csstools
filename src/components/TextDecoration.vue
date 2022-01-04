@@ -514,9 +514,6 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 1.5vw;
-  }
 
   .textDecoration_container {
     width: 100%;
@@ -604,9 +601,7 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 1.8vw;
-  }
+
   .textDecoration_container {
     width: 100%;
     height: 100%;
@@ -693,9 +688,7 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 2vw;
-  }
+
   .textDecoration_container {
     width: 100%;
     height: 100%;
@@ -783,10 +776,6 @@ export default {
     padding-bottom: 30px;
   }
 
-  .imageUrl {
-    font-size: 2.5vw;
-  }
-
   .textDecoration_container {
     width: 100%;
     height: 100%;
@@ -837,7 +826,7 @@ export default {
     font-size: 5vw;
   }
   .toolstextDecoration p {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .optionstextDecoration {
     width: 90%;
@@ -863,7 +852,8 @@ export default {
     overflow-wrap: break-word;
   }
   .elementtextDecoration {
-    font-size: 3.2vw;
+    font-size: 3.5vw;
+    line-height: 1.5em;
   }
 }
 </style>

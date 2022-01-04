@@ -374,9 +374,6 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 1.5vw;
-  }
 
   .border_container {
     width: 100%;
@@ -467,9 +464,7 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 1.8vw;
-  }
+
   .border_container {
     width: 100%;
     height: 100%;
@@ -559,9 +554,7 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-  .imageUrl {
-    font-size: 2vw;
-  }
+
   .border_container {
     width: 100%;
     height: 100%;
@@ -652,10 +645,6 @@ export default {
     padding-bottom: 30px;
   }
 
-  .imageUrl {
-    font-size: 2.5vw;
-  }
-
   .border_container {
     width: 100%;
     height: 100%;
@@ -694,7 +683,7 @@ export default {
     color: rgb(255, 255, 255);
   }
 
-  .resultborderText {
+  .resultBorderText {
     font-size: 5vw;
     font-weight: 600;
     margin-bottom: 20px;
