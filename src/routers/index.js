@@ -80,9 +80,6 @@ const router = new Router({
   ],
 });
 
-Vue.use(VueAnalytics, {
-  id: "G-PF7JV2KS3G",
-  router,
-});
+Vue.use(VueAnalytics, { id: "G-PF7JV2KS3G" }, router);
 
 export default router;
