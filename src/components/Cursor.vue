@@ -189,11 +189,10 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100vh;
   background-color: whitesmoke;
 }
 .backgroundCursor {
-  height: 100ch;
+  height: 1000px;
 }
 
 .titleCursor {

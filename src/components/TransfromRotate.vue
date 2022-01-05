@@ -100,11 +100,10 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100vh;
   background-color: whitesmoke;
 }
 .backgroundTransformRotate {
-  height: 100ch;
+  height: 1000px;
 }
 .titleTransformRotate {
   background-color: rgb(96, 10, 255);
@@ -271,8 +270,8 @@ export default {
 
   .TransformRotate_container {
     width: 100%;
-    height: 100%;
-    z-index: -1;
+    height: 1000px;
+
     margin: 80px auto;
   }
   .navBarClassic {
@@ -347,7 +346,7 @@ export default {
   .TransformRotate_container {
     width: 100%;
     height: 100%;
-    z-index: -1;
+
     margin: 80px auto;
   }
   .navBarClassic {
@@ -422,7 +421,7 @@ export default {
   .TransformRotate_container {
     width: 100%;
     height: 100%;
-    z-index: -1;
+
     margin: 80px auto;
   }
   .navBarClassic {
@@ -497,7 +496,7 @@ export default {
   .TransformRotate_container {
     width: 100%;
     height: 100%;
-    z-index: -1;
+
     margin: 80px auto;
   }
   .navBarClassic {

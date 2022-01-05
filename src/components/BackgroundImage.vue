@@ -366,11 +366,10 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100vh;
   background-color: whitesmoke;
 }
 .backgroundBackgroundImage {
-  height: 100ch;
+  height: 1000px;
 }
 
 .titleBackgroundImage {
@@ -677,9 +676,8 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-
     position: relative;
-    margin: 280px auto;
+    margin: 220px auto;
     height: auto;
     padding-bottom: 30px;
   }
@@ -689,9 +687,7 @@ export default {
 
   .BackgroundImage_container {
     width: 100%;
-    height: 100%;
-
-    z-index: -1;
+    height: 1500px;
     margin: 80px auto;
   }
   .navBarClassic {
@@ -757,9 +753,8 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-
     position: relative;
-    margin: 280px auto;
+    margin: 220px auto;
     height: auto;
     padding-bottom: 30px;
   }
@@ -768,9 +763,7 @@ export default {
   }
   .BackgroundImage_container {
     width: 100%;
-    height: 100%;
-
-    z-index: -1;
+    height: 1500px;
     margin: 80px auto;
   }
   .navBarClassic {
@@ -837,7 +830,7 @@ export default {
     width: 100%;
     height: auto;
     position: relative;
-    margin: 280px auto;
+    margin: 200px auto;
     height: auto;
     padding-bottom: 30px;
   }
@@ -846,8 +839,7 @@ export default {
   }
   .BackgroundImage_container {
     width: 100%;
-    height: 100%;
-    z-index: -1;
+    height: 1500px;
     margin: 80px auto;
   }
   .navBarClassic {
@@ -914,7 +906,7 @@ export default {
     width: 100%;
     height: auto;
     position: relative;
-    margin: 280px auto;
+    margin: 230px auto;
     height: auto;
     padding-bottom: 30px;
   }
@@ -925,9 +917,7 @@ export default {
 
   .BackgroundImage_container {
     width: 100%;
-    height: 100%;
-
-    z-index: -1;
+    height: 1500px;
     margin: 80px auto;
   }
   .navBarClassic {

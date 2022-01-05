@@ -153,11 +153,10 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100vh;
   background-color: whitesmoke;
 }
 .backgroundtextShadow {
-  height: 100ch;
+  height: 1000px;
 }
 .titletextShadow {
   background-color: rgb(96, 10, 255);
@@ -381,8 +380,7 @@ export default {
 
   .textShadow_container {
     width: 100%;
-    height: 100%;
-    z-index: -1;
+    height: 1500px;
     margin: 80px auto;
   }
   .navBarClassic {
@@ -456,8 +454,7 @@ export default {
 
   .textShadow_container {
     width: 100%;
-    height: 100%;
-    z-index: -1;
+    height: 1500px;
     margin: 80px auto;
   }
   .navBarClassic {
@@ -531,8 +528,7 @@ export default {
 
   .textShadow_container {
     width: 100%;
-    height: 100%;
-    z-index: -1;
+    height: 1500px;
     margin: 80px auto;
   }
   .navBarClassic {
@@ -606,8 +602,7 @@ export default {
 
   .textShadow_container {
     width: 100%;
-    height: 100%;
-    z-index: -1;
+    height: 1500px;
     margin: 80px auto;
   }
   .navBarClassic {

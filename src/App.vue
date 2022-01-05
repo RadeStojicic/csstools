@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <vue-background-color></vue-background-color>
     <vue-navbar>
+      <vue-background-color></vue-background-color>
       <vue-border></vue-border>
       <vue-box-shadow></vue-box-shadow>
       <vue-background-image></vue-background-image>

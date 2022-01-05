@@ -114,6 +114,7 @@ export default {
   top: 0;
   right: 0;
   height: 100%;
+
   background-color: whitesmoke;
 }
 .titleColor {
@@ -292,14 +293,12 @@ export default {
     position: relative;
     margin: 30px 0;
     height: auto;
-    padding-bottom: 30px;
   }
 
   .background {
     width: 85vw;
-    height: 100vh;
+    height: 1080px;
     padding-bottom: 30px;
-    z-index: -1;
     margin: 0px auto;
   }
 }
@@ -311,7 +310,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-
     position: relative;
     margin: 30px 0;
     height: auto;
@@ -320,9 +318,7 @@ export default {
 
   .background {
     width: 100%;
-    height: 100vh;
-
-    z-index: -1;
+    height: 1080px;
     margin: 80px auto;
   }
   .navBarClassic {
@@ -465,7 +461,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-
     position: relative;
     margin: 0;
     height: auto;
@@ -474,9 +469,7 @@ export default {
 
   .background {
     width: 100%;
-    height: 100vh;
-
-    z-index: -1;
+    height: 1080px;
     padding-bottom: 30px;
     margin: 80px auto;
   }
@@ -620,18 +613,15 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-
     position: relative;
-    margin: 0;
+
     height: auto;
     padding-bottom: 30px;
   }
 
   .background {
     width: 100%;
-    height: 100ch;
-
-    z-index: -1;
+    height: 1080px;
     margin: 80px auto;
   }
   .navBarClassic {
@@ -774,7 +764,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-
     position: relative;
     margin: 0;
     height: auto;
@@ -783,8 +772,7 @@ export default {
 
   .background {
     width: 100%;
-    height: 100ch;
-
+    height: 1080px;
     z-index: -1;
     margin: 80px auto;
   }

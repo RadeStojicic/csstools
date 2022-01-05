@@ -95,11 +95,10 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100vh;
   background-color: whitesmoke;
 }
 .backgroundOpacity {
-  height: 100ch;
+  height: 1000px;
 }
 
 .titleOpacity {

@@ -428,11 +428,10 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100vh;
   background-color: whitesmoke;
 }
 .backgroundFlexbox {
-  height: 100ch;
+  height: 1000px;
 }
 .titleFlexbox {
   background-color: rgb(96, 10, 255);

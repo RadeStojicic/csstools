@@ -281,11 +281,10 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100vh;
   background-color: whitesmoke;
 }
 .backgroundtextDecoration {
-  height: 100ch;
+  height: 1000px;
 }
 
 .titletextDecoration {
