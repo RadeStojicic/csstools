@@ -30,16 +30,16 @@
           <div class="toolsCursor">
             <div>
               <p>Cursor Type</p>
-              <div
+              <section
                 @click="showDropDownCursor"
-                class="positionDropDown"
+                class="positionDropDownCursor"
                 ref="divClick"
               >
                 <section class="">
                   {{ activeCursor }}
                 </section>
                 <i class="fas fa-caret-down"></i>
-              </div>
+              </section>
               <section style="display: none;" class="itemsDropDownCursor">
                 <section
                   @click="replaceClassCursor(), helpCursor()"
@@ -190,7 +190,7 @@ export default {
   top: 0;
   right: 0;
   height: 100vh;
-  background-color: #1d263d;
+  background-color: whitesmoke;
 }
 .backgroundCursor {
   height: 100ch;
@@ -242,14 +242,6 @@ export default {
   margin-right: 20px;
 }
 
-.bsInputContainer {
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
 .copyContainerCursor {
   display: flex;
   justify-content: space-between;
@@ -257,10 +249,10 @@ export default {
 
 .copyContainerCursor button {
   padding: 10px;
-  border: 1px #ffffff solid;
+  border: 1px #1d263d solid;
   background-color: transparent;
   border-radius: 5px;
-  color: white;
+  color: #1d263d;
   font-weight: 400;
   cursor: pointer;
 }
@@ -275,21 +267,23 @@ export default {
   height: 200px;
   width: 100%;
   margin: auto;
-  background-color: white;
+  background-color: #1d263d;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1vw;
+  color: white;
 }
 
 .toolsCursor div {
   margin-top: 20px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 10px;
 }
 
 .toolsCursor p {
   font-size: 0.9vw;
+  color: #1d263d;
 }
 
 .CursorTool {
@@ -307,7 +301,7 @@ export default {
 }
 
 .CursorText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -315,24 +309,24 @@ export default {
 
 .optionsCursor {
   flex: 1;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
-  color: white;
+  color: #1d263d;
 }
 .secondCursor {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
   width: 50%;
 }
 
 .previewCursorText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -346,7 +340,7 @@ export default {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 10px;
 }
 
@@ -365,22 +359,26 @@ export default {
 }
 
 .resultCursorText {
-  color: white;
+  color: #1d263d;
 }
 
-.positionDropDown {
+.positionDropDownCursor {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.226);
+  border-radius: 2px;
 }
-.positionDropDown i {
-  color: #c9cdd8;
+.positionDropDownCursor i {
+  color: #1d263d;
 }
 
 .itemsDropDownPosition {
-  background-color: rgba(226, 226, 226, 0.158);
   animation: 0.5s opacityDrop ease-in-out;
 }
 @keyframes opacityDrop {
@@ -393,9 +391,6 @@ export default {
 }
 
 .itemsDropDownPosition section {
-  border-top: 1px rgba(65, 61, 61, 0.24) solid;
-  padding: 10px;
-  cursor: pointer;
 }
 
 .activePosition {
@@ -427,10 +422,9 @@ export default {
   cursor: pointer;
 }
 .activeCursor {
-  background-color: rgba(226, 226, 226, 0.24);
 }
 .itemsDropDownCursor {
-  background-color: rgba(226, 226, 226, 0.158);
+  background-color: white;
   animation: 0.5s opacityDrop ease-in-out;
 }
 
@@ -449,7 +443,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 100px auto;
     height: auto;
@@ -459,7 +452,6 @@ export default {
   .Cursor_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -468,9 +460,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleCursorContainer {
@@ -486,12 +475,7 @@ export default {
   }
   .titleCursor div i {
     font-size: 1.6vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resultCursorText {
@@ -516,9 +500,7 @@ export default {
 
   .resultCursor code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 1.5vw;
     overflow-wrap: break-word;
@@ -536,7 +518,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 100px auto;
     height: auto;
@@ -546,7 +527,6 @@ export default {
   .Cursor_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -555,9 +535,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleCursorContainer {
@@ -573,12 +550,7 @@ export default {
   }
   .titleCursor div i {
     font-size: 2.5vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resultCursorText {
@@ -603,9 +575,7 @@ export default {
 
   .resultCursor code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 2vw;
     overflow-wrap: break-word;
@@ -623,7 +593,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 100px auto;
     height: auto;
@@ -633,7 +602,6 @@ export default {
   .Cursor_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -642,9 +610,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleCursorContainer {
@@ -660,12 +625,7 @@ export default {
   }
   .titleCursor div i {
     font-size: 2.7vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resultCursorText {
@@ -690,9 +650,7 @@ export default {
 
   .resultCursor code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 2.5vw;
     overflow-wrap: break-word;
@@ -710,7 +668,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 80px auto;
     height: auto;
@@ -720,7 +677,6 @@ export default {
   .Cursor_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -729,9 +685,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleCursorContainer {
@@ -747,12 +700,7 @@ export default {
   }
   .titleCursor div i {
     font-size: 4.5vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resultCursorText {
@@ -778,9 +726,9 @@ export default {
 
   .resultCursor code {
     margin-top: 10px;
-    background-color: #353945;
+
     padding: 12px;
-    color: white;
+
     border: none;
     font-size: 3.3vw;
     overflow-wrap: break-word;

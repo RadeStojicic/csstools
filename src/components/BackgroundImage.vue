@@ -42,16 +42,16 @@
             </div>
             <div>
               <p>Background Position</p>
-              <div
+              <section
                 @click="showDropDownPosition"
-                class="positionDropDown"
+                class="positionDropDownBI"
                 ref="divClick"
               >
                 <section class="">
                   {{ activePositionVar }}
                 </section>
                 <i class="fas fa-caret-down"></i>
-              </div>
+              </section>
               <section style="display: none;" class="itemsDropDownPosition">
                 <section
                   @click="replaceClassPosition(), leftPosition()"
@@ -92,16 +92,16 @@
             </div>
             <div>
               <p>Background Repeat</p>
-              <div
+              <section
                 @click="showDropDownRepeat"
-                class="repeatDropDown"
+                class="repeatDropDownBI"
                 ref="divClick"
               >
                 <section class="">
                   {{ activeRepeatVar }}
                 </section>
                 <i class="fas fa-caret-down"></i>
-              </div>
+              </section>
               <section style="display: none;" class="itemsDropDownRepeat">
                 <section
                   @click="replaceClassRepeat(), bgRepeat()"
@@ -121,16 +121,16 @@
             </div>
             <div>
               <p>Background Size</p>
-              <div
+              <section
                 @click="showDropDownSize"
-                class="sizeDropDown"
+                class="sizeDropDownBI"
                 ref="divClick"
               >
                 <section class="">
                   {{ activeSizeVar }}
                 </section>
                 <i class="fas fa-caret-down"></i>
-              </div>
+              </section>
               <section style="display: none;" class="itemsDropDownSize">
                 <section
                   @click="replaceClassSize(), containSize()"
@@ -367,7 +367,7 @@ export default {
   top: 0;
   right: 0;
   height: 100vh;
-  background-color: #1d263d;
+  background-color: whitesmoke;
 }
 .backgroundBackgroundImage {
   height: 100ch;
@@ -443,10 +443,10 @@ export default {
 
 .copyContainerBackgroundImage button {
   padding: 10px;
-  border: 1px #ffffff solid;
+  border: 1px #1d263d solid;
   background-color: transparent;
   border-radius: 5px;
-  color: white;
+  color: #1d263d;
   font-weight: 400;
   cursor: pointer;
 }
@@ -465,12 +465,14 @@ export default {
 
 .toolsBackgroundImage div {
   margin-top: 20px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 10px;
+  color: #1d263d;
 }
 
 .toolsBackgroundImage p {
   font-size: 0.9vw;
+  color: #1d263d;
 }
 
 .BackgroundImageTool {
@@ -488,7 +490,7 @@ export default {
 }
 
 .BackgroundImageText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -496,7 +498,7 @@ export default {
 
 .optionsBackgroundImage {
   flex: 1;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 5px;
   color: white;
@@ -506,14 +508,14 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 5px;
   width: 50%;
 }
 
 .previewBackgroundImageText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -527,7 +529,7 @@ export default {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 10px;
 }
 
@@ -546,22 +548,56 @@ export default {
 }
 
 .resultBackgroundImageText {
-  color: white;
+  color: #1d263d;
 }
 
-.positionDropDown {
+.positionDropDownBI {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.226);
+  border-radius: 2px;
 }
-.positionDropDown i {
-  color: #c9cdd8;
+.positionDropDownBI i {
+  color: #1d263d;
+}
+.repeatDropDownBI {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.226);
+  border-radius: 2px;
+}
+.repeatDropDownBI i {
+  color: #1d263d;
+}
+.sizeDropDownBI {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.226);
+  border-radius: 2px;
+}
+.sizeDropDownBI i {
+  color: #1d263d;
 }
 
 .itemsDropDownPosition {
-  background-color: rgba(226, 226, 226, 0.158);
   animation: 0.5s opacityDrop ease-in-out;
 }
 @keyframes opacityDrop {
@@ -577,6 +613,7 @@ export default {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
   padding: 10px;
   cursor: pointer;
+  background-color: rgb(255, 255, 255);
 }
 
 .activePosition {
@@ -599,13 +636,14 @@ export default {
 }
 
 .itemsDropDownRepeat {
-  background-color: rgba(226, 226, 226, 0.158);
+  background-color: rgba(255, 255, 255, 0.158);
   animation: 0.5s opacityDrop ease-in-out;
 }
 .itemsDropDownRepeat section {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
   padding: 10px;
   cursor: pointer;
+  background-color: rgb(255, 255, 255);
 }
 
 .sizeDropDown {
@@ -619,10 +657,6 @@ export default {
   color: #c9cdd8;
 }
 
-.activeSize {
-  background-color: rgba(226, 226, 226, 0.24);
-  border: 1px rgba(0, 119, 255, 0.356) solid;
-}
 .itemsDropDownSize {
   background-color: rgba(226, 226, 226, 0.158);
   animation: 0.5s opacityDrop ease-in-out;
@@ -632,6 +666,7 @@ export default {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
   padding: 10px;
   cursor: pointer;
+  background-color: rgb(255, 255, 255);
 }
 @media (max-width: 1300px) {
   .BackgroundImageTool {
@@ -642,7 +677,7 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
+
     position: relative;
     margin: 280px auto;
     height: auto;
@@ -655,7 +690,7 @@ export default {
   .BackgroundImage_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -664,9 +699,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleBackgroundImageContainer {
@@ -682,12 +714,8 @@ export default {
   }
   .titleBackgroundImage div i {
     font-size: 1.6vw;
-    color: white;
-    padding: 10px;
-  }
 
-  .codePallete {
-    color: rgb(255, 255, 255);
+    padding: 10px;
   }
 
   .resultBackgroundImageText {
@@ -712,9 +740,9 @@ export default {
 
   .resultText code {
     margin-top: 10px;
-    background-color: #353945;
+
     padding: 12px;
-    color: white;
+
     border: none;
     font-size: 1.7vw;
     overflow-wrap: break-word;
@@ -729,7 +757,7 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
+
     position: relative;
     margin: 280px auto;
     height: auto;
@@ -741,7 +769,7 @@ export default {
   .BackgroundImage_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -750,9 +778,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleBackgroundImageContainer {
@@ -768,12 +793,8 @@ export default {
   }
   .titleBackgroundImage div i {
     font-size: 2.5vw;
-    color: white;
-    padding: 10px;
-  }
 
-  .codePallete {
-    color: rgb(255, 255, 255);
+    padding: 10px;
   }
 
   .resultBackgroundImageText {
@@ -798,9 +819,9 @@ export default {
 
   .resultText code {
     margin-top: 10px;
-    background-color: #353945;
+
     padding: 12px;
-    color: white;
+
     border: none;
     font-size: 2vw;
     overflow-wrap: break-word;
@@ -815,7 +836,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 280px auto;
     height: auto;
@@ -827,7 +847,6 @@ export default {
   .BackgroundImage_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -836,9 +855,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleBackgroundImageContainer {
@@ -854,12 +870,8 @@ export default {
   }
   .titleBackgroundImage div i {
     font-size: 2.7vw;
-    color: white;
-    padding: 10px;
-  }
 
-  .codePallete {
-    color: rgb(255, 255, 255);
+    padding: 10px;
   }
 
   .resultBackgroundImageText {
@@ -884,9 +896,9 @@ export default {
 
   .resultText code {
     margin-top: 10px;
-    background-color: #353945;
+
     padding: 12px;
-    color: white;
+
     border: none;
     font-size: 2.5vw;
     overflow-wrap: break-word;
@@ -901,7 +913,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 280px auto;
     height: auto;
@@ -915,7 +926,7 @@ export default {
   .BackgroundImage_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -924,9 +935,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleBackgroundImageContainer {
@@ -942,12 +950,7 @@ export default {
   }
   .titleBackgroundImage div i {
     font-size: 4.5vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resultBackgroundImageText {
@@ -974,15 +977,12 @@ export default {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(245, 245, 245, 0.158);
     padding: 10px;
   }
 
   .resultText code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 3.3vw;
     overflow-wrap: break-word;

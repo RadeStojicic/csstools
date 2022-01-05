@@ -30,16 +30,16 @@
           <div class="toolsFlexbox">
             <div>
               <p>Flex Direction</p>
-              <div
+              <section
                 @click="showDropDownFlexDirection"
-                class="positionDropDown"
+                class="positionDropDownFD"
                 ref="divClick"
               >
                 <section class="">
                   {{ activeFlexDirection }}
                 </section>
                 <i class="fas fa-caret-down"></i>
-              </div>
+              </section>
               <section
                 style="display: none;"
                 class="itemsDropDownFlexDirection"
@@ -76,16 +76,16 @@
             </div>
             <div>
               <p>Justify Content</p>
-              <div
+              <section
                 @click="showDropDownJustifyContent"
-                class="positionDropDown"
+                class="positionDropDownJC"
                 ref="divClick"
               >
                 <section class="">
                   {{ activeJustifyContent }}
                 </section>
                 <i class="fas fa-caret-down"></i>
-              </div>
+              </section>
               <section
                 style="display: none;"
                 class="itemsDropDownJustifyContent"
@@ -136,16 +136,16 @@
             </div>
             <div>
               <p>Align Items</p>
-              <div
+              <section
                 @click="showDropDownAlignItems"
-                class="positionDropDown"
+                class="positionDropDownAI"
                 ref="divClick"
               >
                 <section class="">
                   {{ activeAlignItems }}
                 </section>
                 <i class="fas fa-caret-down"></i>
-              </div>
+              </section>
               <section style="display: none;" class="itemsDropDownAlignItems">
                 <section
                   @click="replaceClassAlignItems(), flexStartAI()"
@@ -429,7 +429,7 @@ export default {
   top: 0;
   right: 0;
   height: 100vh;
-  background-color: #1d263d;
+  background-color: whitesmoke;
 }
 .backgroundFlexbox {
   height: 100ch;
@@ -478,10 +478,10 @@ export default {
 
 .copyContainerFlexbox button {
   padding: 10px;
-  border: 1px #ffffff solid;
+  border: 1px #1d263d solid;
   background-color: transparent;
   border-radius: 5px;
-  color: white;
+  color: #1d263d;
   font-weight: 400;
   cursor: pointer;
 }
@@ -498,24 +498,25 @@ export default {
   margin-top: 50px;
 }
 .elementFlexbox div {
-  background-color: white;
+  background-color: #1d263d;
   width: 8vw;
   height: 100px;
   width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: gray;
+  color: rgb(255, 255, 255);
 }
 
 .toolsFlexbox div {
   margin-top: 20px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 10px;
 }
 
 .toolsFlexbox p {
   font-size: 0.9vw;
+  color: #1d263d;
 }
 
 .FlexboxTool {
@@ -533,7 +534,7 @@ export default {
 }
 
 .FlexboxText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -541,7 +542,7 @@ export default {
 
 .optionsFlexbox {
   flex: 1;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
   color: white;
@@ -551,13 +552,13 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
 }
 
 .previewFlexboxText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -571,7 +572,7 @@ export default {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 10px;
 }
 
@@ -589,35 +590,78 @@ export default {
 }
 
 .resultFlexboxText {
-  color: white;
+  color: #1d263d;
 }
 .activeFlexDirection {
-  background-color: rgba(226, 226, 226, 0.24);
 }
+
 .itemsDropDownFlexDirection section {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
   padding: 10px;
   cursor: pointer;
+
+  color: #1d263d;
 }
 .activeJustifyContent {
-  background-color: rgba(226, 226, 226, 0.24);
 }
 .itemsDropDownJustifyContent section {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
   padding: 10px;
   cursor: pointer;
 }
+.positionDropDownFD {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.226);
+  border-radius: 2px;
+  color: #1d263d;
+}
+.positionDropDownJC {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.226);
+  border-radius: 2px;
+  color: #1d263d;
+}
+.positionDropDownAI {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.226);
+  border-radius: 2px;
+  color: #1d263d;
+}
 .itemsDropDownFlexDirection {
-  background-color: rgba(226, 226, 226, 0.158);
+  background-color: rgb(255, 255, 255);
   animation: 0.5s opacityDrop ease-in-out;
+  color: #1d263d;
 }
 .itemsDropDownJustifyContent {
-  background-color: rgba(226, 226, 226, 0.158);
+  background-color: rgb(255, 255, 255);
   animation: 0.5s opacityDrop ease-in-out;
+  color: #1d263d;
 }
 .itemsDropDownAlignItems {
-  background-color: rgba(226, 226, 226, 0.158);
+  background-color: rgb(255, 255, 255);
   animation: 0.5s opacityDrop ease-in-out;
+  color: #1d263d;
 }
 .itemsDropDownAlignItems section {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
@@ -625,7 +669,6 @@ export default {
   cursor: pointer;
 }
 .activeAlignItems {
-  background-color: rgba(226, 226, 226, 0.24);
 }
 @keyframes opacityDrop {
   0% {
@@ -644,7 +687,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 300px auto;
     height: auto;
@@ -654,7 +696,6 @@ export default {
   .Flexbox_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -663,9 +704,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleFlexboxContainer {
@@ -681,12 +719,8 @@ export default {
   }
   .titleFlexbox div i {
     font-size: 1.6vw;
-    color: white;
-    padding: 10px;
-  }
 
-  .codePallete {
-    color: rgb(255, 255, 255);
+    padding: 10px;
   }
 
   .resultFlexboxText {
@@ -711,9 +745,7 @@ export default {
 
   .resultFlexbox code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 1.5vw;
     overflow-wrap: break-word;
@@ -731,7 +763,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 280px auto;
     height: auto;
@@ -741,7 +772,6 @@ export default {
   .Flexbox_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -750,9 +780,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleFlexboxContainer {
@@ -768,12 +795,7 @@ export default {
   }
   .titleFlexbox div i {
     font-size: 2.5vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resultFlexboxText {
@@ -798,9 +820,7 @@ export default {
 
   .resultFlexbox code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 2vw;
     overflow-wrap: break-word;
@@ -818,7 +838,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 270px auto;
     height: auto;
@@ -828,7 +847,6 @@ export default {
   .Flexbox_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -837,9 +855,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleFlexboxContainer {
@@ -855,12 +870,7 @@ export default {
   }
   .titleFlexbox div i {
     font-size: 2.7vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resultFlexboxText {
@@ -885,9 +895,7 @@ export default {
 
   .resultFlexbox code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 2.5vw;
     overflow-wrap: break-word;
@@ -905,7 +913,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 280px auto;
     height: auto;
@@ -915,7 +922,6 @@ export default {
   .Flexbox_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -924,9 +930,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleFlexboxContainer {
@@ -942,12 +945,7 @@ export default {
   }
   .titleFlexbox div i {
     font-size: 4.5vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resultFlexboxText {
@@ -973,9 +971,7 @@ export default {
 
   .resultFlexbox code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 3.3vw;
     overflow-wrap: break-word;

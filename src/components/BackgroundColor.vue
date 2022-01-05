@@ -75,7 +75,7 @@
 export default {
   data() {
     return {
-      color: "#ffffff",
+      color: "#141b2c",
       rgb: "",
     };
   },
@@ -114,7 +114,7 @@ export default {
   top: 0;
   right: 0;
   height: 100%;
-  background-color: #1d263d;
+  background-color: whitesmoke;
 }
 .titleColor {
   background-color: rgb(96, 10, 255);
@@ -175,7 +175,7 @@ export default {
   border: none;
   outline: none;
   font-size: 18px;
-  background-color: #353945;
+  background-color: #293144;
   color: white;
 }
 
@@ -192,11 +192,11 @@ export default {
 }
 .copyContainerBgColor button {
   padding: 10px;
-  border: 1px #ffffff solid;
+  border: 1px #1d263d solid;
   background-color: transparent;
   border-radius: 5px;
-  color: white;
-  font-weight: 400;
+  color: #1d263dec;
+  font-weight: 500;
   cursor: pointer;
   margin-bottom: 30px;
 }
@@ -205,7 +205,7 @@ export default {
 }
 .colorBG {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: whitesmoke;
   display: flex;
   align-items: center;
 }
@@ -214,17 +214,18 @@ export default {
 }
 
 .codePallete {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 .codePalleteText {
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
+  color: #1d263d;
 }
 
 .inputsBG {
-  background-color: rgba(233, 233, 233, 0.171);
+  background-color: whitesmoke;
   border-radius: 5px;
   padding: 10px;
   font-weight: 500;
@@ -246,7 +247,7 @@ export default {
 }
 
 .colorText {
-  color: rgb(255, 255, 255);
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -254,22 +255,24 @@ export default {
 
 .optionsPallete {
   flex: 1;
-  background-color: rgba(233, 233, 233, 0.171);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
+  box-shadow: -1px 2px 5px 3px #7070700e;
 }
 .secondPallete {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-color: rgba(233, 233, 233, 0.171);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
+  box-shadow: -1px 2px 5px 3px #7070700e;
 }
 
 .previewPalleteText {
-  color: rgb(255, 255, 255);
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -286,7 +289,6 @@ export default {
     margin: auto;
     width: 80%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 30px 0;
     height: auto;
@@ -297,7 +299,6 @@ export default {
     width: 85vw;
     height: 100vh;
     padding-bottom: 30px;
-    background-color: #1d263d;
     z-index: -1;
     margin: 0px auto;
   }
@@ -310,7 +311,7 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
+
     position: relative;
     margin: 30px 0;
     height: auto;
@@ -320,7 +321,7 @@ export default {
   .background {
     width: 100%;
     height: 100vh;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -329,9 +330,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleColorContainer {
@@ -345,13 +343,13 @@ export default {
 
   .titleColorContainer div i {
     font-size: 1.6vw;
-    color: white;
+
     padding: 10px;
   }
 
   .titleColor h1 {
     font-size: 1.6vw;
-    color: rgb(255, 255, 255);
+
     padding: 15px 0px 15px 15px;
     text-align: right;
   }
@@ -377,8 +375,6 @@ export default {
     border: none;
     outline: none;
     font-size: 18px;
-    background-color: #353945;
-    color: white;
   }
 
   #hex {
@@ -390,16 +386,12 @@ export default {
 
   .colorBG {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+
     display: flex;
     align-items: center;
   }
   .colorBG p {
     margin-left: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .codePalleteText {
@@ -409,7 +401,6 @@ export default {
   }
 
   .inputsBG {
-    background-color: rgba(233, 233, 233, 0.171);
     border-radius: 5px;
     padding: 20px 10px 20px 10px;
     font-weight: 500;
@@ -423,7 +414,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #353945;
+
     width: 100%;
     margin-top: 10px;
   }
@@ -432,7 +423,6 @@ export default {
   }
 
   .colorText {
-    color: rgb(255, 255, 255);
     font-size: 2vw;
     font-weight: 600;
     margin-bottom: 20px;
@@ -440,7 +430,7 @@ export default {
 
   .optionsPallete {
     flex: 1;
-    background-color: rgba(233, 233, 233, 0.171);
+
     border-radius: 5px;
     width: 65%;
     margin: auto;
@@ -450,7 +440,7 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    background-color: rgba(233, 233, 233, 0.171);
+
     margin: 10px auto;
     height: auto;
     border-radius: 5px;
@@ -458,7 +448,6 @@ export default {
   }
 
   .previewPalleteText {
-    color: rgb(255, 255, 255);
     font-size: 2vw;
     font-weight: 600;
     margin-bottom: 20px;
@@ -476,7 +465,7 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
+
     position: relative;
     margin: 0;
     height: auto;
@@ -486,7 +475,7 @@ export default {
   .background {
     width: 100%;
     height: 100vh;
-    background-color: #1d263d;
+
     z-index: -1;
     padding-bottom: 30px;
     margin: 80px auto;
@@ -496,9 +485,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleColorContainer {
@@ -512,13 +498,13 @@ export default {
 
   .titleColorContainer div i {
     font-size: 2.5vw;
-    color: white;
+
     padding: 10px;
   }
 
   .titleColor h1 {
     font-size: 2.5vw;
-    color: rgb(255, 255, 255);
+
     padding: 15px 0px 15px 15px;
     text-align: right;
   }
@@ -544,8 +530,6 @@ export default {
     border: none;
     outline: none;
     font-size: 18px;
-    background-color: #353945;
-    color: white;
   }
 
   #hex {
@@ -557,16 +541,12 @@ export default {
 
   .colorBG {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+
     display: flex;
     align-items: center;
   }
   .colorBG p {
     margin-left: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .codePalleteText {
@@ -576,7 +556,6 @@ export default {
   }
 
   .inputsBG {
-    background-color: rgba(233, 233, 233, 0.171);
     border-radius: 5px;
     padding: 20px 10px 20px 10px;
     font-weight: 500;
@@ -590,7 +569,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #353945;
+
     width: 100%;
     margin-top: 10px;
   }
@@ -599,7 +578,6 @@ export default {
   }
 
   .colorText {
-    color: rgb(255, 255, 255);
     font-size: 2.5vw;
     font-weight: 600;
     margin-bottom: 20px;
@@ -607,7 +585,7 @@ export default {
 
   .optionsPallete {
     flex: 1;
-    background-color: rgba(233, 233, 233, 0.171);
+
     border-radius: 5px;
     width: 85%;
     margin: auto;
@@ -617,7 +595,7 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    background-color: rgba(233, 233, 233, 0.171);
+
     margin: 10px auto;
     height: auto;
     border-radius: 5px;
@@ -625,7 +603,6 @@ export default {
   }
 
   .previewPalleteText {
-    color: rgb(255, 255, 255);
     font-size: 2.5vw;
     font-weight: 600;
     margin-bottom: 20px;
@@ -643,7 +620,7 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
+
     position: relative;
     margin: 0;
     height: auto;
@@ -653,7 +630,7 @@ export default {
   .background {
     width: 100%;
     height: 100ch;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -662,9 +639,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleColorContainer {
@@ -678,13 +652,13 @@ export default {
 
   .titleColorContainer div i {
     font-size: 2.7vw;
-    color: white;
+
     padding: 10px;
   }
 
   .titleColor h1 {
     font-size: 2.7vw;
-    color: rgb(255, 255, 255);
+
     padding: 15px 0px 15px 15px;
     text-align: right;
   }
@@ -710,8 +684,6 @@ export default {
     border: none;
     outline: none;
     font-size: 18px;
-    background-color: #353945;
-    color: white;
   }
 
   #hex {
@@ -723,16 +695,12 @@ export default {
 
   .colorBG {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+
     display: flex;
     align-items: center;
   }
   .colorBG p {
     margin-left: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .codePalleteText {
@@ -742,7 +710,6 @@ export default {
   }
 
   .inputsBG {
-    background-color: rgba(233, 233, 233, 0.171);
     border-radius: 5px;
     padding: 20px 10px 20px 10px;
     font-weight: 500;
@@ -756,7 +723,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #353945;
+
     width: 100%;
     margin-top: 10px;
   }
@@ -765,7 +732,6 @@ export default {
   }
 
   .colorText {
-    color: rgb(255, 255, 255);
     font-size: 3vw;
     font-weight: 600;
     margin-bottom: 20px;
@@ -773,7 +739,7 @@ export default {
 
   .optionsPallete {
     flex: 1;
-    background-color: rgba(233, 233, 233, 0.171);
+
     border-radius: 5px;
     width: 95%;
     margin: auto;
@@ -783,7 +749,7 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    background-color: rgba(233, 233, 233, 0.171);
+
     margin: 10px auto;
     height: auto;
     border-radius: 5px;
@@ -791,7 +757,6 @@ export default {
   }
 
   .previewPalleteText {
-    color: rgb(255, 255, 255);
     font-size: 3vw;
     font-weight: 600;
     margin-bottom: 20px;
@@ -809,7 +774,7 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
+
     position: relative;
     margin: 0;
     height: auto;
@@ -819,7 +784,7 @@ export default {
   .background {
     width: 100%;
     height: 100ch;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -828,9 +793,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleColorContainer {
@@ -844,13 +806,13 @@ export default {
 
   .titleColorContainer div i {
     font-size: 4.5vw;
-    color: white;
+
     padding: 10px;
   }
 
   .titleColor h1 {
     font-size: 4vw;
-    color: rgb(255, 255, 255);
+
     padding: 15px 0px 15px 15px;
     text-align: right;
   }
@@ -876,8 +838,6 @@ export default {
     border: none;
     outline: none;
     font-size: 18px;
-    background-color: #353945;
-    color: white;
   }
 
   #hex {
@@ -889,16 +849,12 @@ export default {
 
   .colorBG {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+
     display: flex;
     align-items: center;
   }
   .colorBG p {
     margin-left: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .codePalleteText {
@@ -908,7 +864,6 @@ export default {
   }
 
   .inputsBG {
-    background-color: rgba(233, 233, 233, 0.171);
     border-radius: 5px;
     padding: 2.5vw 1.5vw 2.5vw 1.5vw;
     font-weight: 500;
@@ -921,7 +876,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #353945;
+
     width: 100%;
     margin-top: 10px;
     font-size: 3.3vw;
@@ -931,7 +886,6 @@ export default {
   }
 
   .colorText {
-    color: rgb(255, 255, 255);
     font-size: 5vw;
     font-weight: 600;
     margin-bottom: 20px;
@@ -939,7 +893,7 @@ export default {
 
   .optionsPallete {
     flex: 1;
-    background-color: rgba(233, 233, 233, 0.171);
+
     border-radius: 5px;
     width: 95%;
     margin: auto;
@@ -949,7 +903,7 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    background-color: rgba(233, 233, 233, 0.171);
+
     margin: 10px auto;
     height: auto;
     border-radius: 5px;
@@ -957,7 +911,6 @@ export default {
   }
 
   .previewPalleteText {
-    color: rgb(255, 255, 255);
     font-size: 5vw;
     font-weight: 600;
     margin-bottom: 20px;

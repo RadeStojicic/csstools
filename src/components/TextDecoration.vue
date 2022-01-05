@@ -42,16 +42,16 @@
             </div>
             <div>
               <p>Line</p>
-              <div
+              <section
                 @click="showDropDownLine"
-                class="positionDropDown"
+                class="positionDropDownDDL"
                 ref="divClick"
               >
                 <section class="">
                   {{ activeLineVar }}
                 </section>
                 <i class="fas fa-caret-down"></i>
-              </div>
+              </section>
               <section style="display: none;" class="itemsDropDownLine">
                 <section
                   @click="replaceClassLine(), overline()"
@@ -78,16 +78,16 @@
             </div>
             <div>
               <p>Style</p>
-              <div
+              <section
                 @click="showDropDownLineStyle"
-                class="positionDropDown"
+                class="positionDropDownDDLS"
                 ref="divClick"
               >
                 <section class="">
                   {{ activeLineStyleVar }}
                 </section>
                 <i class="fas fa-caret-down"></i>
-              </div>
+              </section>
               <section style="display: none;" class="itemsDropDownLineStyle">
                 <section
                   @click="replaceClassLineStyle(), doubleLine()"
@@ -169,7 +169,7 @@
 export default {
   data() {
     return {
-      colortextDecoration: "#ffffff",
+      colortextDecoration: "#1d263d",
       activeLineVar: "underline",
       activeLineStyleVar: "solid",
     };
@@ -282,7 +282,7 @@ export default {
   top: 0;
   right: 0;
   height: 100vh;
-  background-color: #1d263d;
+  background-color: whitesmoke;
 }
 .backgroundtextDecoration {
   height: 100ch;
@@ -350,7 +350,7 @@ export default {
 
 .bsInputContainer {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: whitesmoke;
   display: flex;
   align-items: center;
   margin-top: 10px;
@@ -363,10 +363,10 @@ export default {
 
 .copyContainertextDecoration button {
   padding: 10px;
-  border: 1px #ffffff solid;
+  border: 1px #1d263d solid;
   background-color: transparent;
   border-radius: 5px;
-  color: white;
+  color: #1d263d;
   font-weight: 400;
   cursor: pointer;
 }
@@ -378,21 +378,22 @@ export default {
 .elementtextDecoration {
   width: 100%;
   margin: auto;
-  color: white;
+  color: #1d263d;
   font-size: 0.9vw;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 15px;
   height: 150px;
 }
 
 .toolstextDecoration div {
   margin-top: 20px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 10px;
 }
 
 .toolstextDecoration p {
   font-size: 0.9vw;
+  color: #1d263d;
 }
 
 .textDecorationTool {
@@ -410,7 +411,7 @@ export default {
 }
 
 .textDecorationText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -418,7 +419,7 @@ export default {
 
 .optionstextDecoration {
   flex: 1;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
   color: white;
@@ -428,13 +429,13 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
 }
 
 .previewtextDecorationText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -448,7 +449,7 @@ export default {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 10px;
 }
 
@@ -466,13 +467,14 @@ export default {
 }
 
 .resulttextDecorationText {
-  color: white;
+  color: #1d263d;
 }
 
 .itemsDropDownLine {
-  background-color: rgba(226, 226, 226, 0.158);
+  background-color: white;
   -webkit-animation: 0.5s opacityDrop ease-in-out;
   animation: 0.5s opacityDrop ease-in-out;
+  color: #1d263d;
 }
 
 .itemsDropDownLine section {
@@ -481,9 +483,10 @@ export default {
   cursor: pointer;
 }
 .itemsDropDownLineStyle {
-  background-color: rgba(226, 226, 226, 0.158);
+  background-color: white;
   -webkit-animation: 0.5s opacityDrop ease-in-out;
   animation: 0.5s opacityDrop ease-in-out;
+  color: #1d263d;
 }
 
 .itemsDropDownLineStyle section {
@@ -492,11 +495,36 @@ export default {
   cursor: pointer;
 }
 
+.positionDropDownDDL {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.226);
+  border-radius: 2px;
+  color: #1d263d;
+}
+.positionDropDownDDLS {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.226);
+  border-radius: 2px;
+  color: #1d263d;
+}
+
 .activeLine {
-  background-color: rgba(226, 226, 226, 0.24);
 }
 .activeLineStyle {
-  background-color: rgba(226, 226, 226, 0.24);
 }
 
 @media (max-width: 1300px) {
@@ -508,7 +536,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 130px auto;
     height: auto;
@@ -518,7 +545,6 @@ export default {
   .textDecoration_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -527,9 +553,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titletextDecorationContainer {
@@ -545,12 +568,7 @@ export default {
   }
   .titletextDecorationContainer div i {
     font-size: 1.6vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resulttextDecorationText {
@@ -575,9 +593,7 @@ export default {
 
   .resultTextTextDecoration code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 1.7vw;
     overflow-wrap: break-word;
@@ -595,7 +611,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 130px auto;
     height: auto;
@@ -605,7 +620,6 @@ export default {
   .textDecoration_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -614,9 +628,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titletextDecorationContainer {
@@ -632,12 +643,7 @@ export default {
   }
   .titletextDecorationContainer div i {
     font-size: 2.5vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resulttextDecorationText {
@@ -662,9 +668,7 @@ export default {
 
   .resultTextTextDecoration code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 2vw;
     overflow-wrap: break-word;
@@ -682,7 +686,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 130px auto;
     height: auto;
@@ -692,7 +695,6 @@ export default {
   .textDecoration_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -701,9 +703,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titletextDecorationContainer {
@@ -719,12 +718,7 @@ export default {
   }
   .titletextDecorationContainer div i {
     font-size: 2.7vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resulttextDecorationText {
@@ -749,9 +743,7 @@ export default {
 
   .resultTextTextDecoration code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 2.5vw;
     overflow-wrap: break-word;
@@ -769,7 +761,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 130px auto;
     height: auto;
@@ -779,7 +770,6 @@ export default {
   .textDecoration_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -788,9 +778,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titletextDecorationContainer {
@@ -806,12 +793,7 @@ export default {
   }
   .titletextDecorationContainer div i {
     font-size: 4.5vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resulttextDecorationText {
@@ -838,15 +820,12 @@ export default {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(245, 245, 245, 0.158);
     padding: 10px;
   }
 
   .resultTextTextDecoration code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 3.3vw;
     overflow-wrap: break-word;

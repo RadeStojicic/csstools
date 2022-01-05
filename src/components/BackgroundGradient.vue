@@ -54,7 +54,7 @@
             </div>
             <div v-if="this.activeGradientTypeVar == 'linear'">
               <p>Angle</p>
-              <div>
+              <section class="divAngleGD">
                 <input
                   class="angleGradientTool"
                   type="range"
@@ -63,7 +63,7 @@
                   min="0"
                   max="360"
                 />
-              </div>
+              </section>
               <section class="angleIcons">
                 <i @click="angle = '90'" class="fas fa-arrow-right"></i>
                 <i @click="angle = '270'" class="fas fa-arrow-left"></i>
@@ -73,7 +73,7 @@
             </div>
             <div>
               <p>Type</p>
-              <div
+              <section
                 @click="showDropDownGradientType"
                 class="positionDropDown"
                 ref="divClick"
@@ -82,7 +82,7 @@
                   {{ activeGradientTypeVar }}
                 </section>
                 <i class="fas fa-caret-down"></i>
-              </div>
+              </section>
               <section style="display: none;" class="itemsDropDownGradientType">
                 <section
                   @click="replaceClassGradientType(), linear()"
@@ -272,7 +272,7 @@ export default {
   top: 0;
   right: 0;
   height: 100vh;
-  background-color: #1d263d;
+  background-color: whitesmoke;
 }
 .backgroundBackgroundGradient {
   height: 100ch;
@@ -326,7 +326,7 @@ export default {
 
 .GradientInputContainer {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: whitesmoke;
   display: flex;
   align-items: center;
   margin-top: 10px;
@@ -339,10 +339,10 @@ export default {
 
 .copyContainerBackgroundGradient button {
   padding: 10px;
-  border: 1px #ffffff solid;
+  border: 1px #1d263d solid;
   background-color: transparent;
   border-radius: 5px;
-  color: white;
+  color: #1d263d;
   font-weight: 400;
   cursor: pointer;
 }
@@ -361,7 +361,7 @@ export default {
 
 .toolsBackgroundGradient div {
   margin-top: 20px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 10px;
 }
 
@@ -371,7 +371,7 @@ export default {
 
 .BackgroundGradientTool {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 50px 0;
@@ -384,7 +384,7 @@ export default {
 }
 
 .BackgroundGradientText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -392,24 +392,26 @@ export default {
 
 .optionsBackgroundGradient {
   flex: 1;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
-  color: white;
+  color: #1d263d;
+  box-shadow: -1px 2px 5px 3px #7070700e;
 }
 .secondBackgroundGradient {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
   width: 50%;
+  box-shadow: -1px 2px 5px 3px #7070700e;
 }
 
 .previewBackgroundGradientText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -425,8 +427,9 @@ export default {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(245, 245, 245, 0.158);
+  color: #1d263d;
   padding: 10px;
+  background-color: whitesmoke;
 }
 
 .resultTextGradient code {
@@ -444,7 +447,7 @@ export default {
 }
 
 .resultBackgroundGradientText {
-  color: white;
+  color: #1d263d;
 }
 
 .positionDropDown {
@@ -453,13 +456,17 @@ export default {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.226);
+  border-radius: 2px;
 }
 .positionDropDown i {
-  color: #c9cdd8;
+  color: #1d263d;
 }
 
 .itemsDropDownPosition {
-  background-color: rgba(226, 226, 226, 0.158);
   animation: 0.5s opacityDrop ease-in-out;
 }
 @keyframes opacityDrop {
@@ -475,10 +482,6 @@ export default {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
   padding: 10px;
   cursor: pointer;
-}
-
-.activePosition {
-  background-color: rgba(226, 226, 226, 0.24);
 }
 
 .repeatDropDown {
@@ -517,10 +520,6 @@ export default {
   color: #c9cdd8;
 }
 
-.activeSize {
-  background-color: rgba(226, 226, 226, 0.24);
-  border: 1px rgba(0, 119, 255, 0.356) solid;
-}
 .itemsDropDownSize {
   background-color: rgba(226, 226, 226, 0.158);
   animation: 0.5s opacityDrop ease-in-out;
@@ -557,20 +556,24 @@ export default {
 
 .angleIcons i {
   padding: 12px;
-  background-color: rgba(255, 255, 255, 0.185);
+  background-color: rgb(255, 255, 255);
   cursor: pointer;
 }
 .angleIcons i:hover {
-  background-color: rgba(255, 255, 255, 0.226);
+  background-color: rgba(238, 238, 238, 0.781);
 }
 
 .angleGradientTool {
   width: 100%;
-  margin-top: 20px;
+}
+.divAngleGD {
+  background-color: white;
+  padding: 20px;
+  margin-top: 30px;
 }
 
 .itemsDropDownGradientType {
-  background-color: rgba(226, 226, 226, 0.158);
+  background-color: rgb(255, 255, 255);
   -webkit-animation: 0.5s opacityDrop ease-in-out;
   animation: 0.5s opacityDrop ease-in-out;
 }
@@ -579,10 +582,6 @@ export default {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
   padding: 10px;
   cursor: pointer;
-}
-
-.activeGradientType {
-  background-color: rgba(226, 226, 226, 0.24);
 }
 
 @media (max-width: 1300px) {
@@ -594,7 +593,7 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
+
     position: relative;
     margin: 280px auto;
     height: auto;
@@ -604,7 +603,7 @@ export default {
   .BackgroundGradient_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -613,9 +612,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleBackgroundGradientContainer {
@@ -631,12 +627,8 @@ export default {
   }
   .titleBackgroundGradient div i {
     font-size: 1.6vw;
-    color: white;
-    padding: 10px;
-  }
 
-  .codePallete {
-    color: rgb(255, 255, 255);
+    padding: 10px;
   }
 
   .resultBackgroundGradientText {
@@ -661,9 +653,9 @@ export default {
 
   .resultTextGradient code {
     margin-top: 10px;
-    background-color: #353945;
+
     padding: 12px;
-    color: white;
+
     border: none;
     font-size: 1.7vw;
     overflow-wrap: break-word;
@@ -678,7 +670,7 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
+
     position: relative;
     margin: 280px auto;
     height: auto;
@@ -688,7 +680,7 @@ export default {
   .BackgroundGradient_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -697,9 +689,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleBackgroundGradientContainer {
@@ -715,12 +704,8 @@ export default {
   }
   .titleBackgroundGradient div i {
     font-size: 2.5vw;
-    color: white;
-    padding: 10px;
-  }
 
-  .codePallete {
-    color: rgb(255, 255, 255);
+    padding: 10px;
   }
 
   .resultBackgroundGradientText {
@@ -745,9 +730,9 @@ export default {
 
   .resultTextGradient code {
     margin-top: 10px;
-    background-color: #353945;
+
     padding: 12px;
-    color: white;
+
     border: none;
     font-size: 2vw;
     overflow-wrap: break-word;
@@ -762,7 +747,7 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
+
     position: relative;
     margin: 280px auto;
     height: auto;
@@ -772,7 +757,7 @@ export default {
   .BackgroundGradient_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -781,9 +766,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleBackgroundGradientContainer {
@@ -799,12 +781,8 @@ export default {
   }
   .titleBackgroundGradient div i {
     font-size: 2.7vw;
-    color: white;
-    padding: 10px;
-  }
 
-  .codePallete {
-    color: rgb(255, 255, 255);
+    padding: 10px;
   }
 
   .resultBackgroundGradientText {
@@ -829,9 +807,9 @@ export default {
 
   .resultTextGradient code {
     margin-top: 10px;
-    background-color: #353945;
+
     padding: 12px;
-    color: white;
+
     border: none;
     font-size: 2.5vw;
     overflow-wrap: break-word;
@@ -846,7 +824,7 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
+
     position: relative;
     margin: 230px auto;
     height: auto;
@@ -856,7 +834,7 @@ export default {
   .BackgroundGradient_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -865,9 +843,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleBackgroundGradientContainer {
@@ -883,12 +858,8 @@ export default {
   }
   .titleBackgroundGradient div i {
     font-size: 4.5vw;
-    color: white;
-    padding: 10px;
-  }
 
-  .codePallete {
-    color: rgb(255, 255, 255);
+    padding: 10px;
   }
 
   .resultBackgroundGradientText {
@@ -915,15 +886,15 @@ export default {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(245, 245, 245, 0.158);
+
     padding: 10px;
   }
 
   .resultTextGradient code {
     margin-top: 10px;
-    background-color: #353945;
+
     padding: 12px;
-    color: white;
+
     border: none;
     font-size: 3.3vw;
     overflow-wrap: break-word;

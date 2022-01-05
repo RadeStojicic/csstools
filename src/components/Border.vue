@@ -145,7 +145,7 @@ export default {
     return {
       value: 0,
       borderWidth: 1,
-      borderColor: "#ffffff",
+      borderColor: "#000000",
       borderStyle: "solid",
       copied: "copied",
     };
@@ -179,7 +179,7 @@ export default {
   top: 0;
   right: 0;
   height: 100vh;
-  background-color: #1d263d;
+  background-color: whitesmoke;
 }
 .backgroundBorderC {
   height: 100ch;
@@ -229,7 +229,7 @@ export default {
   -webkit-appearance: none;
   padding: 21px;
   background-color: #353945;
-  color: white;
+  color: #1d263d;
   border: none;
   outline: none;
   cursor: pointer;
@@ -254,10 +254,10 @@ export default {
 
 .copyContainerBorder button {
   padding: 10px;
-  border: 1px #ffffff solid;
+  border: 1px #1d263d solid;
   background-color: transparent;
   border-radius: 5px;
-  color: white;
+  color: #1d263d;
   font-weight: 400;
   cursor: pointer;
 }
@@ -274,7 +274,7 @@ export default {
 
 .tools div {
   margin-top: 20px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 10px;
 }
 
@@ -301,7 +301,7 @@ export default {
 }
 
 .borderText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -309,23 +309,23 @@ export default {
 
 .optionsBorder {
   flex: 1;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
-  color: white;
+  color: #1d263d;
 }
 .secondBorder {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
 }
 
 .previewBorderText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -339,7 +339,7 @@ export default {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 10px;
 }
 
@@ -357,7 +357,7 @@ export default {
 }
 
 .resultBorderText {
-  color: white;
+  color: #1d263d;
 }
 @media (max-width: 1300px) {
   .borderTool {
@@ -368,7 +368,7 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
+
     position: relative;
     margin: 230px auto;
     height: auto;
@@ -378,7 +378,7 @@ export default {
   .border_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -387,9 +387,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleBorderContainer {
@@ -405,12 +402,8 @@ export default {
   }
   .titleBorder div i {
     font-size: 1.6vw;
-    color: white;
-    padding: 10px;
-  }
 
-  .codePallete {
-    color: rgb(255, 255, 255);
+    padding: 10px;
   }
 
   .resultBorderText {
@@ -435,9 +428,9 @@ export default {
 
   .resultTextBorder code {
     margin-top: 10px;
-    background-color: #353945;
+
     padding: 12px;
-    color: white;
+
     border: none;
     font-size: 1.5vw;
     overflow-wrap: break-word;
@@ -458,7 +451,7 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
+
     position: relative;
     margin: 220px auto;
     height: auto;
@@ -468,7 +461,7 @@ export default {
   .border_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -477,9 +470,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleBorderContainer {
@@ -495,12 +485,8 @@ export default {
   }
   .titleBorder div i {
     font-size: 2.5vw;
-    color: white;
-    padding: 10px;
-  }
 
-  .codePallete {
-    color: rgb(255, 255, 255);
+    padding: 10px;
   }
 
   .resultBorderText {
@@ -525,9 +511,9 @@ export default {
 
   .resultTextBorder code {
     margin-top: 10px;
-    background-color: #353945;
+
     padding: 12px;
-    color: white;
+
     border: none;
     font-size: 2vw;
     overflow-wrap: break-word;
@@ -548,7 +534,7 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
+
     position: relative;
     margin: 220px auto;
     height: auto;
@@ -558,7 +544,7 @@ export default {
   .border_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -567,9 +553,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleBorderContainer {
@@ -585,12 +568,8 @@ export default {
   }
   .titleBorder div i {
     font-size: 2.7vw;
-    color: white;
-    padding: 10px;
-  }
 
-  .codePallete {
-    color: rgb(255, 255, 255);
+    padding: 10px;
   }
 
   .resultBorderText {
@@ -615,9 +594,9 @@ export default {
 
   .resultTextBorder code {
     margin-top: 10px;
-    background-color: #353945;
+
     padding: 12px;
-    color: white;
+
     border: none;
     font-size: 2.5vw;
     overflow-wrap: break-word;
@@ -638,7 +617,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 220px auto;
     height: auto;
@@ -648,7 +626,7 @@ export default {
   .border_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
+
     z-index: -1;
     margin: 80px auto;
   }
@@ -657,9 +635,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleBorderContainer {
@@ -675,12 +650,8 @@ export default {
   }
   .titleBorder div i {
     font-size: 4.5vw;
-    color: white;
-    padding: 10px;
-  }
 
-  .codePallete {
-    color: rgb(255, 255, 255);
+    padding: 10px;
   }
 
   .resultBorderText {
@@ -706,9 +677,9 @@ export default {
 
   .resultTextBorder code {
     margin-top: 10px;
-    background-color: #353945;
+
     padding: 12px;
-    color: white;
+
     border: none;
     font-size: 3.3vw;
     overflow-wrap: break-word;

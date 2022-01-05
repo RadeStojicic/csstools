@@ -101,7 +101,7 @@ export default {
   top: 0;
   right: 0;
   height: 100vh;
-  background-color: #1d263d;
+  background-color: whitesmoke;
 }
 .backgroundTransformRotate {
   height: 100ch;
@@ -150,10 +150,10 @@ export default {
 
 .copyContainerTransformRotate button {
   padding: 10px;
-  border: 1px #ffffff solid;
+  border: 1px #1d263d solid;
   background-color: transparent;
   border-radius: 5px;
-  color: white;
+  color: #1d263d;
   font-weight: 400;
   cursor: pointer;
 }
@@ -163,7 +163,7 @@ export default {
 }
 
 .elementTransformRotate {
-  background-color: white;
+  background-color: #1d263d;
   height: 200px;
   width: 50%;
   margin: auto;
@@ -171,11 +171,13 @@ export default {
 
 .toolsTransformRotate div {
   margin-top: 20px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 10px;
 }
 
 .toolsTransformRotate p {
+  color: #1d263d;
+
   font-size: 0.9vw;
 }
 
@@ -194,7 +196,7 @@ export default {
 }
 
 .TransformRotateText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -202,7 +204,7 @@ export default {
 
 .optionsTransformRotate {
   flex: 1;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
   color: white;
@@ -212,13 +214,13 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
 }
 
 .previewTransformRotateText {
-  color: white;
+  color: #1d263d;
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 20px;
@@ -232,7 +234,7 @@ export default {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   padding: 10px;
 }
 
@@ -250,7 +252,7 @@ export default {
 }
 
 .resultTransformRotateText {
-  color: white;
+  color: #1d263d;
 }
 @media (max-width: 1300px) {
   .TransformRotateTool {
@@ -261,7 +263,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 0px auto;
     height: auto;
@@ -271,7 +272,6 @@ export default {
   .TransformRotate_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -280,9 +280,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleTransformRotateContainer {
@@ -298,12 +295,7 @@ export default {
   }
   .titleTransformRotate div i {
     font-size: 1.6vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resultTransformRotateText {
@@ -328,9 +320,7 @@ export default {
 
   .resultTransformRotate code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 1.5vw;
     overflow-wrap: break-word;
@@ -348,7 +338,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 0px auto;
     height: auto;
@@ -358,7 +347,6 @@ export default {
   .TransformRotate_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -367,9 +355,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleTransformRotateContainer {
@@ -385,12 +370,7 @@ export default {
   }
   .titleTransformRotate div i {
     font-size: 2.5vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resultTransformRotateText {
@@ -415,9 +395,7 @@ export default {
 
   .resultTransformRotate code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 2vw;
     overflow-wrap: break-word;
@@ -435,7 +413,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 0px auto;
     height: auto;
@@ -445,7 +422,6 @@ export default {
   .TransformRotate_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -454,9 +430,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleTransformRotateContainer {
@@ -472,12 +445,7 @@ export default {
   }
   .titleTransformRotate div i {
     font-size: 2.7vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resultTransformRotateText {
@@ -502,9 +470,7 @@ export default {
 
   .resultTransformRotate code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 2.5vw;
     overflow-wrap: break-word;
@@ -522,7 +488,6 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-    background-color: #1d263d;
     position: relative;
     margin: 0px auto;
     height: auto;
@@ -532,7 +497,6 @@ export default {
   .TransformRotate_container {
     width: 100%;
     height: 100%;
-    background-color: #1d263d;
     z-index: -1;
     margin: 80px auto;
   }
@@ -541,9 +505,6 @@ export default {
   }
   .responsiveNav {
     display: block;
-  }
-  .titleColor {
-    background-color: rgb(96, 10, 255);
   }
 
   .titleTransformRotateContainer {
@@ -559,12 +520,7 @@ export default {
   }
   .titleTransformRotate div i {
     font-size: 4.5vw;
-    color: white;
     padding: 10px;
-  }
-
-  .codePallete {
-    color: rgb(255, 255, 255);
   }
 
   .resultTransformRotateText {
@@ -590,9 +546,7 @@ export default {
 
   .resultTransformRotate code {
     margin-top: 10px;
-    background-color: #353945;
     padding: 12px;
-    color: white;
     border: none;
     font-size: 3.3vw;
     overflow-wrap: break-word;
