@@ -109,11 +109,11 @@ export default {
 
 <style>
 .background {
-  width: 85%;
+  width: 86%;
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
+  height: 1000px;
   background-color: whitesmoke;
 }
 .titleColor {

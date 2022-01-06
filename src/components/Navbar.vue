@@ -1,7 +1,7 @@
 !<template>
   <div class="page">
     <div class="navbarClassic">
-      <h1 class="title">Css Tools</h1>
+      <h1 class="title">CSS Tools</h1>
       <div class="toolsNavBar">
         <ul>
           <p>BACKGROUND</p>
@@ -35,7 +35,7 @@
       </div>
       <footer class="footerClassic">
         <div>
-          <p>CssTools <i class="far fa-copyright"></i> 2021, by Rade</p>
+          <p>CSS Tools <i class="far fa-copyright"></i> 2021, by Rade</p>
         </div>
       </footer>
     </div>
@@ -139,8 +139,9 @@ a {
 .title {
   color: white;
   font-size: 1.4vw;
-  padding: 20px;
+  padding: 25px 20px 25px 20px;
   font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .toolsNavBar {
@@ -166,7 +167,7 @@ a {
   position: relative;
   bottom: 0;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .footerClassic div {
@@ -177,7 +178,7 @@ a {
 }
 .footerClassic p {
   color: rgb(172, 172, 172);
-  font-size: 1em;
+  font-size: 0.9em;
   margin-top: 5px;
 }
 
@@ -293,10 +294,8 @@ a {
   }
 
   .title {
-    color: white;
     font-size: 1.4vw;
     padding: 1vw;
-    font-weight: bold;
   }
 
   .toolsNavBar {
@@ -357,10 +356,8 @@ a {
   }
 
   .title {
-    color: white;
     font-size: 1.8vw;
     padding: 1vw;
-    font-weight: bold;
   }
 
   .toolsNavBar {
