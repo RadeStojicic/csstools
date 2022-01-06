@@ -114,7 +114,6 @@ export default {
   top: 0;
   right: 0;
   height: 100%;
-
   background-color: whitesmoke;
 }
 .titleColor {
@@ -320,6 +319,7 @@ export default {
     width: 100%;
     height: 1080px;
     margin: 80px auto;
+    z-index: -1;
   }
   .navBarClassic {
     display: none;
@@ -773,8 +773,8 @@ export default {
   .background {
     width: 100%;
     height: 1080px;
-    z-index: -1;
     margin: 80px auto;
+    z-index: -1;
   }
   .navBarClassic {
     display: none;

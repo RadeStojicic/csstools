@@ -271,7 +271,7 @@ export default {
   .TransformRotate_container {
     width: 100%;
     height: 1000px;
-
+    z-index: -1;
     margin: 80px auto;
   }
   .navBarClassic {

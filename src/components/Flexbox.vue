@@ -695,8 +695,8 @@ export default {
   .Flexbox_container {
     width: 100%;
     height: 100%;
-    z-index: -1;
     margin: 80px auto;
+    z-index: -1;
   }
   .navBarClassic {
     display: none;
@@ -771,7 +771,6 @@ export default {
   .Flexbox_container {
     width: 100%;
     height: 100%;
-    z-index: -1;
     margin: 80px auto;
   }
   .navBarClassic {
@@ -846,7 +845,6 @@ export default {
   .Flexbox_container {
     width: 100%;
     height: 100%;
-    z-index: -1;
     margin: 80px auto;
   }
   .navBarClassic {
@@ -921,7 +919,6 @@ export default {
   .Flexbox_container {
     width: 100%;
     height: 100%;
-    z-index: -1;
     margin: 80px auto;
   }
   .navBarClassic {
