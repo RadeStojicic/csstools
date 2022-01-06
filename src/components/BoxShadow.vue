@@ -158,7 +158,7 @@ export default {
       verticalBS: 5,
       blurBS: 10,
       spreadBS: 1,
-      colorBoxShadow: "#1d263d",
+      colorBoxShadow: "#605ed9",
       insetBS: "",
     };
   },
@@ -299,10 +299,10 @@ export default {
 
 .elementBoxShadow {
   padding: 50px;
-  background-color: white;
+  background-color: #1d263d;
   height: 200px;
   width: 50%;
-  margin: auto;
+  margin: 50px auto;
 }
 
 .toolsBoxShadow div {
