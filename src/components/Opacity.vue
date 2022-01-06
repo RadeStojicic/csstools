@@ -267,7 +267,7 @@ export default {
 
   .Opacity_container {
     width: 100%;
-    height: 100%;
+    height: 1500px;
     z-index: -1;
     margin: 80px auto;
   }
@@ -346,7 +346,7 @@ export default {
 
   .Opacity_container {
     width: 100%;
-    height: 100%;
+    height: 1500px;
     margin: 80px auto;
   }
   .navBarClassic {
@@ -424,7 +424,7 @@ export default {
 
   .Opacity_container {
     width: 100%;
-    height: 100%;
+    height: 1500px;
     margin: 80px auto;
   }
   .navBarClassic {
@@ -502,7 +502,7 @@ export default {
 
   .Opacity_container {
     width: 100%;
-    height: 100%;
+    height: 1100px;
     margin: 80px auto;
   }
   .navBarClassic {

@@ -450,7 +450,7 @@ export default {
 
   .Cursor_container {
     width: 100%;
-    height: 100%;
+    height: 1500px;
     z-index: -1;
     margin: 80px auto;
   }
@@ -525,7 +525,7 @@ export default {
 
   .Cursor_container {
     width: 100%;
-    height: 100%;
+    height: 1500px;
 
     margin: 80px auto;
   }
@@ -600,7 +600,7 @@ export default {
 
   .Cursor_container {
     width: 100%;
-    height: 100%;
+    height: 1500px;
 
     margin: 80px auto;
   }
@@ -675,8 +675,7 @@ export default {
 
   .Cursor_container {
     width: 100%;
-    height: 100%;
-
+    height: 1300px;
     margin: 80px auto;
   }
   .navBarClassic {
