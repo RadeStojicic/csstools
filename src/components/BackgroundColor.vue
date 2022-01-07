@@ -404,9 +404,6 @@ export default {
 
   .colorBG {
     width: 100%;
-
-    display: flex;
-    align-items: center;
   }
   .colorBG p {
     margin-left: 10px;
@@ -556,9 +553,6 @@ export default {
 
   .colorBG {
     width: 100%;
-
-    display: flex;
-    align-items: center;
   }
   .colorBG p {
     margin-left: 10px;
@@ -707,9 +701,6 @@ export default {
 
   .colorBG {
     width: 100%;
-
-    display: flex;
-    align-items: center;
   }
   .colorBG p {
     margin-left: 10px;
@@ -859,9 +850,6 @@ export default {
 
   .colorBG {
     width: 100%;
-
-    display: flex;
-    align-items: center;
   }
   .colorBG p {
     margin-left: 10px;

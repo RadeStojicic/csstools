@@ -507,20 +507,6 @@ export default {
   color: #c9cdd8;
 }
 
-.activeRepeat {
-  background-color: rgba(226, 226, 226, 0.24);
-}
-
-.itemsDropDownRepeat {
-  background-color: rgba(226, 226, 226, 0.158);
-  animation: 0.5s opacityDrop ease-in-out;
-}
-.itemsDropDownRepeat section {
-  border-top: 1px rgba(65, 61, 61, 0.24) solid;
-  padding: 10px;
-  cursor: pointer;
-}
-
 .sizeDropDown {
   display: flex;
   flex-direction: row;
@@ -594,6 +580,12 @@ export default {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
   padding: 10px;
   cursor: pointer;
+}
+.itemsDropDownGradientType section:hover {
+  background-color: rgb(228, 228, 228);
+}
+.activeGradientType {
+  background-color: rgb(228, 228, 228);
 }
 
 @media (max-width: 1300px) {

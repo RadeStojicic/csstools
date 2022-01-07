@@ -493,6 +493,13 @@ export default {
   padding: 10px;
   cursor: pointer;
 }
+.itemsDropDownLine section:hover {
+  background-color: rgb(228, 228, 228);
+}
+.activeLine {
+  background-color: rgb(228, 228, 228);
+}
+
 .itemsDropDownLineStyle {
   background-color: white;
   -webkit-animation: 0.5s opacityDrop ease-in-out;
@@ -504,6 +511,12 @@ export default {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
   padding: 10px;
   cursor: pointer;
+}
+.itemsDropDownLineStyle section:hover {
+  background-color: rgb(228, 228, 228);
+}
+.activeLineStyle {
+  background-color: rgb(228, 228, 228);
 }
 
 .positionDropDownDDL {
@@ -531,11 +544,6 @@ export default {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.226);
   border-radius: 2px;
   color: #1d263d;
-}
-
-.activeLine {
-}
-.activeLineStyle {
 }
 
 @media (max-width: 1300px) {

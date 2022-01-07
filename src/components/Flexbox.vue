@@ -602,23 +602,33 @@ export default {
 .resultFlexboxText {
   color: #1d263d;
 }
-.activeFlexDirection {
-}
 
 .itemsDropDownFlexDirection section {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
   padding: 10px;
   cursor: pointer;
-
   color: #1d263d;
 }
+
+.itemsDropDownFlexDirection section:hover {
+  background-color: rgb(228, 228, 228);
+}
+.activeFlexDirection {
+  background-color: rgb(228, 228, 228);
+}
+
+.itemsDropDownJustifyContent section:hover {
+  background-color: rgb(228, 228, 228);
+}
 .activeJustifyContent {
+  background-color: rgb(228, 228, 228);
 }
 .itemsDropDownJustifyContent section {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
   padding: 10px;
   cursor: pointer;
 }
+
 .positionDropDownFD {
   display: flex;
   flex-direction: row;
@@ -678,8 +688,13 @@ export default {
   padding: 10px;
   cursor: pointer;
 }
-.activeAlignItems {
+.itemsDropDownAlignItems section:hover {
+  background-color: rgb(228, 228, 228);
 }
+.activeAlignItems {
+  background-color: rgb(228, 228, 228);
+}
+
 @keyframes opacityDrop {
   0% {
     opacity: 0;

@@ -400,13 +400,6 @@ export default {
   }
 }
 
-.itemsDropDownPosition section {
-}
-
-.activePosition {
-  background-color: rgba(226, 226, 226, 0.24);
-}
-
 .repeatDropDown {
   display: flex;
   flex-direction: row;
@@ -418,21 +411,6 @@ export default {
   color: #c9cdd8;
 }
 
-.activeRepeat {
-  background-color: rgba(226, 226, 226, 0.24);
-}
-
-.itemsDropDownRepeat {
-  background-color: rgba(226, 226, 226, 0.158);
-  animation: 0.5s opacityDrop ease-in-out;
-}
-.itemsDropDownRepeat section {
-  border-top: 1px rgba(65, 61, 61, 0.24) solid;
-  padding: 10px;
-  cursor: pointer;
-}
-.activeCursor {
-}
 .itemsDropDownCursor {
   background-color: white;
   animation: 0.5s opacityDrop ease-in-out;
@@ -442,6 +420,13 @@ export default {
   border-top: 1px rgba(65, 61, 61, 0.24) solid;
   padding: 10px;
   cursor: pointer;
+}
+
+.itemsDropDownCursor section:hover {
+  background-color: rgb(228, 228, 228);
+}
+.activeCursor {
+  background-color: rgb(228, 228, 228);
 }
 
 @media (max-width: 1300px) {

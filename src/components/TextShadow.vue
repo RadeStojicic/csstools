@@ -371,10 +371,6 @@ export default {
   cursor: pointer;
 }
 
-.activeShadow {
-}
-.activeShadowStyle {
-}
 @media (max-width: 1300px) {
   .textShadowTool {
     display: flex;
