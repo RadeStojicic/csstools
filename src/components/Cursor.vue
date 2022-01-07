@@ -428,7 +428,11 @@ export default {
 .activeCursor {
   background-color: rgb(228, 228, 228);
 }
-
+@media (max-width: 1800px) {
+  .Cursor_container {
+    width: 80vw;
+  }
+}
 @media (max-width: 1300px) {
   .CursorTool {
     display: flex;

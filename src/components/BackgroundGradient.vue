@@ -41,9 +41,9 @@
           <div class="toolsBackgroundGradient">
             <div>
               <p>Color 1</p>
-              <section class="GradientInputContainer">
+              <section class="GradientInputContainer1">
                 <input
-                  class="GradientColorTool"
+                  class="GradientColorTool1"
                   type="color"
                   v-model="color1"
                   name="color"
@@ -51,12 +51,15 @@
                 />
                 <p style="margin-left: 10px;">{{ color1 }}</p>
               </section>
+              <div class="hideGradientText1">
+                Click and change the first color!
+              </div>
             </div>
             <div>
               <p>Color 2</p>
-              <section class="GradientInputContainer">
+              <section class="GradientInputContainer2">
                 <input
-                  class="GradientColorTool"
+                  class="GradientColorTool2"
                   type="color"
                   v-model="color2"
                   name="color"
@@ -64,6 +67,9 @@
                 />
                 <p style="margin-left: 10px;">{{ color2 }}</p>
               </section>
+              <div class="hideGradientText2">
+                Click and change the second color!
+              </div>
             </div>
             <div v-if="this.activeGradientTypeVar == 'linear'">
               <p>Angle</p>
@@ -336,9 +342,16 @@ export default {
   margin-right: 20px;
 }
 
-.GradientInputContainer {
+.GradientInputContainer1 {
   width: 100%;
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.GradientInputContainer2 {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   margin-top: 10px;
@@ -529,14 +542,7 @@ export default {
   cursor: pointer;
 }
 
-.GradientInputContainer {
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-.GradientColorTool {
+.GradientColorTool1 {
   width: 40px;
   height: 40px;
   padding: 5px;
@@ -545,6 +551,18 @@ export default {
   font-size: 18px;
   background-color: #353945;
   color: white;
+  cursor: pointer;
+}
+.GradientColorTool2 {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #353945;
+  color: white;
+  cursor: pointer;
 }
 .angleIcons {
   margin-top: 20px;
@@ -588,6 +606,75 @@ export default {
   background-color: rgb(228, 228, 228);
 }
 
+.hideGradientText1 {
+  visibility: hidden;
+  position: absolute;
+}
+
+.hideGradientText1::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid rgba(14, 25, 36, 0.719);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.GradientInputContainer1:hover + .hideGradientText1 {
+  animation: effectB 1s infinite 0.5s;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 0.7vw;
+  outline: 1px rgba(14, 25, 36, 0.719) solid;
+  color: rgb(85, 85, 85);
+  margin-left: 0px;
+  margin-top: 15px;
+}
+@keyframes effectB {
+  0% {
+    visibility: visible;
+  }
+}
+
+.hideGradientText2 {
+  visibility: hidden;
+  position: absolute;
+}
+
+.hideGradientText2::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid rgba(14, 25, 36, 0.719);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.GradientInputContainer2:hover + .hideGradientText2 {
+  animation: effectH 1s infinite 0.5s;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 0.7vw;
+  outline: 1px rgba(14, 25, 36, 0.719) solid;
+  color: rgb(85, 85, 85);
+  margin-left: 0px;
+  margin-top: 15px;
+}
+@keyframes effectH {
+  0% {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 1800px) {
+  .BackgroundGradient_container {
+    width: 80vw;
+  }
+}
 @media (max-width: 1300px) {
   .BackgroundGradientTool {
     display: flex;
@@ -602,7 +689,12 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-
+  .hideGradientText2 {
+    display: none;
+  }
+  .hideGradientText1 {
+    display: none;
+  }
   .BackgroundGradient_container {
     width: 100%;
     height: 1500px;

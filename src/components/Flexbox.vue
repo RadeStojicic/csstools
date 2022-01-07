@@ -703,6 +703,11 @@ export default {
     opacity: 1;
   }
 }
+@media (max-width: 1800px) {
+  .Flexbox_container {
+    width: 80vw;
+  }
+}
 @media (max-width: 1300px) {
   .FlexboxTool {
     display: flex;

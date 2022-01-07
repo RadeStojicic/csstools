@@ -49,6 +49,7 @@
                   name="text"
                   value=""
                 />
+                <div class="hideBgUrlText">Copy and paste image url here!</div>
               </section>
             </div>
             <div>
@@ -439,14 +440,6 @@ export default {
   width: 100%;
 }
 
-.bsInputContainer {
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
 .copyContainerBackgroundImage {
   display: flex;
   justify-content: space-between;
@@ -690,6 +683,43 @@ export default {
 .activeSize {
   background-color: rgb(228, 228, 228);
 }
+
+.hideBgUrlText {
+  visibility: hidden;
+  position: absolute;
+}
+
+.hideBgUrlText::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid rgba(14, 25, 36, 0.719);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.imageUrl:hover + .hideBgUrlText {
+  animation: effectA 1s infinite 0.5s;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 0.7vw;
+  outline: 1px rgba(14, 25, 36, 0.719) solid;
+  color: rgb(85, 85, 85);
+  margin-left: 0px;
+  margin-top: 100px;
+}
+@keyframes effectA {
+  0% {
+    visibility: visible;
+  }
+}
+@media (max-width: 1800px) {
+  .BackgroundImage_container {
+    width: 80vw;
+  }
+}
 @media (max-width: 1300px) {
   .BackgroundImageTool {
     display: flex;
@@ -706,6 +736,9 @@ export default {
   }
   .imageUrl {
     font-size: 1.5vw;
+  }
+  .hideBgUrlText {
+    display: none;
   }
 
   .BackgroundImage_container {

@@ -259,7 +259,11 @@ export default {
 .resultOpacityText {
   color: #1d263d;
 }
-
+@media (max-width: 1800px) {
+  .Opacity_container {
+    width: 80vw;
+  }
+}
 @media (max-width: 1300px) {
   .OpacityTool {
     display: flex;

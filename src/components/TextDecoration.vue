@@ -41,7 +41,7 @@
           <div class="toolstextDecoration">
             <div class="colortextDecorationContainer">
               <p>Color</p>
-              <section class="bsInputContainer">
+              <section class="bsInputContainerTD">
                 <input
                   class="textDecorationColorTool"
                   type="color"
@@ -51,6 +51,9 @@
                 />
                 <p style="margin-left: 10px;">{{ colortextDecoration }}</p>
               </section>
+              <div class="hideTextDecorationText">
+                Click and change the color of the line!
+              </div>
             </div>
             <div>
               <p>Line</p>
@@ -357,14 +360,7 @@ export default {
   font-size: 18px;
   background-color: #353945;
   color: white;
-}
-
-.bsInputContainer {
-  width: 100%;
-  background-color: whitesmoke;
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+  cursor: pointer;
 }
 
 .copyContainertextDecoration {
@@ -545,7 +541,48 @@ export default {
   border-radius: 2px;
   color: #1d263d;
 }
-
+.hideTextDecorationText {
+  visibility: hidden;
+  position: absolute;
+}
+.bsInputContainerTD {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.hideTextDecorationText::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid rgba(14, 25, 36, 0.719);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.bsInputContainerTD:hover + .hideTextDecorationText {
+  animation: effectC 1s infinite 0.5s;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 0.7vw;
+  outline: 1px rgba(14, 25, 36, 0.719) solid;
+  color: rgb(85, 85, 85);
+  margin-left: 0px;
+  margin-top: 15px;
+}
+@keyframes effectC {
+  0% {
+    visibility: visible;
+  }
+}
+@media (max-width: 1800px) {
+  .textDecoration_container {
+    width: 80vw;
+  }
+}
 @media (max-width: 1300px) {
   .textDecorationTool {
     display: flex;
@@ -560,7 +597,9 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-
+  .hideTextDecorationText {
+    display: none;
+  }
   .textDecoration_container {
     width: 100%;
     height: 1500px;

@@ -45,6 +45,9 @@
               <p style="margin-left:10px;">{{ color }}</p>
             </section>
           </div>
+          <div class="hideText">
+            Click the button and change the background color!
+          </div>
         </div>
 
         <div class="secondPallete">
@@ -239,6 +242,7 @@ export default {
   font-size: 18px;
   background-color: #353945;
   color: white;
+  cursor: pointer;
 }
 
 .codePalleteText {
@@ -308,6 +312,39 @@ export default {
 .previewPallete {
   height: 200px;
 }
+.hideText {
+  visibility: hidden;
+  position: absolute;
+}
+
+.hideText::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid rgba(14, 25, 36, 0.719);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.colorBG:hover + .hideText {
+  animation: effect 1s infinite 0.5s;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 0.7vw;
+  outline: 1px rgba(14, 25, 36, 0.719) solid;
+  color: rgb(85, 85, 85);
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+@keyframes effect {
+  0% {
+    visibility: visible;
+  }
+}
+
 @media (max-width: 1800px) {
   .hero {
     display: flex;
@@ -322,7 +359,7 @@ export default {
   }
 
   .background {
-    width: 85vw;
+    width: 80vw;
     height: 1080px;
     padding-bottom: 30px;
     margin: 0px auto;
@@ -341,7 +378,9 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-
+  .hideText {
+    display: none;
+  }
   .background {
     width: 100%;
     height: 1080px;
@@ -410,10 +449,9 @@ export default {
   .colorBG {
     width: 100%;
   }
-  .colorBG p {
-    margin-left: 10px;
+  .colorBgTitle {
+    font-size: 1.5vw;
   }
-
   .codePalleteText {
     font-size: 2vw;
     font-weight: 600;
@@ -559,8 +597,8 @@ export default {
   .colorBG {
     width: 100%;
   }
-  .colorBG p {
-    margin-left: 10px;
+  .colorBgTitle {
+    font-size: 2vw;
   }
 
   .codePalleteText {
@@ -707,8 +745,8 @@ export default {
   .colorBG {
     width: 100%;
   }
-  .colorBG p {
-    margin-left: 10px;
+  .colorBgTitle {
+    font-size: 2.5vw;
   }
 
   .codePalleteText {
@@ -787,6 +825,9 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
+  .colorBgTitle {
+    font-size: 3.5vw;
+  }
 
   .background {
     width: 100%;
@@ -855,9 +896,6 @@ export default {
 
   .colorBG {
     width: 100%;
-  }
-  .colorBG p {
-    margin-left: 10px;
   }
 
   .codePalleteText {

@@ -264,6 +264,11 @@ export default {
 .resultTransformRotateText {
   color: #1d263d;
 }
+@media (max-width: 1800px) {
+  .TransformRotate_container {
+    width: 80vw;
+  }
+}
 @media (max-width: 1300px) {
   .TransformRotateTool {
     display: flex;

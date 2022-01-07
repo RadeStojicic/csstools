@@ -41,7 +41,7 @@
           <div class="toolstextShadow">
             <div class="colortextShadowContainer">
               <p>Color</p>
-              <section class="bsInputContainer">
+              <section class="bsInputContainerTS">
                 <input
                   class="textShadowColorTool"
                   type="color"
@@ -51,6 +51,9 @@
                 />
                 <p style="margin-left: 10px;">{{ colortextShadow }}</p>
               </section>
+              <div class="hideTextShadowText">
+                Click and change the color of the text shadow!
+              </div>
             </div>
             <div>
               <p>Horizontal Offset</p>
@@ -224,14 +227,7 @@ export default {
   font-size: 18px;
   background-color: #353945;
   color: white;
-}
-
-.bsInputContainer {
-  width: 100%;
-  background-color: whitesmoke;
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+  cursor: pointer;
 }
 
 .copyContainertextShadow {
@@ -370,7 +366,49 @@ export default {
   padding: 10px;
   cursor: pointer;
 }
+.bsInputContainerTS {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.hideTextShadowText {
+  visibility: hidden;
+  position: absolute;
+}
 
+.hideTextShadowText::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid rgba(14, 25, 36, 0.719);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.bsInputContainerTS:hover + .hideTextShadowText {
+  animation: effectB 1s infinite 0.5s;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 0.7vw;
+  outline: 1px rgba(14, 25, 36, 0.719) solid;
+  color: rgb(85, 85, 85);
+  margin-left: 0px;
+  margin-top: 15px;
+}
+@keyframes effectB {
+  0% {
+    visibility: visible;
+  }
+}
+@media (max-width: 1800px) {
+  .textShadow_container {
+    width: 80vw;
+  }
+}
 @media (max-width: 1300px) {
   .textShadowTool {
     display: flex;
@@ -385,7 +423,9 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-
+  .hideTextShadowText {
+    display: none;
+  }
   .textShadow_container {
     width: 100%;
     height: 1500px;

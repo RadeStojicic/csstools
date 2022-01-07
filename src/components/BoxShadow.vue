@@ -51,6 +51,9 @@
                 />
                 <p style="margin-left: 10px;">{{ colorBoxShadow }}</p>
               </section>
+              <div class="hideBoxShadowText">
+                Click the button and change the shadow color!
+              </div>
             </div>
             <div>
               <p>Inset</p>
@@ -269,6 +272,7 @@ export default {
   font-size: 18px;
   background-color: #353945;
   color: white;
+  cursor: pointer;
 }
 
 .radioBoxShadow {
@@ -402,7 +406,43 @@ export default {
 .resultBoxShadowText {
   color: #1d263d;
 }
+.hideBoxShadowText {
+  visibility: hidden;
+  position: absolute;
+}
 
+.hideBoxShadowText::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid rgba(14, 25, 36, 0.719);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.bsInputContainer:hover + .hideBoxShadowText {
+  animation: effectB 1s infinite 0.5s;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 0.7vw;
+  outline: 1px rgba(14, 25, 36, 0.719) solid;
+  color: rgb(85, 85, 85);
+  margin-left: 0px;
+  margin-top: 15px;
+}
+@keyframes effectB {
+  0% {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 1800px) {
+  .BoxShadow_container {
+    width: 80vw;
+  }
+}
 @media (max-width: 1300px) {
   .BoxShadowTool {
     display: flex;
@@ -417,7 +457,9 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-
+  .hideBoxShadowText {
+    display: none;
+  }
   .BoxShadow_container {
     width: 100%;
     height: 1500px;

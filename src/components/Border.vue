@@ -101,6 +101,9 @@
                 placeholder="#111111"
                 v-model="borderColor"
               />
+              <div class="hideBorderText">
+                Click and change the color of the border!
+              </div>
             </div>
           </div>
         </div>
@@ -370,6 +373,44 @@ export default {
 .resultBorderText {
   color: #1d263d;
 }
+
+.hideBorderText {
+  visibility: hidden;
+  position: absolute;
+}
+
+.hideBorderText::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid rgba(14, 25, 36, 0.719);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.inputBorderColor:hover + .hideBorderText {
+  animation: effectB 1s infinite 0.5s;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 0.7vw;
+  outline: 1px rgba(14, 25, 36, 0.719) solid;
+  color: rgb(85, 85, 85);
+  margin-left: 0px;
+  margin-top: 15px;
+}
+@keyframes effectB {
+  0% {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 1800px) {
+  .border_container {
+    width: 80vw;
+  }
+}
 @media (max-width: 1300px) {
   .borderTool {
     display: flex;
@@ -384,7 +425,9 @@ export default {
     height: auto;
     padding-bottom: 30px;
   }
-
+  .hideBorderText {
+    display: none;
+  }
   .border_container {
     width: 100%;
     height: 1500px;

@@ -39,9 +39,9 @@
         <div class="optionsimageFilter">
           <h1 class="imageFilterText">Settings</h1>
           <div class="toolsimageFilter">
-            <div class="imageUrlContainer">
+            <div class="imageUrlContainerFilter">
               <p>Image URL</p>
-              <section class="bsInputContainer">
+              <section class="bsInputContainerIF">
                 <input
                   class="imageUrl"
                   type="url"
@@ -50,6 +50,9 @@
                   value=""
                 />
               </section>
+              <div class="hideImageFilterText">
+                Copy and paste image url here!
+              </div>
             </div>
             <div>
               <p>Blur</p>
@@ -318,7 +321,7 @@ export default {
   width: 100%;
 }
 
-.bsInputContainer {
+.bsInputContainerIF {
   width: 100%;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -447,7 +450,43 @@ export default {
   width: 100%;
   margin-top: 10px;
 }
+.hideImageFilterText {
+  visibility: hidden;
+  position: absolute;
+}
 
+.hideImageFilterText::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid rgba(14, 25, 36, 0.719);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.bsInputContainerIF:hover + .hideImageFilterText {
+  animation: effectC 1s infinite 0.5s;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 0.7vw;
+  outline: 1px rgba(14, 25, 36, 0.719) solid;
+  color: rgb(85, 85, 85);
+  margin-left: 0px;
+  margin-top: 15px;
+}
+@keyframes effectC {
+  0% {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 1800px) {
+  .imageFilter_container {
+    width: 80vw;
+  }
+}
 @media (max-width: 1300px) {
   .imageFilterToolContainer {
     display: flex;
@@ -461,6 +500,9 @@ export default {
     margin: 380px auto;
     height: auto;
     padding-bottom: 30px;
+  }
+  .hideImageFilterText {
+    display: none;
   }
   .imageUrl {
     font-size: 1.5vw;
