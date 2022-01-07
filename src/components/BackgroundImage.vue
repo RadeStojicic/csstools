@@ -375,14 +375,14 @@ export default {
 
 <style>
 .BackgroundImage_container {
-  width: 86%;
+  width: 85vw;
   position: absolute;
   top: 0;
   right: 0;
   background-color: whitesmoke;
 }
 .backgroundBackgroundImage {
-  height: 1000px;
+  height: 1100px;
 }
 
 .titleBackgroundImage {
@@ -713,6 +713,18 @@ export default {
 @keyframes effectA {
   0% {
     visibility: visible;
+  }
+}
+@media (min-width: 3000px) and (max-width: 8040px) {
+  .BackgroundImage_container {
+    height: 2160px;
+    width: 80vw;
+  }
+}
+@media (min-width: 2048px) and (max-width: 3000px) {
+  .BackgroundImage_container {
+    height: 1200px;
+    width: 80vw;
   }
 }
 @media (max-width: 1800px) {

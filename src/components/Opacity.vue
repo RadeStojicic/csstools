@@ -102,14 +102,14 @@ export default {
 
 <style>
 .Opacity_container {
-  width: 86%;
+  width: 85vw;
   position: absolute;
   top: 0;
   right: 0;
   background-color: whitesmoke;
 }
 .backgroundOpacity {
-  height: 1000px;
+  height: 1100px;
 }
 
 .titleOpacity {
@@ -258,6 +258,18 @@ export default {
 
 .resultOpacityText {
   color: #1d263d;
+}
+@media (min-width: 3000px) and (max-width: 8040px) {
+  .Opacity_container {
+    height: 2160px;
+    width: 80vw;
+  }
+}
+@media (min-width: 2048px) and (max-width: 3000px) {
+  .Opacity_container {
+    height: 1200px;
+    width: 80vw;
+  }
 }
 @media (max-width: 1800px) {
   .Opacity_container {

@@ -127,11 +127,11 @@ export default {
 
 <style>
 .background {
-  width: 86%;
+  width: 85vw;
   position: absolute;
   top: 0;
   right: 0;
-  height: 1000px;
+  height: 1100px;
   background-color: whitesmoke;
 }
 .titleColor {
@@ -513,6 +513,28 @@ export default {
 
   .previewPallete {
     height: 200px;
+  }
+}
+@media (min-width: 3000px) and (max-width: 8040px) {
+  .background {
+    height: 2160px;
+    width: 80vw;
+  }
+}
+@media (min-width: 2048px) and (max-width: 3000px) {
+  .background {
+    height: 1200px;
+    width: 80vw;
+  }
+}
+@media (max-width: 1800px) {
+  .background {
+    width: 80vw;
+  }
+}
+@media (max-width: 1300px) {
+  .background {
+    width: 100vw;
   }
 }
 @media (max-width: 1080px) {
