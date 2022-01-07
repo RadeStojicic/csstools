@@ -49,6 +49,7 @@
                   name="color"
                   value="#000000"
                 />
+                <p style="margin-left: 10px;">{{ colortextDecoration }}</p>
               </section>
             </div>
             <div>

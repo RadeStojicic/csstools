@@ -1,7 +1,9 @@
 !<template>
   <div class="page">
     <div class="navbarClassic">
-      <h1 class="title"><a href="#">CSS Tools</a></h1>
+      <h1 class="title">
+        <a href="#">CodeGenerator <span class="cssTitle">css</span></a>
+      </h1>
       <div class="toolsNavBar">
         <ul>
           <p>BACKGROUND</p>
@@ -35,13 +37,17 @@
       </div>
       <footer class="footerClassic">
         <div>
-          <p>CSS Tools <i class="far fa-copyright"></i> 2021, by Rade</p>
+          <p>
+            CSS Code Generator <i class="far fa-copyright"></i> 2022, by Rade
+          </p>
         </div>
       </footer>
     </div>
     <div class="responsiveNav">
       <div class="headerResponsiveNav">
-        <p>CSS Tools</p>
+        <h1 class="titleRes">
+          <a href="#">CodeGenerator <span class="cssTitleRes">css</span></a>
+        </h1>
         <div>
           <i @click="showNav()" class="fas fa-bars"></i>
           <i style="display:none;" @click="showNav()" class="fas fa-times"></i>
@@ -80,7 +86,9 @@
       </ul>
       <footer class="responsiveFooter">
         <div>
-          <p>CssTools <i class="far fa-copyright"></i> 2021, by Rade</p>
+          <p>
+            CSS Code Generator <i class="far fa-copyright"></i> 2022, by Rade
+          </p>
         </div>
       </footer>
     </div>
@@ -141,7 +149,14 @@ a {
   font-size: 1.4vw;
   padding: 25px 20px 25px 20px;
   font-weight: bold;
-  letter-spacing: 3px;
+  display: flex;
+  justify-content: flex-start;
+}
+.cssTitle {
+  font-size: 0.6vw;
+  float: right;
+  padding-left: 5px;
+  padding-top: 5px;
 }
 
 .toolsNavBar {
@@ -193,12 +208,23 @@ a {
   display: none;
 }
 
+.titleRes {
+  color: white;
+  font-size: 5.5vw;
+  font-weight: bold;
+}
+.cssTitleRes {
+  font-size: 2vw;
+  float: right;
+}
+
 .navBarLinksFooter {
   width: 100vw;
   height: 100vh;
   background-color: #141b2c;
   overflow: scroll;
 }
+
 .fa-bars {
   display: flex;
   justify-content: flex-start;
@@ -408,6 +434,12 @@ a {
   .headerResponsiveNav {
     display: flex;
   }
+  .titleRes {
+    font-size: 2.5vw;
+  }
+  .cssTitleRes {
+    font-size: 0.7vw;
+  }
   .fa-bars {
     display: flex;
     justify-content: flex-start;
@@ -475,6 +507,12 @@ a {
   .headerResponsiveNav {
     display: flex;
   }
+  .titleRes {
+    font-size: 3.5vw;
+  }
+  .cssTitleRes {
+    font-size: 1vw;
+  }
   .fa-bars {
     display: flex;
     justify-content: flex-start;
@@ -522,6 +560,12 @@ a {
   .headerResponsiveNav {
     display: flex;
   }
+  .titleRes {
+    font-size: 4.5vw;
+  }
+  .cssTitleRes {
+    font-size: 1.5vw;
+  }
   .fa-bars {
     display: flex;
     justify-content: flex-start;
@@ -560,6 +604,14 @@ a {
   }
 }
 @media (max-width: 600px) {
+  .titleRes {
+    font-size: 5.5vw;
+  }
+  .cssTitleRes {
+    font-size: 2vw;
+    padding-left: 5px;
+  }
+
   .navbarClassic {
     display: none;
   }

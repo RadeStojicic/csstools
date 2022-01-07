@@ -12,11 +12,17 @@ import BackgroundGradient from "../components/BackgroundGradient.vue";
 import Flexbox from "../components/Flexbox.vue";
 import Cursor from "../components/Cursor.vue";
 import ImageFilter from "../components/ImageFilter.vue";
+import Homepage from "../App.vue";
 
 Vue.use(Router);
 
 const router = new Router({
   routes: [
+    {
+      path: "/home",
+      name: "home",
+      component: Homepage,
+    },
     {
       path: "/background-color",
       name: "background-color",

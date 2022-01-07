@@ -1,20 +1,21 @@
 <template>
   <div id="app">
-    <vue-background-color></vue-background-color>
-    <vue-navbar>
-      <vue-border></vue-border>
-      <vue-box-shadow></vue-box-shadow>
-      <vue-background-image></vue-background-image>
-      <vue-text-decoration></vue-text-decoration>
-      <vue-text-shadow></vue-text-shadow>
-      <vue-transform-rotate></vue-transform-rotate>
-      <vue-opacity></vue-opacity>
-      <vue-background-gradient></vue-background-gradient>
-      <vue-flexbox></vue-flexbox>
-      <vue-cursor></vue-cursor>
-      <vue-image-filter></vue-image-filter>
-    </vue-navbar>
-
+   
+      <vue-background-color></vue-background-color>
+      <vue-navbar>
+        <vue-border></vue-border>
+        <vue-box-shadow></vue-box-shadow>
+        <vue-background-image></vue-background-image>
+        <vue-text-decoration></vue-text-decoration>
+        <vue-text-shadow></vue-text-shadow>
+        <vue-transform-rotate></vue-transform-rotate>
+        <vue-opacity></vue-opacity>
+        <vue-background-gradient></vue-background-gradient>
+        <vue-flexbox></vue-flexbox>
+        <vue-cursor></vue-cursor>
+        <vue-image-filter></vue-image-filter>
+      </vue-navbar>
+ 
     <transition
       name="router-anim"
       enter-active-class="animated fadeIn"
@@ -28,24 +29,11 @@
 <script>
 export default {
   name: "App",
-  metaInfo() {
-    return {
-      title: "CSS Tools",
-      meta: [
-        {
-          name: "description",
-          content: "This Website Contains Css Tools To Generate CSS",
-        },
-        {
-          property: "og:title",
-          content: "Epiloge - Build your network in your field of interest",
-        },
-        { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-        { property: "og:site_name", content: "CSS Tools" },
-        { property: "og:type", content: "website" },
-        { name: "robots", content: "index,follow" },
-      ],
-    };
+  data() {
+    return {};
+  },
+  methods: {
+  
   },
 };
 </script>
@@ -68,4 +56,5 @@ export default {
 .fadeIn {
   animation-duration: 0.15s;
 }
+
 </style>

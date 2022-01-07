@@ -39,10 +39,14 @@
         <div class="optionsPallete">
           <h1 class="colorText">Settings</h1>
           <div class="colorBG">
-            <input class="color" v-model="color" type="color" name="color" />
-            <p>{{ color }}</p>
+            <p>Background Color</p>
+            <section class="colorBgContainer">
+              <input class="color" v-model="color" type="color" name="color" />
+              <p style="margin-left:10px;">{{ color }}</p>
+            </section>
           </div>
         </div>
+
         <div class="secondPallete">
           <div class="previewPalleteContainer">
             <h1 class="previewPalleteText">Preview</h1>
@@ -179,17 +183,6 @@ export default {
   align-items: center;
 }
 
-.color {
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  background-color: #293144;
-  color: white;
-}
-
 #hex {
   font-size: 0.9vw;
 }
@@ -218,14 +211,29 @@ export default {
   width: 100%;
   background-color: whitesmoke;
   display: flex;
-  align-items: center;
-}
-.colorBG p {
-  margin-left: 10px;
+  flex-direction: column;
 }
 
 .codePallete {
   color: #ffffff;
+}
+.colorBgContainer {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.color {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #353945;
+  color: white;
 }
 
 .codePalleteText {
@@ -270,6 +278,9 @@ export default {
   padding: 20px;
   border-radius: 5px;
   box-shadow: -1px 2px 5px 3px #7070700e;
+}
+.optionsPallete div {
+  padding: 10px;
 }
 .secondPallete {
   flex: 1;

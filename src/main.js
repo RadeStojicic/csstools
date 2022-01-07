@@ -14,7 +14,6 @@ import BackgroundGradient from "./components/BackgroundGradient.vue";
 import Flexbox from "./components/Flexbox.vue";
 import Cursor from "./components/Cursor.vue";
 import ImageFilter from "./components/ImageFilter.vue";
-import VueMeta from "vue-meta";
 
 Vue.config.productionTip = false;
 
@@ -31,8 +30,6 @@ Vue.component("vue-background-gradient", BackgroundGradient);
 Vue.component("vue-flexbox", Flexbox);
 Vue.component("vue-cursor", Cursor);
 Vue.component("vue-image-filter", ImageFilter);
-
-Vue.use(VueMeta);
 
 new Vue({
   router,

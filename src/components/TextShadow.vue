@@ -49,6 +49,7 @@
                   name="color"
                   value="#000000"
                 />
+                <p style="margin-left: 10px;">{{ colortextShadow }}</p>
               </section>
             </div>
             <div>

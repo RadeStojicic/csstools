@@ -49,6 +49,7 @@
                   name="color"
                   value="#000000"
                 />
+                <p style="margin-left: 10px;">{{ color1 }}</p>
               </section>
             </div>
             <div>
@@ -61,6 +62,7 @@
                   name="color"
                   value="#ffffff"
                 />
+                <p style="margin-left: 10px;">{{ color2 }}</p>
               </section>
             </div>
             <div v-if="this.activeGradientTypeVar == 'linear'">
