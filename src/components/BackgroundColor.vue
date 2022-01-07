@@ -39,7 +39,7 @@
         <div class="optionsPallete">
           <h1 class="colorText">Settings</h1>
           <div class="colorBG">
-            <p>Background Color</p>
+            <p class="colorBgTitle">Background Color</p>
             <section class="colorBgContainer">
               <input class="color" v-model="color" type="color" name="color" />
               <p style="margin-left:10px;">{{ color }}</p>
@@ -212,6 +212,11 @@ export default {
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
+}
+
+.colorBgTitle {
+  font-size: 0.9vw;
+  color: #1d263d;
 }
 
 .codePallete {
