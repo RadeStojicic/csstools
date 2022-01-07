@@ -1,7 +1,7 @@
 !<template>
   <div class="page">
     <div class="navbarClassic">
-      <h1 class="title">CSS Tools</h1>
+      <h1 class="title"><a href="#">CSS Tools</a></h1>
       <div class="toolsNavBar">
         <ul>
           <p>BACKGROUND</p>
@@ -172,9 +172,10 @@ a {
 
 .footerClassic div {
   border-top: 1px rgba(128, 128, 128, 0.39) solid;
-  width: 95%;
+  width: 100%;
   margin: 20px auto;
-  padding: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 .footerClassic p {
   color: rgb(172, 172, 172);
@@ -393,7 +394,7 @@ a {
   }
   .footerClassic p {
     color: rgb(172, 172, 172);
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     margin-top: 5px;
   }
 }

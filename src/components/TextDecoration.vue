@@ -7,18 +7,29 @@
             <h1>Category/TextDecoration</h1>
           </div>
           <div>
-            <a href="https://github.com/RadeStojicic" target="_blank">
+            <a
+              alt="github account"
+              href="https://github.com/RadeStojicic"
+              target="_blank"
+            >
               <i class="fab fa-github"></i
             ></a>
-            <a href="https://www.facebook.com/rade.stojicic" target="_blank"
+            <a
+              alt="facebook account"
+              href="https://www.facebook.com/rade.stojicic"
+              target="_blank"
               ><i class="fab fa-facebook-square"></i
             ></a>
             <a
+              alt="linkedin account"
               href="https://www.linkedin.com/in/rade-stojicic-098883222/"
               target="_blank"
               ><i class="fab fa-linkedin-in"></i
             ></a>
-            <a href="https://www.instagram.com/radee_st/" target="_blank"
+            <a
+              alt="instagram account"
+              href="https://www.instagram.com/radee_st/"
+              target="_blank"
               ><i class="fab fa-instagram"></i
             ></a>
           </div>
