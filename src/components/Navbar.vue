@@ -350,7 +350,7 @@ a {
 .title {
   color: white;
   font-size: 1.4vw;
-  padding: 25px 20px 5px 10px;
+  padding: 25px 20px 5px 20px;
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
