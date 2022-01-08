@@ -397,13 +397,9 @@ a {
 }
 .toolsNavBar ::-webkit-scrollbar-thumb {
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    rgb(7, 26, 44),
-    rgb(7, 26, 44)
-  );
+  background: -webkit-linear-gradient(to bottom, #c0c0c0, #c0c0c0);
   /* Chrome 10-25, Safari 5.1-6 */
-  background-color: rgba(3, 24, 71, 0.233);
+  background-color: #c0c0c0;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
