@@ -83,6 +83,11 @@ const router = new Router({
       name: "image-filter",
       component: ImageFilter,
     },
+    {
+      path: "/",
+      name: "background-color",
+      component: BackgroundColor,
+    },
   ],
 });
 

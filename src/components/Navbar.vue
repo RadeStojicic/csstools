@@ -393,7 +393,7 @@ a {
 }
 /* Track */
 .toolsNavBar ::-webkit-scrollbar-track {
-  box-shadow: inset 30px 30px 30px #141b2c;
+  box-shadow: inset 30px 30px 30px #c0c0c0;
 }
 .toolsNavBar ::-webkit-scrollbar-thumb {
   /* fallback for old browsers */
@@ -403,7 +403,7 @@ a {
     rgb(7, 26, 44)
   );
   /* Chrome 10-25, Safari 5.1-6 */
-  background-color: rgb(192, 192, 192);
+  background-color: rgba(3, 24, 71, 0.233);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
