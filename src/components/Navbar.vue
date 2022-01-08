@@ -818,11 +818,14 @@ a {
     font-size: 1.1vw;
   }
   .toolsNavBar li {
-    padding: 0.65vw 0.5vw 0.6vw 1.3vw;
+    padding: 0.65vw 0.5vw 0.8vw 1.3vw;
     color: white;
     font-size: 1vw;
     border-top: 1px rgba(128, 128, 128, 0.39) solid;
     width: 100%;
+  }
+  .toolsNavBar ul {
+    padding-bottom: 50px;
   }
   .toolsNavBar li:hover {
     background-color: rgba(41, 41, 41, 0.178);

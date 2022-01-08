@@ -603,10 +603,16 @@ export default {
   .textDecoration_container {
     width: 80vw;
   }
+  .textDecorationTool {
+    top: 35%;
+  }
 }
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;
+  }
+  .textDecorationTool {
+    top: 45%;
   }
   .textDecorationTool {
     display: flex;

@@ -557,6 +557,9 @@ export default {
   .background {
     width: 80vw;
   }
+  .hero {
+    top: 35%;
+  }
 }
 @media (max-width: 1300px) {
   .background {
@@ -564,6 +567,9 @@ export default {
   }
   .portfolioLink {
     display: none;
+  }
+  .hero {
+    top: 50%;
   }
 }
 @media (max-width: 1080px) {

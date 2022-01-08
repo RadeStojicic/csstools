@@ -429,10 +429,16 @@ export default {
   .textShadow_container {
     width: 80vw;
   }
+  .textShadowTool {
+    top: 35%;
+  }
 }
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;
+  }
+  .textShadowTool {
+    top: 40%;
   }
   .textShadowTool {
     display: flex;

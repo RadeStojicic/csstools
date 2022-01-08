@@ -740,10 +740,16 @@ export default {
   .BackgroundImage_container {
     width: 80vw;
   }
+  .BackgroundImageTool {
+    top: 45%;
+  }
 }
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;
+  }
+  .BackgroundImageTool {
+    top: 50%;
   }
   .BackgroundImageTool {
     display: flex;

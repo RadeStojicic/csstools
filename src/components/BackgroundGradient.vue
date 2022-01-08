@@ -694,8 +694,14 @@ export default {
   .BackgroundGradient_container {
     width: 80vw;
   }
+  .BackgroundGradientTool {
+    top: 40%;
+  }
 }
 @media (max-width: 1300px) {
+  .BackgroundGradientTool {
+    top: 42%;
+  }
   .portfolioLink {
     display: none;
   }
@@ -708,7 +714,7 @@ export default {
     width: 100%;
     height: auto;
     position: relative;
-    margin: 220px auto;
+    margin: 200px auto;
     height: auto;
     padding-bottom: 30px;
   }
@@ -787,9 +793,8 @@ export default {
     margin: auto;
     width: 100%;
     height: auto;
-
     position: relative;
-    margin: 220px auto;
+    margin: 250px auto;
     height: auto;
     padding-bottom: 30px;
   }

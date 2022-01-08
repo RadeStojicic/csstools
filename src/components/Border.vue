@@ -430,10 +430,16 @@ export default {
   .border_container {
     width: 80vw;
   }
+  .borderTool {
+    top: 45%;
+  }
 }
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;
+  }
+  .borderTool {
+    top: 45%;
   }
   .borderTool {
     display: flex;

@@ -462,10 +462,16 @@ export default {
   .BoxShadow_container {
     width: 80vw;
   }
+  .BoxShadowTool {
+    top: 40%;
+  }
 }
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;
+  }
+  .BoxShadowTool {
+    top: 50%;
   }
   .BoxShadowTool {
     display: flex;

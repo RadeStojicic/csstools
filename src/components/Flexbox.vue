@@ -728,10 +728,16 @@ export default {
   .Flexbox_container {
     width: 80vw;
   }
+  .FlexboxTool {
+    top: 40%;
+  }
 }
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;
+  }
+  .FlexboxTool {
+    top: 45%;
   }
   .FlexboxTool {
     display: flex;
