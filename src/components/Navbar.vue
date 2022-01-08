@@ -840,6 +840,11 @@ a {
     margin-top: 5px;
   }
 }
+@media (max-width: 1500px) {
+  .toolsNavBar ul {
+    width: 95%;
+  }
+}
 @media (max-width: 1300px) {
   .navbarClassic {
     display: none;
