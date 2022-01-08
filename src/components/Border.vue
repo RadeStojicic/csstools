@@ -432,6 +432,9 @@ export default {
   }
 }
 @media (max-width: 1300px) {
+  .portfolioLink {
+    display: none;
+  }
   .borderTool {
     display: flex;
     flex-direction: column;

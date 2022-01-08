@@ -742,6 +742,9 @@ export default {
   }
 }
 @media (max-width: 1300px) {
+  .portfolioLink {
+    display: none;
+  }
   .BackgroundImageTool {
     display: flex;
     flex-direction: column;

@@ -605,6 +605,9 @@ export default {
   }
 }
 @media (max-width: 1300px) {
+  .portfolioLink {
+    display: none;
+  }
   .textDecorationTool {
     display: flex;
     flex-direction: column;

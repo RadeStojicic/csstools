@@ -508,6 +508,9 @@ export default {
   }
 }
 @media (max-width: 1300px) {
+  .portfolioLink {
+    display: none;
+  }
   .imageFilterToolContainer {
     display: flex;
     flex-direction: column;

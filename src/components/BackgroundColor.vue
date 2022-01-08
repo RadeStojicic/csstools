@@ -562,6 +562,9 @@ export default {
   .background {
     width: 100vw;
   }
+  .portfolioLink {
+    display: none;
+  }
 }
 @media (max-width: 1080px) {
   .hero {
