@@ -432,7 +432,7 @@ a {
 .footerClassic {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 15vw;
   margin-top: 0px;
   padding-bottom: 10px;
   background-color: #0f1629;
@@ -757,6 +757,7 @@ a {
     position: absolute;
     bottom: 0;
     width: 100%;
+    width: 20vw;
   }
 
   .footerClassic div {
@@ -796,7 +797,9 @@ a {
     text-decoration: none;
     color: white;
   }
-
+  .footerClassic {
+    width: 20vw;
+  }
   .title {
     font-size: 1.8vw;
     padding: 1vw;
