@@ -1,21 +1,20 @@
 <template>
   <div id="app">
-   
-      <vue-background-color></vue-background-color>
-      <vue-navbar>
-        <vue-border></vue-border>
-        <vue-box-shadow></vue-box-shadow>
-        <vue-background-image></vue-background-image>
-        <vue-text-decoration></vue-text-decoration>
-        <vue-text-shadow></vue-text-shadow>
-        <vue-transform-rotate></vue-transform-rotate>
-        <vue-opacity></vue-opacity>
-        <vue-background-gradient></vue-background-gradient>
-        <vue-flexbox></vue-flexbox>
-        <vue-cursor></vue-cursor>
-        <vue-image-filter></vue-image-filter>
-      </vue-navbar>
- 
+    <vue-background-color></vue-background-color>
+    <vue-navbar>
+      <vue-border></vue-border>
+      <vue-box-shadow></vue-box-shadow>
+      <vue-background-image></vue-background-image>
+      <vue-text-decoration></vue-text-decoration>
+      <vue-text-shadow></vue-text-shadow>
+      <vue-transform-rotate></vue-transform-rotate>
+      <vue-opacity></vue-opacity>
+      <vue-background-gradient></vue-background-gradient>
+      <vue-flexbox></vue-flexbox>
+      <vue-cursor></vue-cursor>
+      <vue-image-filter></vue-image-filter>
+    </vue-navbar>
+
     <transition
       name="router-anim"
       enter-active-class="animated fadeIn"
@@ -32,9 +31,7 @@ export default {
   data() {
     return {};
   },
-  methods: {
-  
-  },
+  methods: {},
 };
 </script>
 
@@ -56,5 +53,4 @@ export default {
 .fadeIn {
   animation-duration: 0.15s;
 }
-
 </style>
