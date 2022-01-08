@@ -35,6 +35,11 @@
           </div>
         </div>
       </div>
+      <div class="portfolioLink">
+        <a href="https://www.radestojicic.com/" target="_blank"
+          ><i class="fas fa-external-link-alt"></i
+        ></a>
+      </div>
       <div class="BackgroundImageTool">
         <div class="optionsBackgroundImage">
           <h1 class="BackgroundImageText">Settings</h1>
@@ -387,6 +392,10 @@ export default {
 
 .titleBackgroundImage {
   background-color: rgb(96, 10, 255);
+  background-image: url("../assets/navbarDesign.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .titleBackgroundImageContainer {
   width: 80%;

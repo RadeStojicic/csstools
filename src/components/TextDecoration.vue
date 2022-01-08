@@ -34,6 +34,11 @@
             ></a>
           </div>
         </div>
+        <div class="portfolioLink">
+          <a href="https://www.radestojicic.com/" target="_blank"
+            ><i class="fas fa-external-link-alt"></i
+          ></a>
+        </div>
       </div>
       <div class="textDecorationTool">
         <div class="optionstextDecoration">
@@ -304,6 +309,10 @@ export default {
 
 .titletextDecoration {
   background-color: rgb(96, 10, 255);
+  background-image: url("../assets/navbarDesign.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .titletextDecorationContainer {
   width: 80%;

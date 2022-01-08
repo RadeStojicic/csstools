@@ -26,8 +26,8 @@
               class="backgroundDropdown"
             >
               <p>Background</p>
-              <i class="fas fa-chevron-down down1"></i>
-              <i style="display: none;" class="fas fa-chevron-up up1"></i>
+              <i style="display: none;" class="fas fa-chevron-down down1"></i>
+              <i class="fas fa-chevron-up up1"></i>
             </div>
           </div>
           <div style="display: block;" class="backgroundLinks">
@@ -48,8 +48,8 @@
               class="boxDropdown"
             >
               <p>Box</p>
-              <i class="fas fa-chevron-down down2"></i>
-              <i style="display: none;" class="fas fa-chevron-up up2"></i>
+              <i style="display: none;" class="fas fa-chevron-down down2"></i>
+              <i class="fas fa-chevron-up up2"></i>
             </div>
           </div>
           <div style="display:block;" class="boxLinks">
@@ -59,8 +59,8 @@
           <div class="dropdownParentText">
             <div @click="dropTextContent()">
               <p>Text</p>
-              <i style="display: none;" class="fas fa-chevron-up up3"></i>
-              <i class="fas fa-chevron-down down3"></i>
+              <i class="fas fa-chevron-up up3"></i>
+              <i style="display: none;" class="fas fa-chevron-down down3"></i>
             </div>
           </div>
           <div style="display: block;" class="textLinks">
@@ -72,8 +72,8 @@
           <div class="dropdownParentTransform">
             <div @click="dropTransformContent()">
               <p>Transform</p>
-              <i class="fas fa-chevron-down down4"></i>
-              <i style="display: none;" class="fas fa-chevron-up up4"></i>
+              <i style="display: none;" class="fas fa-chevron-down down4"></i>
+              <i class="fas fa-chevron-up up4"></i>
             </div>
           </div>
           <div style="display: block;" class="transformLinks">
@@ -83,8 +83,8 @@
           <div class="dropdownParentLayout">
             <div @click="dropLayoutContent()">
               <p>Layout</p>
-              <i class="fas fa-chevron-down down5"></i>
-              <i style="display: none;" class="fas fa-chevron-up up5"></i>
+              <i style="display: none;" class="fas fa-chevron-down down5"></i>
+              <i class="fas fa-chevron-up up5"></i>
             </div>
           </div>
           <div style="display: block;" class="layoutLinks">
@@ -93,8 +93,8 @@
           <div class="dropdownParentFilter">
             <div @click="dropFilterContent()">
               <p>Filter</p>
-              <i class="fas fa-chevron-down down6"></i>
-              <i style="display: none;" class="fas fa-chevron-up up6"></i>
+              <i style="display: none;" class="fas fa-chevron-down down6"></i>
+              <i class="fas fa-chevron-up up6"></i>
             </div>
           </div>
           <div style="display:block;" class="filterLinks">
@@ -103,8 +103,8 @@
           <div class="dropdownParentOther">
             <div @click="dropOtherContent()">
               <p>Other</p>
-              <i class="fas fa-chevron-down down7"></i>
-              <i style="display: none;" class="fas fa-chevron-up up7"></i>
+              <i style="display: none;" class="fas fa-chevron-down down7"></i>
+              <i class="fas fa-chevron-up up7"></i>
             </div>
           </div>
           <div style="display: block;" class="otherLinks">
@@ -366,6 +366,9 @@ a {
   color: rgb(255, 255, 255);
   padding: 15px 10px 15px 10px;
   background-color: #0c1325;
+}
+.homeContainer div:hover {
+  background-color: rgba(195, 231, 255, 0.062);
 }
 
 .homeContainer i {

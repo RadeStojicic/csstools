@@ -34,7 +34,13 @@
             ></a>
           </div>
         </div>
+        <div class="portfolioLink">
+          <a href="https://www.radestojicic.com/" target="_blank"
+            ><i class="fas fa-external-link-alt"></i
+          ></a>
+        </div>
       </div>
+
       <div class="hero">
         <div class="optionsPallete">
           <h1 class="colorText">Settings</h1>
@@ -136,8 +142,28 @@ export default {
 }
 .titleColor {
   background-color: rgb(96, 10, 255);
+  background-image: url("../assets/navbarDesign.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+.portfolioLink {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 5px;
+  background-color: rgb(96, 10, 255);
+}
+.portfolioLink i {
+  color: rgb(255, 255, 255);
+  font-size: 1vw;
+  padding: 10px;
+}
+.portfolioLink:hover {
+  border-radius: 50px;
+  transition: 1.5s;
+  cursor: pointer;
+}
 .titleColorContainer {
   width: 80%;
   margin: auto;
