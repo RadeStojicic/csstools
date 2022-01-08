@@ -396,13 +396,13 @@ a {
 }
 /* Track */
 .toolsNavBar ::-webkit-scrollbar-track {
-  box-shadow: inset 30px 30px 30px #c0c0c0;
+  box-shadow: inset 30px 30px 30px #191931;
 }
 .toolsNavBar ::-webkit-scrollbar-thumb {
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #c0c0c0, #c0c0c0);
   /* Chrome 10-25, Safari 5.1-6 */
-  background-color: #c0c0c0;
+  background-color: #85858581;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
