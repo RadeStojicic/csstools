@@ -64,149 +64,171 @@
             </div>
           </div>
         </router-link>
-        <div class="bgImageHomeContainer">
-          <div class="bgImageImage">
-            <i class="fas fa-image"></i>
+        <router-link to="/background-image">
+          <div class="bgImageHomeContainer">
+            <div class="bgImageImage">
+              <i class="fas fa-image"></i>
+            </div>
+            <div class="bgImageHomeText">
+              <h1>Background Image</h1>
+              <p>
+                Upload your Background Image in this Generator and experiment
+                with the settings!
+              </p>
+              <p class="seeGenerator">See Generator</p>
+            </div>
           </div>
-          <div class="bgImageHomeText">
-            <h1>Background Image</h1>
-            <p>
-              Upload your Background Image in this Generator and experiment with
-              the settings!
-            </p>
-            <p class="seeGenerator">See Generator</p>
+        </router-link>
+        <router-link to="/background-gradient">
+          <div class="bgGradientHomeContainer">
+            <div class="bgGradientImage">
+              <i class="fas fa-tint"></i>
+            </div>
+            <div class="bgGradientHomeText">
+              <h1>Background Gradient</h1>
+              <p>
+                Background Gradient Generator is a tool that lets you create a
+                custom gradient background.
+              </p>
+              <p class="seeGenerator">See Generator</p>
+            </div>
           </div>
-        </div>
-        <div class="bgGradientHomeContainer">
-          <div class="bgGradientImage">
-            <i class="fas fa-tint"></i>
+        </router-link>
+        <router-link to="/border">
+          <div class="bgBoxShadowHomeContainer">
+            <div class="bgBorderImage">
+              <i class="fas fa-border-all"></i>
+            </div>
+            <div class="bgBorderHomeText">
+              <h1>Border</h1>
+              <p>
+                Use Border Generator to make custom border style shown in
+                preview section.
+              </p>
+              <p class="seeGenerator">See Generator</p>
+            </div>
           </div>
-          <div class="bgGradientHomeText">
-            <h1>Background Gradient</h1>
-            <p>
-              Background Gradient Generator is a tool that lets you create a
-              custom gradient background.
-            </p>
-            <p class="seeGenerator">See Generator</p>
+        </router-link>
+        <router-link to="/box-shadow">
+          <div class="bgBoxShadowHomeContainer">
+            <div class="bgBoxShadowImage">
+              <i class="fas fa-box-open"></i>
+            </div>
+            <div class="bgBoxShadowHomeText">
+              <h1>Box Shadow</h1>
+              <p>
+                Experiment with the box shadow settings and see how they work.
+                The Generator will display your result in preview section.
+              </p>
+              <p class="seeGenerator">See Generator</p>
+            </div>
           </div>
-        </div>
-        <div class="bgBoxShadowHomeContainer">
-          <div class="bgBorderImage">
-            <i class="fas fa-border-all"></i>
+        </router-link>
+        <router-link to="/text-decoration">
+          <div class="bgTextDecorationHomeContainer">
+            <div class="bgTextDecorationImage">
+              <i class="fas fa-underline"></i>
+            </div>
+            <div class="bgTextDecorationHomeText">
+              <h1>Text Decoration</h1>
+              <p>
+                Text design is very important in typography, so the Text
+                Decoration Generator is there to help you.
+              </p>
+              <p class="seeGenerator">See Generator</p>
+            </div>
           </div>
-          <div class="bgBorderHomeText">
-            <h1>Border</h1>
-            <p>
-              Use Border Generator to make custom border style shown in preview
-              section.
-            </p>
-            <p class="seeGenerator">See Generator</p>
+        </router-link>
+        <router-link to="/text-shadow">
+          <div class="bgTextShadowHomeContainer">
+            <div class="bgTextShadowImage">
+              <i class="fas fa-font"></i>
+            </div>
+            <div class="bgTextShadowHomeText">
+              <h1>Text Shadow</h1>
+              <p>
+                Manipulate the shadow on the text simply and quickly using Text
+                Shadow Generator.
+              </p>
+              <p class="seeGenerator">See Generator</p>
+            </div>
           </div>
-        </div>
-        <div class="bgBoxShadowHomeContainer">
-          <div class="bgBoxShadowImage">
-            <i class="fas fa-box-open"></i>
+        </router-link>
+        <router-link to="/transform-rotate">
+          <div class="bgRotateHomeContainer">
+            <div class="bgRotateImage">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <div class="bgRotateHomeText">
+              <h1>Rotate</h1>
+              <p>
+                Rotate Generator uses the transform property to rotate your
+                element by any angles. This tool uses degrees.
+              </p>
+              <p class="seeGenerator">See Generator</p>
+            </div>
           </div>
-          <div class="bgBoxShadowHomeText">
-            <h1>Box Shadow</h1>
-            <p>
-              Experiment with the box shadow settings and see how they work. The
-              Generator will display your result in preview section.
-            </p>
-            <p class="seeGenerator">See Generator</p>
+        </router-link>
+        <router-link to="/opacity">
+          <div class="bgOpacityHomeContainer">
+            <div class="bgOpacityImage">
+              <i class="fas fa-feather-alt"></i>
+            </div>
+            <div class="bgOpacityHomeText">
+              <h1>Opacity</h1>
+              <p>
+                Opacity Generator uses the transform property to change opacity
+                of your element.
+              </p>
+              <p class="seeGenerator">See Generator</p>
+            </div>
           </div>
-        </div>
-        <div class="bgTextDecorationHomeContainer">
-          <div class="bgTextDecorationImage">
-            <i class="fas fa-underline"></i>
+        </router-link>
+        <router-link to="/flexbox">
+          <div class="bgFlexboxHomeContainer">
+            <div class="bgFlexboxImage">
+              <i class="fab fa-buromobelexperte"></i>
+            </div>
+            <div class="bgFlexboxHomeText">
+              <h1>Flexbox</h1>
+              <p>
+                Visually see how CSS flexbox works. Experiment with the settings
+                of Generator and learn Flexbox quickly.
+              </p>
+              <p class="seeGenerator">See Generator</p>
+            </div>
           </div>
-          <div class="bgTextDecorationHomeText">
-            <h1>Text Decoration</h1>
-            <p>
-              Text design is very important in typography, so the Text
-              Decoration Generator is there to help you.
-            </p>
-            <p class="seeGenerator">See Generator</p>
+        </router-link>
+        <router-link to="/image-filter">
+          <div class="bgImageFilterHomeContainer">
+            <div class="bgImageFilterImage">
+              <i class="fas fa-images"></i>
+            </div>
+            <div class="bgImageFilterHomeText">
+              <h1>Image Filter</h1>
+              <p>
+                Have you ever wondered how to edit an image in CSS? Upload your
+                image and try this Generator.
+              </p>
+              <p class="seeGenerator">See Generator</p>
+            </div>
           </div>
-        </div>
-        <div class="bgTextShadowHomeContainer">
-          <div class="bgTextShadowImage">
-            <i class="fas fa-font"></i>
+        </router-link>
+        <router-link to="/cursor">
+          <div class="bgCursorHomeContainer">
+            <div class="bgCursorImage">
+              <i class="fas fa-mouse-pointer"></i>
+            </div>
+            <div class="bgCursorHomeText">
+              <h1>Cursor</h1>
+              <p>
+                This Generator will help you to see how different cursor types
+                look. Hurry up and test it!
+              </p>
+              <p class="seeGenerator">See Generator</p>
+            </div>
           </div>
-          <div class="bgTextShadowHomeText">
-            <h1>Text Shadow</h1>
-            <p>
-              Manipulate the shadow on the text simply and quickly using Text
-              Shadow Generator.
-            </p>
-            <p class="seeGenerator">See Generator</p>
-          </div>
-        </div>
-        <div class="bgRotateHomeContainer">
-          <div class="bgRotateImage">
-            <i class="fas fa-sync-alt"></i>
-          </div>
-          <div class="bgRotateHomeText">
-            <h1>Rotate</h1>
-            <p>
-              Rotate Generator uses the transform property to rotate your
-              element by any angles. This tool uses degrees.
-            </p>
-            <p class="seeGenerator">See Generator</p>
-          </div>
-        </div>
-        <div class="bgOpacityHomeContainer">
-          <div class="bgOpacityImage">
-            <i class="fas fa-feather-alt"></i>
-          </div>
-          <div class="bgOpacityHomeText">
-            <h1>Opacity</h1>
-            <p>
-              Opacity Generator uses the transform property to change opacity of
-              your element.
-            </p>
-            <p class="seeGenerator">See Generator</p>
-          </div>
-        </div>
-        <div class="bgFlexboxHomeContainer">
-          <div class="bgFlexboxImage">
-            <i class="fab fa-buromobelexperte"></i>
-          </div>
-          <div class="bgFlexboxHomeText">
-            <h1>Flexbox</h1>
-            <p>
-              Visually see how CSS flexbox works. Experiment with the settings
-              of Generator and learn Flexbox quickly.
-            </p>
-            <p class="seeGenerator">See Generator</p>
-          </div>
-        </div>
-        <div class="bgImageFilterHomeContainer">
-          <div class="bgImageFilterImage">
-            <i class="fas fa-images"></i>
-          </div>
-          <div class="bgImageFilterHomeText">
-            <h1>Image Filter</h1>
-            <p>
-              Have you ever wondered how to edit an image in CSS? Upload your
-              image and try this Generator.
-            </p>
-            <p class="seeGenerator">See Generator</p>
-          </div>
-        </div>
-        <div class="bgCursorHomeContainer">
-          <div class="bgCursorImage">
-            <i class="fas fa-mouse-pointer"></i>
-          </div>
-          <div class="bgCursorHomeText">
-            <h1>Cursor</h1>
-            <p>
-              This Generator will help you to see how different cursor types
-              look. Hurry up and test it!
-            </p>
-            <p class="seeGenerator">See Generator</p>
-          </div>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -368,6 +390,10 @@ export default {
   display: flex;
   flex-direction: column;
 }
+.bgImageHomeContainer:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
 
 .bgImageImage {
   background-color: rgb(96, 10, 255);
@@ -408,6 +434,10 @@ export default {
   display: flex;
   flex-direction: column;
 }
+.bgGradientHomeContainer:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
 
 .bgGradientImage {
   background: linear-gradient(
@@ -442,6 +472,10 @@ export default {
 .bgBorderHomeContainer {
   display: flex;
   flex-direction: column;
+}
+.bgBorderHomeContainer:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
 }
 
 .bgBorderImage {
@@ -481,6 +515,10 @@ export default {
 .bgBoxShadowHomeContainer {
   display: flex;
   flex-direction: column;
+}
+.bgBoxShadowHomeContainer:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
 }
 
 .bgBoxShadowImage {
@@ -522,6 +560,10 @@ export default {
   display: flex;
   flex-direction: column;
 }
+.bgTextDecorationHomeContainer:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
 
 .bgTextDecorationImage {
   background-color: rgb(96, 10, 255);
@@ -562,6 +604,10 @@ export default {
   display: flex;
   flex-direction: column;
 }
+.bgTextShadowHomeContainer:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
 
 .bgTextShadowImage {
   background-color: rgb(96, 10, 255);
@@ -601,6 +647,10 @@ export default {
 .bgRotateHomeContainer {
   display: flex;
   flex-direction: column;
+}
+.bgRotateHomeContainer:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
 }
 
 .bgRotateImage {
@@ -643,6 +693,10 @@ export default {
   display: flex;
   flex-direction: column;
 }
+.bgOpacityHomeContainer:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
 
 .bgOpacityImage {
   background-color: rgb(96, 10, 255);
@@ -682,6 +736,10 @@ export default {
 .bgFlexboxHomeContainer {
   display: flex;
   flex-direction: column;
+}
+.bgFlexboxHomeContainer:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
 }
 
 .bgFlexboxImage {
@@ -723,6 +781,10 @@ export default {
   display: flex;
   flex-direction: column;
 }
+.bgImageFilterHomeContainer:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
 
 .bgImageFilterImage {
   background-color: rgb(96, 10, 255);
@@ -762,6 +824,10 @@ export default {
 .bgCursorHomeContainer {
   display: flex;
   flex-direction: column;
+}
+.bgCursorHomeContainer:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
 }
 
 .bgCursorImage {

@@ -133,6 +133,7 @@
     </div>
     <div class="navBarLinksFooter" style="display:none">
       <ul class="responsiveLinks">
+        <router-link to="/home"><p>Home</p></router-link>
         <p>Background</p>
         <router-link to="/background-color"
           ><li>Background Color</li></router-link
