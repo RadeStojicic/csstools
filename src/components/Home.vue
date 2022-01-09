@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="headingHome">
-        <h1>CodeGenCSS</h1>
+        <h1>Quick & Simple CSS Generator - Online Tools</h1>
         <h2>(CSS Tools That Generate Code)</h2>
         <p>
           Quick and easy CSS tools designed to learn CSS in a practical way.
@@ -50,7 +50,7 @@
       </div>
       <div class="containerHome">
         <router-link to="/background-color">
-          <div class="bgColorHomeContainer">
+          <div title="Background Color" class="bgColorHomeContainer">
             <div class="bgColorImage">
               <i class="fas fa-palette"></i>
             </div>
@@ -65,7 +65,7 @@
           </div>
         </router-link>
         <router-link to="/background-image">
-          <div class="bgImageHomeContainer">
+          <div title="Background Image" class="bgImageHomeContainer">
             <div class="bgImageImage">
               <i class="fas fa-image"></i>
             </div>
@@ -80,7 +80,7 @@
           </div>
         </router-link>
         <router-link to="/background-gradient">
-          <div class="bgGradientHomeContainer">
+          <div title="Background Gradient" class="bgGradientHomeContainer">
             <div class="bgGradientImage">
               <i class="fas fa-tint"></i>
             </div>
@@ -95,7 +95,7 @@
           </div>
         </router-link>
         <router-link to="/border">
-          <div class="bgBoxShadowHomeContainer">
+          <div title="Border" class="bgBoxShadowHomeContainer">
             <div class="bgBorderImage">
               <i class="fas fa-border-all"></i>
             </div>
@@ -110,7 +110,7 @@
           </div>
         </router-link>
         <router-link to="/box-shadow">
-          <div class="bgBoxShadowHomeContainer">
+          <div title="Box Shadow" class="bgBoxShadowHomeContainer">
             <div class="bgBoxShadowImage">
               <i class="fas fa-box-open"></i>
             </div>
@@ -125,7 +125,7 @@
           </div>
         </router-link>
         <router-link to="/text-decoration">
-          <div class="bgTextDecorationHomeContainer">
+          <div title="Text Decoration" class="bgTextDecorationHomeContainer">
             <div class="bgTextDecorationImage">
               <i class="fas fa-underline"></i>
             </div>
@@ -140,7 +140,7 @@
           </div>
         </router-link>
         <router-link to="/text-shadow">
-          <div class="bgTextShadowHomeContainer">
+          <div title="Text Shadow" class="bgTextShadowHomeContainer">
             <div class="bgTextShadowImage">
               <i class="fas fa-font"></i>
             </div>
@@ -155,7 +155,7 @@
           </div>
         </router-link>
         <router-link to="/transform-rotate">
-          <div class="bgRotateHomeContainer">
+          <div title="Rotate" class="bgRotateHomeContainer">
             <div class="bgRotateImage">
               <i class="fas fa-sync-alt"></i>
             </div>
@@ -170,7 +170,7 @@
           </div>
         </router-link>
         <router-link to="/opacity">
-          <div class="bgOpacityHomeContainer">
+          <div title="Opacity" class="bgOpacityHomeContainer">
             <div class="bgOpacityImage">
               <i class="fas fa-feather-alt"></i>
             </div>
@@ -185,7 +185,7 @@
           </div>
         </router-link>
         <router-link to="/flexbox">
-          <div class="bgFlexboxHomeContainer">
+          <div title="Flexbox" class="bgFlexboxHomeContainer">
             <div class="bgFlexboxImage">
               <i class="fab fa-buromobelexperte"></i>
             </div>
@@ -200,7 +200,7 @@
           </div>
         </router-link>
         <router-link to="/image-filter">
-          <div class="bgImageFilterHomeContainer">
+          <div title="Image Filter" class="bgImageFilterHomeContainer">
             <div class="bgImageFilterImage">
               <i class="fas fa-images"></i>
             </div>
@@ -215,7 +215,7 @@
           </div>
         </router-link>
         <router-link to="/cursor">
-          <div class="bgCursorHomeContainer">
+          <div title="Cursor" class="bgCursorHomeContainer">
             <div class="bgCursorImage">
               <i class="fas fa-mouse-pointer"></i>
             </div>
