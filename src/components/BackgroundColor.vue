@@ -564,6 +564,7 @@ export default {
 @media (max-width: 1300px) {
   .background {
     width: 100vw;
+    height: 1500px;
   }
   .portfolioLink {
     display: none;
@@ -588,7 +589,7 @@ export default {
 
   .background {
     width: 100%;
-    height: 1080px;
+    height: 1500px;
     padding-bottom: 30px;
     margin: 80px auto;
   }

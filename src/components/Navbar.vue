@@ -11,7 +11,7 @@
 
       <div class="toolsNavBar">
         <div class="homeContainer">
-          <router-link to="/background-color">
+          <router-link to="/home">
             <div>
               <span>Home</span>
               <i class="fas fa-home"></i>
