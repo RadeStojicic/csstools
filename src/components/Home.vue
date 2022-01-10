@@ -1129,7 +1129,7 @@ export default {
     color: #1d263dec;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 780px) {
   .containerHome {
     width: 90%;
     margin: auto;
@@ -1147,6 +1147,7 @@ export default {
     background-color: rgb(255, 255, 255);
     box-shadow: -1px 2px 5px 3px #7070700e;
   }
+
   .headingHome h1 {
     font-size: 4vw;
     color: #1d263dec;
@@ -1214,6 +1215,9 @@ export default {
     padding: 20px;
     background-color: rgb(255, 255, 255);
     box-shadow: -1px 2px 5px 3px #7070700e;
+  }
+  .backgroundHome {
+    height: 1080px;
   }
   .headingHome {
     width: 90%;

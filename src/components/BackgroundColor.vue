@@ -185,13 +185,6 @@ export default {
   text-align: right;
 }
 
-.rgb {
-  padding: 21px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 18px;
-}
 .hero {
   position: absolute;
   top: 45%;
@@ -204,19 +197,6 @@ export default {
   gap: 100px;
   align-items: flex-start;
   width: 80%;
-}
-
-.hexContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#hex {
-  font-size: 0.9vw;
-}
-#rgb {
-  font-size: 0.9vw;
 }
 
 .copyContainerBgColor {
@@ -442,20 +422,6 @@ export default {
     text-align: right;
   }
 
-  .rgb {
-    padding: 21px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 18px;
-  }
-
-  .hexContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .color {
     width: 50px;
     height: 50px;
@@ -463,13 +429,6 @@ export default {
     border: none;
     outline: none;
     font-size: 18px;
-  }
-
-  #hex {
-    font-size: 0.9vw;
-  }
-  #rgb {
-    font-size: 0.9vw;
   }
 
   .colorBG {
@@ -611,29 +570,13 @@ export default {
 
   .titleColorContainer div i {
     font-size: 2.5vw;
-
     padding: 10px;
   }
 
   .titleColor h1 {
     font-size: 2.5vw;
-
     padding: 15px 0px 15px 15px;
     text-align: right;
-  }
-
-  .rgb {
-    padding: 21px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 18px;
-  }
-
-  .hexContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .color {
@@ -643,13 +586,6 @@ export default {
     border: none;
     outline: none;
     font-size: 18px;
-  }
-
-  #hex {
-    font-size: 0.9vw;
-  }
-  #rgb {
-    font-size: 0.9vw;
   }
 
   .colorBG {
@@ -738,7 +674,7 @@ export default {
 
   .background {
     width: 100%;
-    height: 1080px;
+    height: 1500px;
     margin: 80px auto;
   }
   .navBarClassic {
@@ -770,20 +706,6 @@ export default {
     text-align: right;
   }
 
-  .rgb {
-    padding: 21px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 18px;
-  }
-
-  .hexContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .color {
     width: 50px;
     height: 50px;
@@ -791,13 +713,6 @@ export default {
     border: none;
     outline: none;
     font-size: 18px;
-  }
-
-  #hex {
-    font-size: 0.9vw;
-  }
-  #rgb {
-    font-size: 0.9vw;
   }
 
   .colorBG {
@@ -922,20 +837,6 @@ export default {
     text-align: right;
   }
 
-  .rgb {
-    padding: 21px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 18px;
-  }
-
-  .hexContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .color {
     width: 50px;
     height: 50px;
@@ -943,13 +844,6 @@ export default {
     border: none;
     outline: none;
     font-size: 18px;
-  }
-
-  #hex {
-    font-size: 0.9vw;
-  }
-  #rgb {
-    font-size: 0.9vw;
   }
 
   .colorBG {
