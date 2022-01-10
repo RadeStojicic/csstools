@@ -455,6 +455,30 @@ export default {
     width: 80vw;
   }
 }
+@media (max-width: 1500px) {
+  .CursorTool {
+    width: 90%;
+    gap: 50px;
+  }
+  .cursorText {
+    font-size: 2vw;
+  }
+  .previewCursorText {
+    font-size: 2vw;
+  }
+  .resultCursorText {
+    font-size: 2vw;
+  }
+  .resultTextCursor code {
+    font-size: 1vw;
+  }
+  .toolsCursor p {
+    font-size: 1.2vw;
+  }
+  .elementCursor {
+    font-size: 1.2vw;
+  }
+}
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;

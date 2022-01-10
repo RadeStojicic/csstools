@@ -732,6 +732,27 @@ export default {
     top: 40%;
   }
 }
+@media (max-width: 1500px) {
+  .FlexboxTool {
+    width: 90%;
+    gap: 50px;
+  }
+  .FlexboxText {
+    font-size: 2vw;
+  }
+  .previewFlexboxText {
+    font-size: 2vw;
+  }
+  .resultFlexboxText {
+    font-size: 2vw;
+  }
+  .resultTextFlexBox code {
+    font-size: 1vw;
+  }
+  .toolsFlexbox p {
+    font-size: 1.2vw;
+  }
+}
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;

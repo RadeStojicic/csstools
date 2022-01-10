@@ -285,6 +285,28 @@ export default {
     width: 80vw;
   }
 }
+
+@media (max-width: 1500px) {
+  .OpacityTool {
+    width: 90%;
+    gap: 50px;
+  }
+  .OpacityText {
+    font-size: 2vw;
+  }
+  .previewOpacityText {
+    font-size: 2vw;
+  }
+  .resultOpacityText {
+    font-size: 2vw;
+  }
+  .resultTextOpacity code {
+    font-size: 1vw;
+  }
+  .toolsOpacity p {
+    font-size: 1.2vw;
+  }
+}
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;

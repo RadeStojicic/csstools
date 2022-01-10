@@ -291,6 +291,27 @@ export default {
     width: 80vw;
   }
 }
+@media (max-width: 1500px) {
+  .TransformRotateTool {
+    width: 90%;
+    gap: 50px;
+  }
+  .TransformRotateText {
+    font-size: 2vw;
+  }
+  .previewTransformRotateText {
+    font-size: 2vw;
+  }
+  .resultTransformRotateText {
+    font-size: 2vw;
+  }
+  .resultTextRotate code {
+    font-size: 1vw;
+  }
+  .toolsTransformRotate p {
+    font-size: 1.2vw;
+  }
+}
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;

@@ -698,6 +698,27 @@ export default {
     top: 40%;
   }
 }
+@media (max-width: 1500px) {
+  .BackgroundGradientTool {
+    width: 90%;
+    gap: 50px;
+  }
+  .BackgroundGradientText {
+    font-size: 2vw;
+  }
+  .previewBackgroundGradientText {
+    font-size: 2vw;
+  }
+  .resultBackgroundGradientText {
+    font-size: 2vw;
+  }
+  .resultTextGradient code {
+    font-size: 1vw;
+  }
+  .toolsBackgroundGradient p {
+    font-size: 1.2vw;
+  }
+}
 @media (max-width: 1300px) {
   .BackgroundGradientTool {
     top: 42%;

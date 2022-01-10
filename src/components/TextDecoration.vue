@@ -607,6 +607,30 @@ export default {
     top: 35%;
   }
 }
+@media (max-width: 1500px) {
+  .textDecorationTool {
+    width: 90%;
+    gap: 50px;
+  }
+  .textDecorationText {
+    font-size: 2vw;
+  }
+  .previewtextDecorationText {
+    font-size: 2vw;
+  }
+  .resulttextDecorationText {
+    font-size: 2vw;
+  }
+  .resultTextTextDecoration code {
+    font-size: 1vw;
+  }
+  .toolstextDecoration p {
+    font-size: 1.2vw;
+  }
+  .elementtextDecoration {
+    font-size: 1.2vw;
+  }
+}
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;

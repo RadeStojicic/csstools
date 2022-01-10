@@ -434,6 +434,27 @@ export default {
     top: 45%;
   }
 }
+@media (max-width: 1500px) {
+  .borderTool {
+    width: 90%;
+    gap: 50px;
+  }
+  .borderText {
+    font-size: 2vw;
+  }
+  .previewBorderText {
+    font-size: 2vw;
+  }
+  .resultBorderText {
+    font-size: 2vw;
+  }
+  .resultTextBorder code {
+    font-size: 1vw;
+  }
+  .tools p {
+    font-size: 1.2vw;
+  }
+}
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;

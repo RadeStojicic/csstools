@@ -744,6 +744,30 @@ export default {
     top: 45%;
   }
 }
+@media (max-width: 1500px) {
+  .BackgroundImageTool {
+    width: 90%;
+    gap: 50px;
+  }
+  .BackgroundImageText {
+    font-size: 2vw;
+  }
+  .previewBackgroundImageText {
+    font-size: 2vw;
+  }
+  .resultBackgroundImageText {
+    font-size: 2vw;
+  }
+  .resultText code {
+    font-size: 1vw;
+  }
+  .toolsBackgroundImage p {
+    font-size: 1.2vw;
+  }
+  .imageUrl {
+    font-size: 2vw;
+  }
+}
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;

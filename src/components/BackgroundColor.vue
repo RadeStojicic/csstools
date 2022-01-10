@@ -520,6 +520,27 @@ export default {
     top: 35%;
   }
 }
+@media (max-width: 1500px) {
+  .colorBgTitle {
+    font-size: 1.2vw;
+    color: #1d263d;
+  }
+  .previewPalleteText {
+    font-size: 2vw;
+  }
+  .codePalleteText {
+    font-size: 2vw;
+  }
+  .colorText {
+    font-size: 2vw;
+  }
+  .hero {
+    width: 90%;
+  }
+  .inputsBG {
+    font-size: 1vw;
+  }
+}
 @media (max-width: 1300px) {
   .background {
     width: 100vw;

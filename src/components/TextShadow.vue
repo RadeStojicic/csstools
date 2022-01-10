@@ -433,6 +433,30 @@ export default {
     top: 35%;
   }
 }
+@media (max-width: 1500px) {
+  .textShadowTool {
+    width: 90%;
+    gap: 50px;
+  }
+  .textShadowText {
+    font-size: 2vw;
+  }
+  .previewtextShadowText {
+    font-size: 2vw;
+  }
+  .resulttextShadowText {
+    font-size: 2vw;
+  }
+  .resultTextTextShadow code {
+    font-size: 1vw;
+  }
+  .toolstextShadow p {
+    font-size: 1.2vw;
+  }
+  .elementtextShadow {
+    font-size: 1.2vw;
+  }
+}
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;

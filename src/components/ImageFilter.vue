@@ -507,6 +507,27 @@ export default {
     width: 80vw;
   }
 }
+@media (max-width: 1500px) {
+  .imageFilterToolContainer {
+    width: 90%;
+    gap: 50px;
+  }
+  .imageFilterText {
+    font-size: 2vw;
+  }
+  .previewimageFilterText {
+    font-size: 2vw;
+  }
+  .resultimageFilterText {
+    font-size: 2vw;
+  }
+  .resultTextImageFilter code {
+    font-size: 1vw;
+  }
+  .toolsimageFilter p {
+    font-size: 1.2vw;
+  }
+}
 @media (max-width: 1300px) {
   .portfolioLink {
     display: none;
@@ -591,6 +612,7 @@ export default {
     font-size: 1.5vw;
   }
 }
+
 @media (max-width: 1080px) {
   .imageFilterToolContainer {
     display: flex;

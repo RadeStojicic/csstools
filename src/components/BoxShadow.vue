@@ -465,6 +465,43 @@ export default {
   .BoxShadowTool {
     top: 40%;
   }
+  .elementBoxShadow {
+    padding: 50px;
+    background-color: #1d263d;
+    height: 150px;
+    width: 70%;
+    margin: 50px auto;
+  }
+}
+@media (max-width: 1500px) {
+  .toolsBoxShadow p {
+    font-size: 1.2vw;
+  }
+  .BoxShadowTool {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: flex-start;
+    width: 90%;
+  }
+  .resultTextBoxShadow code {
+    font-size: 1vw;
+  }
+  .BoxShadowText {
+    font-size: 2vw;
+  }
+  .previewBoxShadowText {
+    font-size: 2vw;
+  }
+  .resultBoxShadowText {
+    font-size: 2vw;
+  }
 }
 @media (max-width: 1300px) {
   .portfolioLink {
