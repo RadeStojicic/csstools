@@ -743,6 +743,12 @@ export default {
   .BackgroundImageTool {
     top: 45%;
   }
+  .titleBackgroundImageContainer h1 {
+    font-size: 1.2vw;
+  }
+  .titleBackgroundImage div i {
+    font-size: 1.2vw;
+  }
 }
 @media (max-width: 1500px) {
   .BackgroundImageTool {
@@ -766,6 +772,12 @@ export default {
   }
   .imageUrl {
     font-size: 2vw;
+  }
+  .titleBackgroundImageContainer h1 {
+    font-size: 1.3vw;
+  }
+  .titleBackgroundImage div i {
+    font-size: 1.3vw;
   }
 }
 @media (max-width: 1300px) {
@@ -821,7 +833,6 @@ export default {
   }
   .titleBackgroundImage div i {
     font-size: 1.6vw;
-
     padding: 10px;
   }
 

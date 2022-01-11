@@ -433,6 +433,12 @@ export default {
   .borderTool {
     top: 45%;
   }
+  .titleBorderContainer h1 {
+    font-size: 1.2vw;
+  }
+  .titleBorder div i {
+    font-size: 1.2vw;
+  }
 }
 @media (max-width: 1500px) {
   .borderTool {
@@ -453,6 +459,12 @@ export default {
   }
   .tools p {
     font-size: 1.2vw;
+  }
+  .titleBorderContainer h1 {
+    font-size: 1.3vw;
+  }
+  .titleBorder div i {
+    font-size: 1.3vw;
   }
 }
 @media (max-width: 1300px) {

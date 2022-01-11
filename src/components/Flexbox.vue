@@ -731,6 +731,12 @@ export default {
   .FlexboxTool {
     top: 40%;
   }
+  .titleFlexboxContainer h1 {
+    font-size: 1.2vw;
+  }
+  .titleFlexbox div i {
+    font-size: 1.2vw;
+  }
 }
 @media (max-width: 1500px) {
   .FlexboxTool {
@@ -751,6 +757,12 @@ export default {
   }
   .toolsFlexbox p {
     font-size: 1.2vw;
+  }
+  .titleFlexboxContainer h1 {
+    font-size: 1.3vw;
+  }
+  .titleFlexbox div i {
+    font-size: 1.3vw;
   }
 }
 @media (max-width: 1300px) {
@@ -800,7 +812,6 @@ export default {
   }
   .titleFlexbox div i {
     font-size: 1.6vw;
-
     padding: 10px;
   }
 

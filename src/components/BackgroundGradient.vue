@@ -697,6 +697,12 @@ export default {
   .BackgroundGradientTool {
     top: 40%;
   }
+  .titleBackgroundGradientContainer h1 {
+    font-size: 1.2vw;
+  }
+  .titleBackgroundGradient div i {
+    font-size: 1.2vw;
+  }
 }
 @media (max-width: 1500px) {
   .BackgroundGradientTool {
@@ -717,6 +723,12 @@ export default {
   }
   .toolsBackgroundGradient p {
     font-size: 1.2vw;
+  }
+  .titleBackgroundGradientContainer h1 {
+    font-size: 1.3vw;
+  }
+  .titleBackgroundGradient div i {
+    font-size: 1.3vw;
   }
 }
 @media (max-width: 1300px) {
@@ -771,7 +783,6 @@ export default {
   }
   .titleBackgroundGradient div i {
     font-size: 1.6vw;
-
     padding: 10px;
   }
 

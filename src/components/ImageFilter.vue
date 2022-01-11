@@ -506,6 +506,12 @@ export default {
   .imageFilter_container {
     width: 80vw;
   }
+  .titleimageFilterContainer h1 {
+    font-size: 1.2vw;
+  }
+  .titleimageFilter div i {
+    font-size: 1.2vw;
+  }
 }
 @media (max-width: 1500px) {
   .imageFilterToolContainer {
@@ -526,6 +532,12 @@ export default {
   }
   .toolsimageFilter p {
     font-size: 1.2vw;
+  }
+  .titleimageFilterContainer h1 {
+    font-size: 1.3vw;
+  }
+  .titleimageFilter div i {
+    font-size: 1.3vw;
   }
 }
 @media (max-width: 1300px) {

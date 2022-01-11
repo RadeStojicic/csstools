@@ -472,6 +472,12 @@ export default {
     width: 70%;
     margin: 50px auto;
   }
+  .titleBoxShadowContainer h1 {
+    font-size: 1.2vw;
+  }
+  .titleBoxShadow div i {
+    font-size: 1.2vw;
+  }
 }
 @media (max-width: 1500px) {
   .toolsBoxShadow p {
@@ -501,6 +507,12 @@ export default {
   }
   .resultBoxShadowText {
     font-size: 2vw;
+  }
+  .titleBoxShadowContainer h1 {
+    font-size: 1.3vw;
+  }
+  .titleBoxShadow div i {
+    font-size: 1.3vw;
   }
 }
 @media (max-width: 1300px) {
@@ -552,7 +564,6 @@ export default {
   }
   .titleBoxShadow div i {
     font-size: 1.6vw;
-
     padding: 10px;
   }
 

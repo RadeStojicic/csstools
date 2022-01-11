@@ -290,6 +290,12 @@ export default {
   .TransformRotate_container {
     width: 80vw;
   }
+  .titleTransformRotateContainer h1 {
+    font-size: 1.2vw;
+  }
+  .titleTransformRotate div i {
+    font-size: 1.2vw;
+  }
 }
 @media (max-width: 1500px) {
   .TransformRotateTool {
@@ -310,6 +316,12 @@ export default {
   }
   .toolsTransformRotate p {
     font-size: 1.2vw;
+  }
+  .titleTransformRotateContainer h1 {
+    font-size: 1.3vw;
+  }
+  .titleTransformRotate div i {
+    font-size: 1.3vw;
   }
 }
 @media (max-width: 1300px) {

@@ -606,6 +606,12 @@ export default {
   .textDecorationTool {
     top: 35%;
   }
+  .titletextDecorationContainer h1 {
+    font-size: 1.2vw;
+  }
+  .titletextDecorationContainer div i {
+    font-size: 1.2vw;
+  }
 }
 @media (max-width: 1500px) {
   .textDecorationTool {
@@ -629,6 +635,12 @@ export default {
   }
   .elementtextDecoration {
     font-size: 1.2vw;
+  }
+  .titletextDecorationContainer h1 {
+    font-size: 1.3vw;
+  }
+  .titletextDecorationContainer div i {
+    font-size: 1.3vw;
   }
 }
 @media (max-width: 1300px) {

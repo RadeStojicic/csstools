@@ -454,6 +454,12 @@ export default {
   .Cursor_container {
     width: 80vw;
   }
+  .titleCursorContainer h1 {
+    font-size: 1.2vw;
+  }
+  .titleCursor div i {
+    font-size: 1.2vw;
+  }
 }
 @media (max-width: 1500px) {
   .CursorTool {
@@ -477,6 +483,12 @@ export default {
   }
   .elementCursor {
     font-size: 1.2vw;
+  }
+  .titleCursorContainer h1 {
+    font-size: 1.3vw;
+  }
+  .titleCursor div i {
+    font-size: 1.3vw;
   }
 }
 @media (max-width: 1300px) {

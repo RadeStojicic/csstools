@@ -432,6 +432,12 @@ export default {
   .textShadowTool {
     top: 35%;
   }
+  .titletextShadowContainer h1 {
+    font-size: 1.2vw;
+  }
+  .titletextShadow div i {
+    font-size: 1.2vw;
+  }
 }
 @media (max-width: 1500px) {
   .textShadowTool {
@@ -455,6 +461,12 @@ export default {
   }
   .elementtextShadow {
     font-size: 1.2vw;
+  }
+  .titletextShadowContainer h1 {
+    font-size: 1.3vw;
+  }
+  .titletextShadow div i {
+    font-size: 1.3vw;
   }
 }
 @media (max-width: 1300px) {

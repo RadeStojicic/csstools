@@ -519,6 +519,13 @@ export default {
   .hero {
     top: 35%;
   }
+  .titleColorContainer div i {
+    font-size: 1.2vw;
+  }
+
+  .titleColor h1 {
+    font-size: 1.2vw;
+  }
 }
 @media (max-width: 1500px) {
   .colorBgTitle {
@@ -540,6 +547,13 @@ export default {
   .inputsBG {
     font-size: 1vw;
   }
+  .titleColorContainer div i {
+    font-size: 1.3vw;
+  }
+
+  .titleColor h1 {
+    font-size: 1.3vw;
+  }
 }
 @media (max-width: 1300px) {
   .background {
@@ -551,6 +565,13 @@ export default {
   }
   .hero {
     top: 50%;
+  }
+  .titleColorContainer div i {
+    font-size: 1.8vw;
+  }
+
+  .titleColor h1 {
+    font-size: 1.8vw;
   }
 }
 @media (max-width: 1080px) {
@@ -847,13 +868,11 @@ export default {
 
   .titleColorContainer div i {
     font-size: 4.5vw;
-
     padding: 10px;
   }
 
   .titleColor h1 {
     font-size: 4vw;
-
     padding: 15px 0px 15px 15px;
     text-align: right;
   }

@@ -284,6 +284,12 @@ export default {
   .Opacity_container {
     width: 80vw;
   }
+  .titleOpacityContainer h1 {
+    font-size: 1.2vw;
+  }
+  .titleOpacity div i {
+    font-size: 1.2vw;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -305,6 +311,12 @@ export default {
   }
   .toolsOpacity p {
     font-size: 1.2vw;
+  }
+  .titleOpacityContainer h1 {
+    font-size: 1.3vw;
+  }
+  .titleOpacity div i {
+    font-size: 1.3vw;
   }
 }
 @media (max-width: 1300px) {
